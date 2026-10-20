@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mujoco model="o6_tabletop_lift">
+  <compiler angle="radian" autolimits="true" inertiafromgeom="auto" strippath="false" />
+  <option timestep="0.001" gravity="0 0 -9.81" integrator="implicitfast" cone="elliptic" iterations="100" impratio="10" noslip_iterations="2" />
+  <visual>
+    <global offwidth="960" offheight="720" />
+    <headlight ambient="0.4 0.4 0.4" diffuse="0.7 0.7 0.7" />
+  </visual>
+  <asset>
+    <texture name="sky" type="skybox" builtin="gradient" rgb1="0.75 0.83 0.9" rgb2="0.9 0.93 0.96" width="512" height="512" />
+    <texture name="checker" type="2d" builtin="checker" rgb1="0.7 0.73 0.76" rgb2="0.9 0.91 0.92" width="512" height="512" />
+    <material name="table_mat" texture="checker" texrepeat="8 8" reflectance="0.05" />
+    <mesh name="mesh_0" file="../../../meshes/f7fc8dae5d375e5a33251593c46f8b882c3a1aaafe89fa9544f0ef57d657f5de.stl" scale="1 1 1" />
+    <mesh name="mesh_1" file="../../../meshes/d92665c1cf3304617674cb4bc64cb20bc42ee49238043a427c222e32b4bdfe56.stl" scale="1 1 1" />
+    <mesh name="mesh_2" file="../../../meshes/6bb54d668aea4f71251d48dc010897e08717b0cd13f63b304357fdc36894b897.stl" scale="1 1 1" />
+    <mesh name="mesh_3" file="../../../meshes/c3642be300b1ae3f7f5af071f5b1cfd4dec99e610e57e7bfe44a3b804886a360.stl" scale="1 1 1" />
+    <mesh name="mesh_4" file="../../../meshes/38c58f62b9911203069925c3d374703772927ffd3fa98049400fd75e66e7194a.stl" scale="1 1 1" />
+    <mesh name="mesh_5" file="../../../meshes/f07c23647d61bbc3e1c195fd94a726fa1a7828d128100ad49176af4c2364645f.stl" scale="1 1 1" />
+    <mesh name="mesh_6" file="../../../meshes/392519c735b9658d3417d793a00f6a0f655b8e8b0a64fdd096eb2bcb31a4de65.stl" scale="1 1 1" />
+    <mesh name="mesh_7" file="../../../meshes/15d9e1daab1e75a1ce6808a64d37effd1f7cd179b9d1ecb44f3a4be70d0e186e.stl" scale="1 1 1" />
+    <mesh name="mesh_8" file="../../../meshes/e7485a837556d6c8a6101617bb113a625d65a878a00ac297b096d59b89629d5b.stl" scale="1 1 1" />
+    <mesh name="mesh_9" file="../../../meshes/e6488d4c8d8a8aa2d857c51178472f50e398dac1a2552cf90d2cf08561ae69cf.stl" scale="1 1 1" />
+    <mesh name="mesh_10" file="../../../meshes/50a1131fbead7bcf79ed1f435d4d799bd29f637ce81aa5220f31dc8b75a43777.stl" scale="1 1 1" />
+    <mesh name="mesh_11" file="../../../meshes/1b4b1c44dadd484bc3564ad622e0b7609c60eb8d76937b2a10c7d262cddc96e0.stl" scale="1 1 1" />
+    <mesh name="mesh_12" file="../../../meshes/8b043eb671d1f6619fb6ebb39dbd4f9012edc715de01d700d7bd0540cf9ae87e.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_13" file="../../../meshes/3123f7f175d40b8a3ea54cf9f67639fa1aaa24bd19951ef0677904e06217df0b.obj" scale="0.1 0.1 0.1" />
+    <material name="replay_default_material" rgba="0.72 0.47 0.36 1" specular="0.18" shininess="0.15" />
+  </asset>
+  <default>
+    <joint damping="0.05" frictionloss="0.01" armature="0.0002" />
+    <geom condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+  </default>
+  <worldbody>
+    <light pos="0 -0.5 1" dir="0 0 -1" diffuse="0.8 0.8 0.8" />
+    <geom name="table" type="plane" size="1 1 0.1" material="table_mat" />
+    <body name="hand_target" mocap="true" />
+    <body name="rh_hand_base_link">
+      <freejoint name="hand_free" />
+      <inertial pos="-0.00160320773491 0.000358462699238 0.0538002704027" mass="0.06740077960995" fullinertia="5.22359941042e-05 3.33473043514e-05 2.28342677422e-05 3.03915358528e-07 3.88322215372e-07 -7.77555280795e-07" />
+      <geom name="rh_hand_base_link_visual_0" type="mesh" mesh="mesh_0" pos="0 0 0" quat="1 0 0 0" contype="0" conaffinity="0" density="0" group="2" rgba="0.5 0.5 0.52 1.0" />
+      <geom name="rh_hand_base_link_collision_0" type="mesh" mesh="mesh_0" pos="0 0 0" quat="1 0 0 0" group="3" rgba="0.4 0.55 0.65 0" />
+      <body name="rh_thumb_metacarpals_base2" pos="0.011508 0.022975 0.032794" quat="1 0 0 0">
+        <joint name="rh_thumb_cmc_yaw" type="hinge" axis="0 0 -1" range="0 1.36" />
+        <inertial pos="0.00162795738394 0.00276671978337 -0.00184227725603" mass="0.00138591070212997" fullinertia="5.26294625624e-08 4.82623724533e-08 2.88555522061e-08 -3.92880137996e-09 2.437662682e-09 3.71867754115e-09" />
+        <geom name="rh_thumb_metacarpals_base2_visual_0" type="mesh" mesh="mesh_1" pos="0 0 0" quat="1 0 0 0" contype="0" conaffinity="0" density="0" group="2" rgba="0.15 0.15 0.15 1.0" />
+        <geom name="rh_thumb_metacarpals_base2_collision_0" type="mesh" mesh="mesh_1" pos="0 0 0" quat="1 0 0 0" group="3" rgba="0.4 0.55 0.65 0" />
+        <body name="rh_thumb_metacarpals" pos="0.0061649 0.010678 -0.004891" quat="0.419199652001 -0.472028720759 -0.27252436779 -0.726079201948">
+          <joint name="rh_thumb_cmc_pitch" type="hinge" axis="0 1 0" range="0 0.58" />
+          <inertial pos="4.24920612856e-05 -1.67885666835e-05 0.022834152259" mass="0.0123381607727595" fullinertia="1.10292488694e-06 1.76757658486e-06 9.36348143657e-07 -6.14241939152e-10 1.14233108677e-07 -4.24576599367e-10" />
+          <geom name="rh_thumb_metacarpals_visual_0" type="mesh" mesh="mesh_2" pos="0 0 0" quat="1 0 0 0" contype="0" conaffinity="0" density="0" group="2" rgba="0.5 0.5 0.52 1.0" />
+          <geom name="rh_thumb_metacarpals_collision_0" type="mesh" mesh="mesh_2" pos="0 0 0" quat="1 0 0 0" group="3" rgba="0.4 0.55 0.65 0" />
+          <body name="rh_thumb_distal" pos="0.0037776 0 0.045368" quat="1 0 0 0">
+            <joint name="rh_thumb_ip" type="hinge" axis="0 1 0" range="0 1.08" />
+            <inertial pos="-0.00413690727497 -4.54842793429e-07 0.0230097179164" mass="0.00763302603723749" fullinertia="1.30546842792e-06 1.22457212713e-06 2.77298979444e-07 -2.61617511029e-12 7.19030685242e-08 1.66931068485e-11" />
+            <geom name="rh_thumb_distal_visual_0" type="mesh" mesh="mesh_3" pos="0 0 0" quat="1 0 0 0" contype="0" conaffinity="0" density="0" group="2" rgba="0.5 0.5 0.52 1.0" />
+            <geom name="rh_thumb_distal_collision_0" type="mesh" mesh="mesh_3" pos="0 0 0" quat="1 0 0 0" group="3" rgba="0.4 0.55 0.65 0" />
+          </body>
+        </body>
+      </body>
+      <body name="rh_index_proximal" pos="0.0024758 0.02419 0.098779" quat="0.999657323373 -0.026177009507 0 0">
+        <joint name="rh_index_mcp_pitch" type="hinge" axis="0 1 0" range="0 1.6" />
+        <inertial pos="-0.00208665596034 -4.89649906443e-06 0.01727367189" mass="0.00253178529301663" fullinertia="2.65990159539e-07 2.72915460278e-07 8.56026306688e-08 -3.55165625723e-11 4.31046335852e-08 1.75935978709e-10" />
+        <geom name="rh_index_proximal_visual_0" type="mesh" mesh="mesh_4" pos="0 0 0" quat="1 0 0 0" contype="0" conaffinity="0" density="0" group="2" rgba="0.5 0.5 0.52 1.0" />
+        <geom name="rh_index_proximal_collision_0" type="mesh" mesh="mesh_4" pos="0 0 0" quat="1 0 0 0" group="3" rgba="0.4 0.55 0.65 0" />
+        <body name="rh_index_distal" pos="-0.0052516 0 0.036625" quat="1 0 0 0">
+          <joint name="rh_index_dip" type="hinge" axis="0 1 0" range="0 1.43" />
+          <inertial pos="0.00658940011631 -4.59976557023e-06 0.0194434136421" mass="0.00376787129082313" fullinertia="3.22116619426e-07 3.65131844686e-07 1.24256890613e-07 1.03152735699e-11 -1.14363506431e-07 -1.97263639269e-10" />
+          <geom name="rh_index_distal_visual_0" type="mesh" mesh="mesh_5" pos="0 0 0" quat="1 0 0 0" contype="0" conaffinity="0" density="0" group="2" rgba="0.5 0.5 0.52 1.0" />
+          <geom name="rh_index_distal_collision_0" type="mesh" mesh="mesh_5" pos="0 0 0" quat="1 0 0 0" group="3" rgba="0.4 0.55 0.65 0" />
+        </body>
+      </body>
+      <body name="rh_middle_proximal" pos="0.00052576 0.00634 0.1027" quat="1 0 0 0">
+        <joint name="rh_middle_mcp_pitch" type="hinge" axis="0 1 0" range="0 1.6" />
+        <inertial pos="-0.00208661081774 -4.93451838476e-06 0.0172736805322" mass="0.00253175497594429" fullinertia="2.65989683691e-07 2.72915006047e-07 8.56020467203e-08 -3.58343951792e-11 4.31048601085e-08 1.75718024413e-10" />
+        <geom name="rh_middle_proximal_visual_0" type="mesh" mesh="mesh_6" pos="0 0 0" quat="1 0 0 0" contype="0" conaffinity="0" density="0" group="2" rgba="0.5 0.5 0.52 1.0" />
+        <geom name="rh_middle_proximal_collision_0" type="mesh" mesh="mesh_6" pos="0 0 0" quat="1 0 0 0" group="3" rgba="0.4 0.55 0.65 0" />
+        <body name="rh_middle_distal" pos="-0.0052516 0 0.036625" quat="1 0 0 0">
+          <joint name="rh_middle_dip" type="hinge" axis="0 1 0" range="0 1.43" />
+          <inertial pos="0.00658940304809 -4.58857435932e-06 0.0194434523296" mass="0.00376786259758948" fullinertia="3.22115365831e-07 3.65130723083e-07 1.24256787914e-07 1.02639617308e-11 -1.14363547273e-07 -1.96904618798e-10" />
+          <geom name="rh_middle_distal_visual_0" type="mesh" mesh="mesh_7" pos="0 0 0" quat="1 0 0 0" contype="0" conaffinity="0" density="0" group="2" rgba="0.5 0.5 0.52 1.0" />
+          <geom name="rh_middle_distal_collision_0" type="mesh" mesh="mesh_7" pos="0 0 0" quat="1 0 0 0" group="3" rgba="0.4 0.55 0.65 0" />
+        </body>
+      </body>
+      <body name="rh_ring_proximal" pos="0.0010258 -0.011135 0.098767" quat="0.999657323373 0.026177009507 0 0">
+        <joint name="rh_ring_mcp_pitch" type="hinge" axis="0 1 0" range="0 1.6" />
+        <inertial pos="-0.00208654311325 -4.98538564003e-06 0.0172736743497" mass="0.00253170963529411" fullinertia="2.65989137957e-07 2.72914417062e-07 8.56012458678e-08 -3.62757108675e-11 4.31050611556e-08 1.75554984053e-10" />
+        <geom name="rh_ring_proximal_visual_0" type="mesh" mesh="mesh_8" pos="0 0 0" quat="1 0 0 0" contype="0" conaffinity="0" density="0" group="2" rgba="0.5 0.5 0.52 1.0" />
+        <geom name="rh_ring_proximal_collision_0" type="mesh" mesh="mesh_8" pos="0 0 0" quat="1 0 0 0" group="3" rgba="0.4 0.55 0.65 0" />
+        <body name="rh_ring_distal" pos="-0.0052516 0 0.036625" quat="1 0 0 0">
+          <joint name="rh_ring_dip" type="hinge" axis="0 1 0" range="0 1.43" />
+          <inertial pos="0.0065894027307 -4.56628863592e-06 0.0194435005687" mass="0.0037678395356105" fullinertia="3.22112632438e-07 3.65128262096e-07 1.24256284608e-07 1.01848408914e-11 -1.14363489153e-07 -1.96145632992e-10" />
+          <geom name="rh_ring_distal_visual_0" type="mesh" mesh="mesh_9" pos="0 0 0" quat="1 0 0 0" contype="0" conaffinity="0" density="0" group="2" rgba="0.5 0.5 0.52 1.0" />
+          <geom name="rh_ring_distal_collision_0" type="mesh" mesh="mesh_9" pos="0 0 0" quat="1 0 0 0" group="3" rgba="0.4 0.55 0.65 0" />
+        </body>
+      </body>
+      <body name="rh_pinky_proximal" pos="0.0024758 -0.028372 0.092741" quat="0.999048231671 0.0436191562856 0 0">
+        <joint name="rh_pinky_mcp_pitch" type="hinge" axis="0 1 0" range="0 1.6" />
+        <inertial pos="-0.00208649034131 -5.02314582561e-06 0.0172736680794" mass="0.00253167400540778" fullinertia="2.6598871882e-07 2.72913936905e-07 8.5600642472e-08 -3.6601229528e-11 4.31052220484e-08 1.75447396222e-10" />
+        <geom name="rh_pinky_proximal_visual_0" type="mesh" mesh="mesh_10" pos="0 0 0" quat="1 0 0 0" contype="0" conaffinity="0" density="0" group="2" rgba="0.5 0.5 0.52 1.0" />
+        <geom name="rh_pinky_proximal_collision_0" type="mesh" mesh="mesh_10" pos="0 0 0" quat="1 0 0 0" group="3" rgba="0.4 0.55 0.65 0" />
+        <body name="rh_pinky_distal" pos="-0.0052516 0 0.036625" quat="1 0 0 0">
+          <joint name="rh_pinky_dip" type="hinge" axis="0 1 0" range="0 1.43" />
+          <inertial pos="0.00658940431519 -4.5526831421e-06 0.0194435341098" mass="0.00376782669873412" fullinertia="3.22111112339e-07 3.65126916899e-07 1.24256004854e-07 1.01707985908e-11 -1.14363524419e-07 -1.95589215866e-10" />
+          <geom name="rh_pinky_distal_visual_0" type="mesh" mesh="mesh_11" pos="0 0 0" quat="1 0 0 0" contype="0" conaffinity="0" density="0" group="2" rgba="0.5 0.5 0.52 1.0" />
+          <geom name="rh_pinky_distal_collision_0" type="mesh" mesh="mesh_11" pos="0 0 0" quat="1 0 0 0" group="3" rgba="0.4 0.55 0.65 0" />
+        </body>
+      </body>
+    </body>
+    <body name="object">
+      <freejoint name="object_free" />
+      <geom name="object_collision_0" type="mesh" mesh="mesh_12" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_visual" type="mesh" mesh="mesh_13" contype="0" conaffinity="0" density="0" group="2" material="replay_default_material" />
+      <inertial pos="0.000234243455893 -1.24048525632e-05 -4.14858556809e-05" quat="0.709164058197 0.00855164807486 0.0119502369922 0.704890345879" mass="0.1" diaginertia="0.000134205503889 0.000132460329224 0.000128182160076" />
+    </body>
+  </worldbody>
+  <equality>
+    <joint name="couple_rh_thumb_ip" joint1="rh_thumb_ip" joint2="rh_thumb_cmc_pitch" polycoef="0 1.86 0 0 0" solref="0.002 1" solimp="0.999 0.999 0.001 0.5 2" />
+    <joint name="couple_rh_index_dip" joint1="rh_index_dip" joint2="rh_index_mcp_pitch" polycoef="0 0.89 0 0 0" solref="0.002 1" solimp="0.999 0.999 0.001 0.5 2" />
+    <joint name="couple_rh_middle_dip" joint1="rh_middle_dip" joint2="rh_middle_mcp_pitch" polycoef="0 0.89 0 0 0" solref="0.002 1" solimp="0.999 0.999 0.001 0.5 2" />
+    <joint name="couple_rh_ring_dip" joint1="rh_ring_dip" joint2="rh_ring_mcp_pitch" polycoef="0 0.89 0 0 0" solref="0.002 1" solimp="0.999 0.999 0.001 0.5 2" />
+    <joint name="couple_rh_pinky_dip" joint1="rh_pinky_dip" joint2="rh_pinky_mcp_pitch" polycoef="0 0.89 0 0 0" solref="0.002 1" solimp="0.999 0.999 0.001 0.5 2" />
+    <weld name="wrist_servo" body1="hand_target" body2="rh_hand_base_link" solref="0.002 1" solimp="0.999 0.999 0.001 0.5 2" />
+  </equality>
+  <contact>
+    <exclude body1="rh_hand_base_link" body2="rh_thumb_metacarpals_base2" />
+    <exclude body1="rh_thumb_metacarpals_base2" body2="rh_thumb_metacarpals" />
+    <exclude body1="rh_thumb_metacarpals" body2="rh_thumb_distal" />
+    <exclude body1="rh_hand_base_link" body2="rh_index_proximal" />
+    <exclude body1="rh_index_proximal" body2="rh_index_distal" />
+    <exclude body1="rh_hand_base_link" body2="rh_middle_proximal" />
+    <exclude body1="rh_middle_proximal" body2="rh_middle_distal" />
+    <exclude body1="rh_hand_base_link" body2="rh_ring_proximal" />
+    <exclude body1="rh_ring_proximal" body2="rh_ring_distal" />
+    <exclude body1="rh_hand_base_link" body2="rh_pinky_proximal" />
+    <exclude body1="rh_pinky_proximal" body2="rh_pinky_distal" />
+  </contact>
+  <actuator>
+    <position name="motor_rh_thumb_cmc_yaw" joint="rh_thumb_cmc_yaw" kp="5.0" kv="0.15" ctrlrange="0 1.36" forcerange="-3 3" />
+    <position name="motor_rh_thumb_cmc_pitch" joint="rh_thumb_cmc_pitch" kp="5.0" kv="0.15" ctrlrange="0 0.58" forcerange="-3 3" />
+    <position name="motor_rh_index_mcp_pitch" joint="rh_index_mcp_pitch" kp="5.0" kv="0.15" ctrlrange="0 1.6" forcerange="-3 3" />
+    <position name="motor_rh_middle_mcp_pitch" joint="rh_middle_mcp_pitch" kp="5.0" kv="0.15" ctrlrange="0 1.6" forcerange="-3 3" />
+    <position name="motor_rh_ring_mcp_pitch" joint="rh_ring_mcp_pitch" kp="5.0" kv="0.15" ctrlrange="0 1.6" forcerange="-3 3" />
+    <position name="motor_rh_pinky_mcp_pitch" joint="rh_pinky_mcp_pitch" kp="5.0" kv="0.15" ctrlrange="0 1.6" forcerange="-3 3" />
+  </actuator>
+</mujoco>

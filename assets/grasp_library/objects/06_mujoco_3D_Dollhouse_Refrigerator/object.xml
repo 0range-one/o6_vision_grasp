@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mujoco model="selected_object">
+  <compiler angle="radian" autolimits="true" inertiafromgeom="auto" strippath="false" />
+  <option timestep="0.001" gravity="0 0 -9.81" integrator="implicitfast" cone="elliptic" iterations="100" impratio="10" noslip_iterations="2" />
+  <default>
+    <joint damping="0.05" frictionloss="0.01" armature="0.0002" />
+    <geom condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+  </default>
+  <asset>
+    <mesh name="mesh_12" file="../../../meshes/d1f39b6936127681972c7d77197ca082b4f0f66c4ca8b93ad7cccd3fc077b262.obj" scale="0.06 0.06 0.06" />
+    <mesh name="mesh_13" file="../../../meshes/fc84537b3fa729c1ad4d5745f5adc137a63c12465cb95b48cbac453ac9872efc.obj" scale="0.06 0.06 0.06" />
+    <mesh name="mesh_14" file="../../../meshes/5701b5ea5b3686533888ace45ef98c7fd3ac36516734b0b4b4054e6ccdfd733e.obj" scale="0.06 0.06 0.06" />
+    <mesh name="mesh_15" file="../../../meshes/7c48919a59fdfc7ba75a27a503aaed1a1a4950198ff0311933d0b75cb6ee2739.obj" scale="0.06 0.06 0.06" />
+    <mesh name="mesh_16" file="../../../meshes/78b95d5a926271e4bc4be69f7a9b0493bfc80ae73ec0575559dbd975c1b1a52c.obj" scale="0.06 0.06 0.06" />
+    <mesh name="mesh_17" file="../../../meshes/7f968951801ef22f0988062a571726d645ca10c9342bb9b94a7f10e62f087641.obj" scale="0.06 0.06 0.06" />
+    <mesh name="mesh_18" file="../../../meshes/4bd8536bc5de29846c4b0ddc7a7cbb57ec55673b30c4c723f255b6b81b3e946b.obj" scale="0.06 0.06 0.06" />
+    <mesh name="replay_mesh_0" file="../../../meshes/374a9c741f9c8fec3b58a9b61235d4e0a6bf808943ab71e3570e08aa7a57f2e7.obj" scale="0.06 0.06 0.06" />
+    <texture name="replay_texture_0" type="2d" file="../../../meshes/f92e59802f90e74177bee426f17c6f594452d54579158f1ff008a4cc07703d1c.png" />
+    <material name="replay_material_0" specular="0.4000000000000001" shininess="0.15" texture="replay_texture_0" rgba="1 1 1 1" />
+  </asset>
+  <worldbody>
+    <body name="object">
+      <freejoint name="object_free" />
+      <geom name="object_collision_0" type="mesh" mesh="mesh_12" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_1" type="mesh" mesh="mesh_13" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_2" type="mesh" mesh="mesh_14" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_3" type="mesh" mesh="mesh_15" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_4" type="mesh" mesh="mesh_16" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_5" type="mesh" mesh="mesh_17" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_6" type="mesh" mesh="mesh_18" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <inertial pos="2.38568640394e-05 0.00163918867871 0.000129578809637" quat="0.710688524032 0.000919375126419 -0.00703251125577 0.703471051533" mass="0.1" diaginertia="0.000108752657303 0.000104960835582 2.33445977466e-05" />
+      <geom name="object_visual" type="mesh" mesh="replay_mesh_0" contype="0" conaffinity="0" density="0" group="2" material="replay_material_0" />
+    </body>
+  </worldbody>
+</mujoco>

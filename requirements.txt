@@ -1,0 +1,10 @@
+numpy==1.26.4
+torch==2.6.0
+torchvision==0.21.0
+ultralytics==8.3.232
+open3d==0.19.0
+mujoco==3.3.7
+scipy==1.13.1
+opencv-python==4.11.0.86
+glfw==2.11.0
+Pillow==12.3.0

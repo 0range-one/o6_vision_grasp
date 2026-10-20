@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mujoco model="selected_object">
+  <compiler angle="radian" autolimits="true" inertiafromgeom="auto" strippath="false" />
+  <option timestep="0.001" gravity="0 0 -9.81" integrator="implicitfast" cone="elliptic" iterations="100" impratio="10" noslip_iterations="2" />
+  <default>
+    <joint damping="0.05" frictionloss="0.01" armature="0.0002" />
+    <geom condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+  </default>
+  <asset>
+    <mesh name="mesh_12" file="../../../meshes/8b043eb671d1f6619fb6ebb39dbd4f9012edc715de01d700d7bd0540cf9ae87e.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_13" file="../../../meshes/3123f7f175d40b8a3ea54cf9f67639fa1aaa24bd19951ef0677904e06217df0b.obj" scale="0.1 0.1 0.1" />
+    <material name="replay_default_material" rgba="0.72 0.47 0.36 1" specular="0.18" shininess="0.15" />
+  </asset>
+  <worldbody>
+    <body name="object">
+      <freejoint name="object_free" />
+      <geom name="object_collision_0" type="mesh" mesh="mesh_12" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_visual" type="mesh" mesh="mesh_13" contype="0" conaffinity="0" density="0" group="2" material="replay_default_material" />
+      <inertial pos="0.000234243455893 -1.24048525632e-05 -4.14858556809e-05" quat="0.709164058197 0.00855164807486 0.0119502369922 0.704890345879" mass="0.1" diaginertia="0.000134205503889 0.000132460329224 0.000128182160076" />
+    </body>
+  </worldbody>
+</mujoco>

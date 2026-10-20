@@ -1,0 +1,62 @@
+{
+  "units": {
+    "translation": "metre",
+    "joint_angle": "radian",
+    "time": "second"
+  },
+  "transform_convention": "T_A_B maps a column point in frame B to frame A: p_A=T_A_B @ p_B.",
+  "object_frame": "object body/processed scaled mesh frame; not the centre of mass",
+  "hand_frame": "rh_hand_base_link; not an arm flange/TCP frame",
+  "grasps": [
+    {
+      "index": 1,
+      "label": "盒子",
+      "object_id": "mujoco_Olive_Kids_Dinosaur_Land_Lunch_Box",
+      "candidate": 1,
+      "model": "objects/01_mujoco_Olive_Kids_Dinosaur_Land_Lunch_Box/model.xml",
+      "object_model": "objects/01_mujoco_Olive_Kids_Dinosaur_Land_Lunch_Box/object.xml",
+      "record": "objects/01_mujoco_Olive_Kids_Dinosaur_Land_Lunch_Box/records/candidate_001.npz",
+      "record_sha256": "4b536bc42cdb1bdb91bf019c517073148ba6be40bf521a90d0b05d676b19beb3"
+    },
+    {
+      "index": 2,
+      "label": "罐头/易拉罐",
+      "object_id": "core_can_6f2c06bb129e52be63ed57e35c972b4b",
+      "candidate": 6,
+      "model": "objects/02_core_can_6f2c06bb129e52be63ed57e35c972b4b/model.xml",
+      "object_model": "objects/02_core_can_6f2c06bb129e52be63ed57e35c972b4b/object.xml",
+      "record": "objects/02_core_can_6f2c06bb129e52be63ed57e35c972b4b/records/candidate_006.npz",
+      "record_sha256": "bf7ce667ca307dfedc404ff7e0ac6b20dcefb14f72891e6ba22bb8eaf456a22f"
+    },
+    {
+      "index": 3,
+      "label": "锅/盆",
+      "object_id": "mujoco_Cole_Hardware_Electric_Pot_Cabana_55",
+      "candidate": 1,
+      "model": "objects/03_mujoco_Cole_Hardware_Electric_Pot_Cabana_55/model.xml",
+      "object_model": "objects/03_mujoco_Cole_Hardware_Electric_Pot_Cabana_55/object.xml",
+      "record": "objects/03_mujoco_Cole_Hardware_Electric_Pot_Cabana_55/records/candidate_001.npz",
+      "record_sha256": "74f46c461a10481042969c86b5d6dc0f44850fbf016d5ba3fcf03ebc858a38f5"
+    },
+    {
+      "index": 4,
+      "label": "球",
+      "object_id": "sem_Ball_6e5293cc109eb6a3a06399e706688398",
+      "candidate": 3,
+      "model": "objects/04_sem_Ball_6e5293cc109eb6a3a06399e706688398/model.xml",
+      "object_model": "objects/04_sem_Ball_6e5293cc109eb6a3a06399e706688398/object.xml",
+      "record": "objects/04_sem_Ball_6e5293cc109eb6a3a06399e706688398/records/candidate_003.npz",
+      "record_sha256": "c47947dc3e67cff8f11d91c86e8a5925bc79c154a352782214bc8644b7bb3efa"
+    },
+    {
+      "index": 5,
+      "label": "3d_dollhouse_refrigerator",
+      "object_id": "mujoco_3D_Dollhouse_Refrigerator",
+      "candidate": 2,
+      "model": "objects/06_mujoco_3D_Dollhouse_Refrigerator/model.xml",
+      "object_model": "objects/06_mujoco_3D_Dollhouse_Refrigerator/object.xml",
+      "record": "objects/06_mujoco_3D_Dollhouse_Refrigerator/records/candidate_002.npz",
+      "record_sha256": "d644eb9a1816367c8167c9a5b79e1b6b6ce63073b4d24b8c2946593c4d64ae11"
+    }
+  ]
+}

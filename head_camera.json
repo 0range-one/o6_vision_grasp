@@ -1,0 +1,20 @@
+{
+  "name": "head_camera",
+  "parent_link": "lsrobot_torso_link3",
+  "camera_link": "head_camera_link",
+  "optical_frame": "head_camera_optical_frame",
+  "position_m": [
+    0.071,
+    0.0,
+    0.153
+  ],
+  "downward_pitch_deg": 55.0,
+  "vertical_fov_deg": 70.0,
+  "resolution": [
+    640,
+    480
+  ],
+  "calibration_status": "nominal_simulation_only",
+  "placement_note": "仿真相机下俯 55°，腰部固定；位置、内参与外参尚未实机标定。",
+  "depth_note": "模拟深度沿相机光轴方向计算，单位为米。"
+}

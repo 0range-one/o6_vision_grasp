@@ -1,0 +1,275 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mujoco model="o6_tabletop_lift">
+  <compiler angle="radian" autolimits="true" inertiafromgeom="auto" strippath="false" />
+  <option timestep="0.001" gravity="0 0 -9.81" integrator="implicitfast" cone="elliptic" iterations="100" impratio="10" noslip_iterations="2" />
+  <visual>
+    <global offwidth="960" offheight="720" />
+    <headlight ambient="0.4 0.4 0.4" diffuse="0.7 0.7 0.7" />
+  </visual>
+  <asset>
+    <texture name="sky" type="skybox" builtin="gradient" rgb1="0.75 0.83 0.9" rgb2="0.9 0.93 0.96" width="512" height="512" />
+    <texture name="checker" type="2d" builtin="checker" rgb1="0.7 0.73 0.76" rgb2="0.9 0.91 0.92" width="512" height="512" />
+    <material name="table_mat" texture="checker" texrepeat="8 8" reflectance="0.05" />
+    <mesh name="mesh_0" file="../../../meshes/f7fc8dae5d375e5a33251593c46f8b882c3a1aaafe89fa9544f0ef57d657f5de.stl" scale="1 1 1" />
+    <mesh name="mesh_1" file="../../../meshes/d92665c1cf3304617674cb4bc64cb20bc42ee49238043a427c222e32b4bdfe56.stl" scale="1 1 1" />
+    <mesh name="mesh_2" file="../../../meshes/6bb54d668aea4f71251d48dc010897e08717b0cd13f63b304357fdc36894b897.stl" scale="1 1 1" />
+    <mesh name="mesh_3" file="../../../meshes/c3642be300b1ae3f7f5af071f5b1cfd4dec99e610e57e7bfe44a3b804886a360.stl" scale="1 1 1" />
+    <mesh name="mesh_4" file="../../../meshes/38c58f62b9911203069925c3d374703772927ffd3fa98049400fd75e66e7194a.stl" scale="1 1 1" />
+    <mesh name="mesh_5" file="../../../meshes/f07c23647d61bbc3e1c195fd94a726fa1a7828d128100ad49176af4c2364645f.stl" scale="1 1 1" />
+    <mesh name="mesh_6" file="../../../meshes/392519c735b9658d3417d793a00f6a0f655b8e8b0a64fdd096eb2bcb31a4de65.stl" scale="1 1 1" />
+    <mesh name="mesh_7" file="../../../meshes/15d9e1daab1e75a1ce6808a64d37effd1f7cd179b9d1ecb44f3a4be70d0e186e.stl" scale="1 1 1" />
+    <mesh name="mesh_8" file="../../../meshes/e7485a837556d6c8a6101617bb113a625d65a878a00ac297b096d59b89629d5b.stl" scale="1 1 1" />
+    <mesh name="mesh_9" file="../../../meshes/e6488d4c8d8a8aa2d857c51178472f50e398dac1a2552cf90d2cf08561ae69cf.stl" scale="1 1 1" />
+    <mesh name="mesh_10" file="../../../meshes/50a1131fbead7bcf79ed1f435d4d799bd29f637ce81aa5220f31dc8b75a43777.stl" scale="1 1 1" />
+    <mesh name="mesh_11" file="../../../meshes/1b4b1c44dadd484bc3564ad622e0b7609c60eb8d76937b2a10c7d262cddc96e0.stl" scale="1 1 1" />
+    <mesh name="mesh_12" file="../../../meshes/e5798cf931cb04700344bfb272b999b058e9487181b4ddbcbebd032db0e9fb24.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_13" file="../../../meshes/87804bc9776efc687f24057d7b8de70245b49cf02dd687e66bcab7c539c948da.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_14" file="../../../meshes/37475071ff24a3ccc8429703707d4d7cf8636deedb53a238dd174583553bd9ef.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_15" file="../../../meshes/bb2c2d56eebb0b42931e53a2822de226618e317ae79e61905dd816cfa33d71e2.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_16" file="../../../meshes/c43557e2623fbdd9702592d3eabf5a087f9040086eada6e51016d33dd64c586c.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_17" file="../../../meshes/b452a1cecd2758a0a706b8dfd66047310ec4cc99ee8800fd8c2f7a36776ff17a.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_18" file="../../../meshes/2652098ad00b5f7c73291944169adeec34963c2b10741127203734be3af3c11d.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_19" file="../../../meshes/f8f25f5ffd316004049a923c7c9252127d51e50c3c7c79c9ecb0c109dd2906bf.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_20" file="../../../meshes/8669809f43f7b96ff19909d71856825a374386987c9671d435cee83275c56652.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_21" file="../../../meshes/4bafe50b3a384c6d2c45f36728da9b2ee230693ee067132703121ca6a5e7264b.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_22" file="../../../meshes/06ebad25ea961a355b1a88b1b3118c3f2b0b624086363922d6ded391995824c5.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_23" file="../../../meshes/1328d9b8f8e7284cffebbc2b286f93b4019a4d9c140445281511810f15610032.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_24" file="../../../meshes/67741a4316dd8b6eed3ac4cf1171e5b839315aaf45ccb97a6e6900305716f7f4.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_25" file="../../../meshes/8b3f7c585b3230c22b3ae3bce7ed10b08357a0f4e1f34f30cb8147c98104293d.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_26" file="../../../meshes/a18097eafa21fd9ce11f3f5c675eab88c209e316b859d2fd44ba8a9139ae49ca.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_27" file="../../../meshes/d2864fc015f4248b31e74e4bc54488a9068129fc816aa17d43aa46cba9cddf11.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_28" file="../../../meshes/27a51afc946258cd1e50f9fc2b015ddac72ca660a52eb3a6847f6bf84d681495.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_29" file="../../../meshes/119d6aac124f2d937eaaa77281742f758e60684627d4160c4a58ab055bc2226b.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_30" file="../../../meshes/a31ddd72cb151b250fc99a95c5dfd1137299b87467cd8492e8c7ff74921c1509.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_31" file="../../../meshes/06b4e3eef8a3ccc3c2c14649a2fc8a5fdeaf597b2d25ead5b60001f489c81104.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_32" file="../../../meshes/4b896b0b57eeed7cbeaba4ad2a9e9e64126b5cdc2918726a0a33642cd6ec81da.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_33" file="../../../meshes/4f7c46c31cb9c423b18851830d7971c8a2621d5c4f2b1b422981ed86e7384e5c.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_34" file="../../../meshes/6341fcaad604a496db0208b71f6c55acc213fa673106232528e84946ab7031e2.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_35" file="../../../meshes/1468091fe7d707561bcc6b3dbe1d52914aeb5d736861141370c659a998e78e8f.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_36" file="../../../meshes/501b1b89d49b65610d869fd67f4d425514761411e63d3bf434bd9c3f6951d191.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_37" file="../../../meshes/c07ce8c60955c5661e9a6ba02f84ca5db3bb3be9be89d346683298d4359c1312.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_38" file="../../../meshes/d3f12eec8928f55c9c5e7931f04e3f6f7a588f558ebb7bb89e2334fda06de4d9.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_39" file="../../../meshes/63d97e541aab21e5823a477db0dd4409a08cbc5e7f3fe7db5bc69beb9576165c.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_40" file="../../../meshes/3d08f7b1dcb8308e190eedeb9f739d42da24af66cc7400d4d828eb8418fa59ea.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_41" file="../../../meshes/3018c085b37acceea27b85d2c304397224c9e426285040a75315d5a551554a26.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_42" file="../../../meshes/6493ee73d0c2f42608ae04aed15321017c9874369363cffcce822cf9732b06b3.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_43" file="../../../meshes/71f4afd2410ea651ddad4b5269ed158b933542e7e2c9418dbb2820484080f651.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_44" file="../../../meshes/281b013f7eff2a8a378f4df1f33814b0d805369f9a368e223c2fc16e68d4199c.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_45" file="../../../meshes/e4184a6f56aa27005325a878561efc25c551f964ca36898fc0ded279b73444a4.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_46" file="../../../meshes/4b8305026b9bc2784862a3ac01f8916da6da47be1512747a052d60712eae2b31.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_47" file="../../../meshes/69525a01bb6197b7af1dae0a03229e8b5d08f4c9b162e038542c1c93a5185b70.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_48" file="../../../meshes/70023e40ee934f2d6fa6493aac408ff2c1d911a7f51031f7b91087e4e7de45c4.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_49" file="../../../meshes/16cb1d711f87fdb705651ad5b37379416db9a0c17f8082baf2945ceb920d9efe.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_50" file="../../../meshes/99ecfdd47878c8bedfaeb9415640f7bd06f1fe6182a022f16b087b4c68c2f9de.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_51" file="../../../meshes/656f5375f1bc923a81f34fd3dfc121aa336028eef8fa01f99018da93add386bb.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_52" file="../../../meshes/d3ac3737218e658856e22d47585201104603a59300044767876902ccba1969ae.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_53" file="../../../meshes/64c9d16cc2ea3db055ff1a50ae87d230542539ef6618160bc39a1416cfe73fc1.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_54" file="../../../meshes/42d9470c87a6844aeae6f2a97834c9979ce74330763582a50874edad8d37ffbe.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_55" file="../../../meshes/e50efab4bdd237212cf91cd1087ccf1d55d2878b93995f30432371e96ab9ebc2.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_56" file="../../../meshes/4170077206e8bca6064191d7a824bb41bfd3bd5b60ea02e21fb78cb5e943b55e.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_57" file="../../../meshes/c9b220c4015411bb348339a1ac09b62337e8b0df4935c78786de987d0c803198.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_58" file="../../../meshes/f8f6feb364ae47b4537e60f5c55b599d32f6820b5a49e9ad577c46a81028da34.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_59" file="../../../meshes/7be9312798a953d809ebaa7e776d14565df1dd8c04bad63493ec354f74d17db8.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_60" file="../../../meshes/b386b9f979f2838c5c3f5ea22e7198b8297c5810ca9255b3ddb5d6f6d8c104cc.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_61" file="../../../meshes/46026167cece4a794d6405216ddba20e72964a97db3decb4f0f0f8498c1b95fd.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_62" file="../../../meshes/130cc77f6c676fe13c84df8c3a17d3a409fd7ff6ae65e1883f1e103b4a8dac51.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_63" file="../../../meshes/ab0c463c9f052c3ce85e23d202f96779f6a7ad2bc051811c2e238069aea0e2e3.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_64" file="../../../meshes/12f6a09c6562627373a3604605e64a83e81f34e4e6bb9be5d132e98e49c41214.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_65" file="../../../meshes/ff74022771ea1e813dddb96fbe1b7e18ee4e9ec12ba0666aa0633a67a70752ce.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_66" file="../../../meshes/32c2a77db3a3a5681480af1faf0157d4147eb251f3318af5db237069d43ed90a.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_67" file="../../../meshes/c71cbe2ea1b129177be362ba981a26bab668c6b346da958ce0f6330b6adeb4c0.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_68" file="../../../meshes/dae69ff86d1c57df39ee717ddafe1667ac19e316c5b1fabf46e7f66ff41b81a2.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_69" file="../../../meshes/fd2c17626433501a82809f1a8e0ad01003021d190ff5da4437e8bbbbc580520a.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_70" file="../../../meshes/b96028e707f62373efc96309a76be0a836239ea9c342b3194744340fcb6ef60d.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_71" file="../../../meshes/832901cb0568f3a8168040297f99f9ffd2640a242c72035dfec4e434870a0efc.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_72" file="../../../meshes/a784cd8b14167afcaea6e474e0a22987709a36e89742c4d55cd8eb8f7c5eee2b.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_73" file="../../../meshes/d0b3424f4a920e08433399c94fc84862b003ea5232a14d484edf395e662f1508.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_74" file="../../../meshes/edfdd7c380eb980a3c0596c1c0abf4b8749534ea6edc89fdf1dcd2407ce8d2c4.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_75" file="../../../meshes/1b7b6ce0e81fbfb1c8ffbdd81d9d683f8773c4eb4e9dde48fea612215472ca3e.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_76" file="../../../meshes/e548817b197c3f751822c35910030afe4cf88877213a8ffae319d4255fb53685.obj" scale="0.1 0.1 0.1" />
+    <mesh name="mesh_77" file="../../../meshes/ab4eec382801b66519414823784ed668ab559deea43d455e48c811a4fc1b9664.obj" scale="0.1 0.1 0.1" />
+    <mesh name="replay_mesh_0" file="../../../meshes/b08b1641f0f446a92d0833c9b10e6ff4f9fe9c04afb0be2e70277000018e235d.obj" scale="0.1 0.1 0.1" />
+    <texture name="replay_texture_0" type="2d" file="../../../meshes/f92e59802f90e74177bee426f17c6f594452d54579158f1ff008a4cc07703d1c.png" />
+    <material name="replay_material_0" specular="0.4000000000000001" shininess="0.15" texture="replay_texture_0" rgba="1 1 1 1" />
+  </asset>
+  <default>
+    <joint damping="0.05" frictionloss="0.01" armature="0.0002" />
+    <geom condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+  </default>
+  <worldbody>
+    <light pos="0 -0.5 1" dir="0 0 -1" diffuse="0.8 0.8 0.8" />
+    <geom name="table" type="plane" size="1 1 0.1" material="table_mat" />
+    <body name="hand_target" mocap="true" />
+    <body name="rh_hand_base_link">
+      <freejoint name="hand_free" />
+      <inertial pos="-0.00160320773491 0.000358462699238 0.0538002704027" mass="0.06740077960995" fullinertia="5.22359941042e-05 3.33473043514e-05 2.28342677422e-05 3.03915358528e-07 3.88322215372e-07 -7.77555280795e-07" />
+      <geom name="rh_hand_base_link_visual_0" type="mesh" mesh="mesh_0" pos="0 0 0" quat="1 0 0 0" contype="0" conaffinity="0" density="0" group="2" rgba="0.5 0.5 0.52 1.0" />
+      <geom name="rh_hand_base_link_collision_0" type="mesh" mesh="mesh_0" pos="0 0 0" quat="1 0 0 0" group="3" rgba="0.4 0.55 0.65 0" />
+      <body name="rh_thumb_metacarpals_base2" pos="0.011508 0.022975 0.032794" quat="1 0 0 0">
+        <joint name="rh_thumb_cmc_yaw" type="hinge" axis="0 0 -1" range="0 1.36" />
+        <inertial pos="0.00162795738394 0.00276671978337 -0.00184227725603" mass="0.00138591070212997" fullinertia="5.26294625624e-08 4.82623724533e-08 2.88555522061e-08 -3.92880137996e-09 2.437662682e-09 3.71867754115e-09" />
+        <geom name="rh_thumb_metacarpals_base2_visual_0" type="mesh" mesh="mesh_1" pos="0 0 0" quat="1 0 0 0" contype="0" conaffinity="0" density="0" group="2" rgba="0.15 0.15 0.15 1.0" />
+        <geom name="rh_thumb_metacarpals_base2_collision_0" type="mesh" mesh="mesh_1" pos="0 0 0" quat="1 0 0 0" group="3" rgba="0.4 0.55 0.65 0" />
+        <body name="rh_thumb_metacarpals" pos="0.0061649 0.010678 -0.004891" quat="0.419199652001 -0.472028720759 -0.27252436779 -0.726079201948">
+          <joint name="rh_thumb_cmc_pitch" type="hinge" axis="0 1 0" range="0 0.58" />
+          <inertial pos="4.24920612856e-05 -1.67885666835e-05 0.022834152259" mass="0.0123381607727595" fullinertia="1.10292488694e-06 1.76757658486e-06 9.36348143657e-07 -6.14241939152e-10 1.14233108677e-07 -4.24576599367e-10" />
+          <geom name="rh_thumb_metacarpals_visual_0" type="mesh" mesh="mesh_2" pos="0 0 0" quat="1 0 0 0" contype="0" conaffinity="0" density="0" group="2" rgba="0.5 0.5 0.52 1.0" />
+          <geom name="rh_thumb_metacarpals_collision_0" type="mesh" mesh="mesh_2" pos="0 0 0" quat="1 0 0 0" group="3" rgba="0.4 0.55 0.65 0" />
+          <body name="rh_thumb_distal" pos="0.0037776 0 0.045368" quat="1 0 0 0">
+            <joint name="rh_thumb_ip" type="hinge" axis="0 1 0" range="0 1.08" />
+            <inertial pos="-0.00413690727497 -4.54842793429e-07 0.0230097179164" mass="0.00763302603723749" fullinertia="1.30546842792e-06 1.22457212713e-06 2.77298979444e-07 -2.61617511029e-12 7.19030685242e-08 1.66931068485e-11" />
+            <geom name="rh_thumb_distal_visual_0" type="mesh" mesh="mesh_3" pos="0 0 0" quat="1 0 0 0" contype="0" conaffinity="0" density="0" group="2" rgba="0.5 0.5 0.52 1.0" />
+            <geom name="rh_thumb_distal_collision_0" type="mesh" mesh="mesh_3" pos="0 0 0" quat="1 0 0 0" group="3" rgba="0.4 0.55 0.65 0" />
+          </body>
+        </body>
+      </body>
+      <body name="rh_index_proximal" pos="0.0024758 0.02419 0.098779" quat="0.999657323373 -0.026177009507 0 0">
+        <joint name="rh_index_mcp_pitch" type="hinge" axis="0 1 0" range="0 1.6" />
+        <inertial pos="-0.00208665596034 -4.89649906443e-06 0.01727367189" mass="0.00253178529301663" fullinertia="2.65990159539e-07 2.72915460278e-07 8.56026306688e-08 -3.55165625723e-11 4.31046335852e-08 1.75935978709e-10" />
+        <geom name="rh_index_proximal_visual_0" type="mesh" mesh="mesh_4" pos="0 0 0" quat="1 0 0 0" contype="0" conaffinity="0" density="0" group="2" rgba="0.5 0.5 0.52 1.0" />
+        <geom name="rh_index_proximal_collision_0" type="mesh" mesh="mesh_4" pos="0 0 0" quat="1 0 0 0" group="3" rgba="0.4 0.55 0.65 0" />
+        <body name="rh_index_distal" pos="-0.0052516 0 0.036625" quat="1 0 0 0">
+          <joint name="rh_index_dip" type="hinge" axis="0 1 0" range="0 1.43" />
+          <inertial pos="0.00658940011631 -4.59976557023e-06 0.0194434136421" mass="0.00376787129082313" fullinertia="3.22116619426e-07 3.65131844686e-07 1.24256890613e-07 1.03152735699e-11 -1.14363506431e-07 -1.97263639269e-10" />
+          <geom name="rh_index_distal_visual_0" type="mesh" mesh="mesh_5" pos="0 0 0" quat="1 0 0 0" contype="0" conaffinity="0" density="0" group="2" rgba="0.5 0.5 0.52 1.0" />
+          <geom name="rh_index_distal_collision_0" type="mesh" mesh="mesh_5" pos="0 0 0" quat="1 0 0 0" group="3" rgba="0.4 0.55 0.65 0" />
+        </body>
+      </body>
+      <body name="rh_middle_proximal" pos="0.00052576 0.00634 0.1027" quat="1 0 0 0">
+        <joint name="rh_middle_mcp_pitch" type="hinge" axis="0 1 0" range="0 1.6" />
+        <inertial pos="-0.00208661081774 -4.93451838476e-06 0.0172736805322" mass="0.00253175497594429" fullinertia="2.65989683691e-07 2.72915006047e-07 8.56020467203e-08 -3.58343951792e-11 4.31048601085e-08 1.75718024413e-10" />
+        <geom name="rh_middle_proximal_visual_0" type="mesh" mesh="mesh_6" pos="0 0 0" quat="1 0 0 0" contype="0" conaffinity="0" density="0" group="2" rgba="0.5 0.5 0.52 1.0" />
+        <geom name="rh_middle_proximal_collision_0" type="mesh" mesh="mesh_6" pos="0 0 0" quat="1 0 0 0" group="3" rgba="0.4 0.55 0.65 0" />
+        <body name="rh_middle_distal" pos="-0.0052516 0 0.036625" quat="1 0 0 0">
+          <joint name="rh_middle_dip" type="hinge" axis="0 1 0" range="0 1.43" />
+          <inertial pos="0.00658940304809 -4.58857435932e-06 0.0194434523296" mass="0.00376786259758948" fullinertia="3.22115365831e-07 3.65130723083e-07 1.24256787914e-07 1.02639617308e-11 -1.14363547273e-07 -1.96904618798e-10" />
+          <geom name="rh_middle_distal_visual_0" type="mesh" mesh="mesh_7" pos="0 0 0" quat="1 0 0 0" contype="0" conaffinity="0" density="0" group="2" rgba="0.5 0.5 0.52 1.0" />
+          <geom name="rh_middle_distal_collision_0" type="mesh" mesh="mesh_7" pos="0 0 0" quat="1 0 0 0" group="3" rgba="0.4 0.55 0.65 0" />
+        </body>
+      </body>
+      <body name="rh_ring_proximal" pos="0.0010258 -0.011135 0.098767" quat="0.999657323373 0.026177009507 0 0">
+        <joint name="rh_ring_mcp_pitch" type="hinge" axis="0 1 0" range="0 1.6" />
+        <inertial pos="-0.00208654311325 -4.98538564003e-06 0.0172736743497" mass="0.00253170963529411" fullinertia="2.65989137957e-07 2.72914417062e-07 8.56012458678e-08 -3.62757108675e-11 4.31050611556e-08 1.75554984053e-10" />
+        <geom name="rh_ring_proximal_visual_0" type="mesh" mesh="mesh_8" pos="0 0 0" quat="1 0 0 0" contype="0" conaffinity="0" density="0" group="2" rgba="0.5 0.5 0.52 1.0" />
+        <geom name="rh_ring_proximal_collision_0" type="mesh" mesh="mesh_8" pos="0 0 0" quat="1 0 0 0" group="3" rgba="0.4 0.55 0.65 0" />
+        <body name="rh_ring_distal" pos="-0.0052516 0 0.036625" quat="1 0 0 0">
+          <joint name="rh_ring_dip" type="hinge" axis="0 1 0" range="0 1.43" />
+          <inertial pos="0.0065894027307 -4.56628863592e-06 0.0194435005687" mass="0.0037678395356105" fullinertia="3.22112632438e-07 3.65128262096e-07 1.24256284608e-07 1.01848408914e-11 -1.14363489153e-07 -1.96145632992e-10" />
+          <geom name="rh_ring_distal_visual_0" type="mesh" mesh="mesh_9" pos="0 0 0" quat="1 0 0 0" contype="0" conaffinity="0" density="0" group="2" rgba="0.5 0.5 0.52 1.0" />
+          <geom name="rh_ring_distal_collision_0" type="mesh" mesh="mesh_9" pos="0 0 0" quat="1 0 0 0" group="3" rgba="0.4 0.55 0.65 0" />
+        </body>
+      </body>
+      <body name="rh_pinky_proximal" pos="0.0024758 -0.028372 0.092741" quat="0.999048231671 0.0436191562856 0 0">
+        <joint name="rh_pinky_mcp_pitch" type="hinge" axis="0 1 0" range="0 1.6" />
+        <inertial pos="-0.00208649034131 -5.02314582561e-06 0.0172736680794" mass="0.00253167400540778" fullinertia="2.6598871882e-07 2.72913936905e-07 8.5600642472e-08 -3.6601229528e-11 4.31052220484e-08 1.75447396222e-10" />
+        <geom name="rh_pinky_proximal_visual_0" type="mesh" mesh="mesh_10" pos="0 0 0" quat="1 0 0 0" contype="0" conaffinity="0" density="0" group="2" rgba="0.5 0.5 0.52 1.0" />
+        <geom name="rh_pinky_proximal_collision_0" type="mesh" mesh="mesh_10" pos="0 0 0" quat="1 0 0 0" group="3" rgba="0.4 0.55 0.65 0" />
+        <body name="rh_pinky_distal" pos="-0.0052516 0 0.036625" quat="1 0 0 0">
+          <joint name="rh_pinky_dip" type="hinge" axis="0 1 0" range="0 1.43" />
+          <inertial pos="0.00658940431519 -4.5526831421e-06 0.0194435341098" mass="0.00376782669873412" fullinertia="3.22111112339e-07 3.65126916899e-07 1.24256004854e-07 1.01707985908e-11 -1.14363524419e-07 -1.95589215866e-10" />
+          <geom name="rh_pinky_distal_visual_0" type="mesh" mesh="mesh_11" pos="0 0 0" quat="1 0 0 0" contype="0" conaffinity="0" density="0" group="2" rgba="0.5 0.5 0.52 1.0" />
+          <geom name="rh_pinky_distal_collision_0" type="mesh" mesh="mesh_11" pos="0 0 0" quat="1 0 0 0" group="3" rgba="0.4 0.55 0.65 0" />
+        </body>
+      </body>
+    </body>
+    <body name="object">
+      <freejoint name="object_free" />
+      <geom name="object_collision_0" type="mesh" mesh="mesh_12" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_1" type="mesh" mesh="mesh_13" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_2" type="mesh" mesh="mesh_14" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_3" type="mesh" mesh="mesh_15" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_4" type="mesh" mesh="mesh_16" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_5" type="mesh" mesh="mesh_17" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_6" type="mesh" mesh="mesh_18" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_7" type="mesh" mesh="mesh_19" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_8" type="mesh" mesh="mesh_20" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_9" type="mesh" mesh="mesh_21" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_10" type="mesh" mesh="mesh_22" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_11" type="mesh" mesh="mesh_23" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_12" type="mesh" mesh="mesh_24" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_13" type="mesh" mesh="mesh_25" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_14" type="mesh" mesh="mesh_26" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_15" type="mesh" mesh="mesh_27" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_16" type="mesh" mesh="mesh_28" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_17" type="mesh" mesh="mesh_29" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_18" type="mesh" mesh="mesh_30" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_19" type="mesh" mesh="mesh_31" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_20" type="mesh" mesh="mesh_32" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_21" type="mesh" mesh="mesh_33" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_22" type="mesh" mesh="mesh_34" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_23" type="mesh" mesh="mesh_35" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_24" type="mesh" mesh="mesh_36" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_25" type="mesh" mesh="mesh_37" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_26" type="mesh" mesh="mesh_38" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_27" type="mesh" mesh="mesh_39" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_28" type="mesh" mesh="mesh_40" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_29" type="mesh" mesh="mesh_41" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_30" type="mesh" mesh="mesh_42" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_31" type="mesh" mesh="mesh_43" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_32" type="mesh" mesh="mesh_44" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_33" type="mesh" mesh="mesh_45" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_34" type="mesh" mesh="mesh_46" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_35" type="mesh" mesh="mesh_47" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_36" type="mesh" mesh="mesh_48" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_37" type="mesh" mesh="mesh_49" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_38" type="mesh" mesh="mesh_50" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_39" type="mesh" mesh="mesh_51" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_40" type="mesh" mesh="mesh_52" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_41" type="mesh" mesh="mesh_53" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_42" type="mesh" mesh="mesh_54" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_43" type="mesh" mesh="mesh_55" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_44" type="mesh" mesh="mesh_56" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_45" type="mesh" mesh="mesh_57" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_46" type="mesh" mesh="mesh_58" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_47" type="mesh" mesh="mesh_59" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_48" type="mesh" mesh="mesh_60" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_49" type="mesh" mesh="mesh_61" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_50" type="mesh" mesh="mesh_62" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_51" type="mesh" mesh="mesh_63" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_52" type="mesh" mesh="mesh_64" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_53" type="mesh" mesh="mesh_65" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_54" type="mesh" mesh="mesh_66" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_55" type="mesh" mesh="mesh_67" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_56" type="mesh" mesh="mesh_68" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_57" type="mesh" mesh="mesh_69" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_58" type="mesh" mesh="mesh_70" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_59" type="mesh" mesh="mesh_71" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_60" type="mesh" mesh="mesh_72" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_61" type="mesh" mesh="mesh_73" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_62" type="mesh" mesh="mesh_74" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_63" type="mesh" mesh="mesh_75" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_64" type="mesh" mesh="mesh_76" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <inertial pos="-9.42627256897e-05 0.000215509036119 0.000637209743904" quat="0.993794461766 0.00348914884856 -0.066693916134 0.0889511953513" mass="0.1" diaginertia="0.000219420261577 0.000218511901459 0.000214865405049" />
+      <geom name="object_visual" type="mesh" mesh="replay_mesh_0" contype="0" conaffinity="0" density="0" group="2" material="replay_material_0" />
+    </body>
+  </worldbody>
+  <equality>
+    <joint name="couple_rh_thumb_ip" joint1="rh_thumb_ip" joint2="rh_thumb_cmc_pitch" polycoef="0 1.86 0 0 0" solref="0.002 1" solimp="0.999 0.999 0.001 0.5 2" />
+    <joint name="couple_rh_index_dip" joint1="rh_index_dip" joint2="rh_index_mcp_pitch" polycoef="0 0.89 0 0 0" solref="0.002 1" solimp="0.999 0.999 0.001 0.5 2" />
+    <joint name="couple_rh_middle_dip" joint1="rh_middle_dip" joint2="rh_middle_mcp_pitch" polycoef="0 0.89 0 0 0" solref="0.002 1" solimp="0.999 0.999 0.001 0.5 2" />
+    <joint name="couple_rh_ring_dip" joint1="rh_ring_dip" joint2="rh_ring_mcp_pitch" polycoef="0 0.89 0 0 0" solref="0.002 1" solimp="0.999 0.999 0.001 0.5 2" />
+    <joint name="couple_rh_pinky_dip" joint1="rh_pinky_dip" joint2="rh_pinky_mcp_pitch" polycoef="0 0.89 0 0 0" solref="0.002 1" solimp="0.999 0.999 0.001 0.5 2" />
+    <weld name="wrist_servo" body1="hand_target" body2="rh_hand_base_link" solref="0.002 1" solimp="0.999 0.999 0.001 0.5 2" />
+  </equality>
+  <contact>
+    <exclude body1="rh_hand_base_link" body2="rh_thumb_metacarpals_base2" />
+    <exclude body1="rh_thumb_metacarpals_base2" body2="rh_thumb_metacarpals" />
+    <exclude body1="rh_thumb_metacarpals" body2="rh_thumb_distal" />
+    <exclude body1="rh_hand_base_link" body2="rh_index_proximal" />
+    <exclude body1="rh_index_proximal" body2="rh_index_distal" />
+    <exclude body1="rh_hand_base_link" body2="rh_middle_proximal" />
+    <exclude body1="rh_middle_proximal" body2="rh_middle_distal" />
+    <exclude body1="rh_hand_base_link" body2="rh_ring_proximal" />
+    <exclude body1="rh_ring_proximal" body2="rh_ring_distal" />
+    <exclude body1="rh_hand_base_link" body2="rh_pinky_proximal" />
+    <exclude body1="rh_pinky_proximal" body2="rh_pinky_distal" />
+  </contact>
+  <actuator>
+    <position name="motor_rh_thumb_cmc_yaw" joint="rh_thumb_cmc_yaw" kp="5.0" kv="0.15" ctrlrange="0 1.36" forcerange="-3 3" />
+    <position name="motor_rh_thumb_cmc_pitch" joint="rh_thumb_cmc_pitch" kp="5.0" kv="0.15" ctrlrange="0 0.58" forcerange="-3 3" />
+    <position name="motor_rh_index_mcp_pitch" joint="rh_index_mcp_pitch" kp="5.0" kv="0.15" ctrlrange="0 1.6" forcerange="-3 3" />
+    <position name="motor_rh_middle_mcp_pitch" joint="rh_middle_mcp_pitch" kp="5.0" kv="0.15" ctrlrange="0 1.6" forcerange="-3 3" />
+    <position name="motor_rh_ring_mcp_pitch" joint="rh_ring_mcp_pitch" kp="5.0" kv="0.15" ctrlrange="0 1.6" forcerange="-3 3" />
+    <position name="motor_rh_pinky_mcp_pitch" joint="rh_pinky_mcp_pitch" kp="5.0" kv="0.15" ctrlrange="0 1.6" forcerange="-3 3" />
+  </actuator>
+</mujoco>

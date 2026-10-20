@@ -1,0 +1,1162 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mujoco model="LSRobot_O6_five_objects_sort_and_lift">
+  <compiler angle="radian" autolimits="true" inertiafromgeom="auto" fusestatic="false" />
+  <option timestep=".001" gravity="0 0 -9.81" integrator="implicitfast" iterations="80" cone="elliptic" impratio="10" />
+  <visual>
+    <global offwidth="1600" offheight="1200" />
+    <headlight diffuse="0.45000000000000001 0.45000000000000001 0.45000000000000001" ambient="0.40000000000000002 0.40000000000000002 0.40000000000000002" specular="0.69999999999999996 0.69999999999999996 0.69999999999999996" />
+  </visual>
+  <default>
+    <geom friction="1 .01 .001" condim="4" solref=".004 1" solimp=".98 .995 .0005" />
+  </default>
+  <asset>
+    <material name="robot_gloss_white" rgba="0.92000000000000004 0.93000000000000005 0.93999999999999995 1" specular="0.7" shininess="0.65" reflectance="0.0" />
+    <mesh name="mesh_0" file="assets/meshes/e4533e685400db1ab796e23dab6ba096af8f8fa8de086898d5ec7e843200cf96.stl" scale="1 1 1" />
+    <mesh name="mesh_1" file="assets/meshes/b12dcda02990ca550c46400f03c9066099d4130c97e32c3e3ca484f9b58fb67e.stl" scale="1 1 1" />
+    <mesh name="mesh_2" file="assets/meshes/a2d9e1678c33879faf04fe1df76e0044d375c2189f934fff3881f24f14ff3136.stl" scale="1 1 1" />
+    <mesh name="mesh_3" file="assets/meshes/2fcc33581578ec3a2ed7fdc976678f7c773a3f38fae7ebdeb4efd980973310ae.stl" scale="1 1 1" />
+    <mesh name="mesh_4" file="assets/meshes/ba8f8db73d111e5125cf42844a736b591bf984b9cbe96848ba3f77dfc486463f.stl" scale="1 1 1" />
+    <mesh name="mesh_5" file="assets/meshes/6a22b41139a4f678aba7808ad7f17b67544bd81203aa44514fc3905821128c6a.stl" scale="1 1 1" />
+    <mesh name="mesh_6" file="assets/meshes/1fd59cb712022577c138d8446cfe5bc15b10bd28e9523abfdd4691196894fd0a.stl" scale="1 1 1" />
+    <mesh name="mesh_7" file="assets/meshes/b2a01ad1b80edd5c9edbbd5197d0d38a262119c0e1ccefce6b4dd647c3f6caaa.stl" scale="1 1 1" />
+    <mesh name="mesh_8" file="assets/meshes/4b7c2c5c06694fd111b122eaaee3701995e9d4143371985ceaaa898f46586fc6.stl" scale="1 1 1" />
+    <mesh name="mesh_9" file="assets/meshes/2f35e12de65ea2fcafe6b3399af8988f0572055f4e5f838889dc3968123c05b2.stl" scale="1 1 1" />
+    <mesh name="mesh_10" file="assets/meshes/9828eccd68e2da9e301c47b956570c33b65e2f967b528bc70e4bfbc2135ce0cf.stl" scale="1 1 1" />
+    <mesh name="mesh_11" file="assets/meshes/9c4a9206a29ab35100457a7ec1626e02385262987e12b15c8db1550c94f40de6.stl" scale="1 1 1" />
+    <mesh name="mesh_12" file="assets/meshes/50d1d418dadb70a0377bd69e33cc3ebf1dd7734ac3b057e4f46e5d444bca016c.stl" scale="1 1 1" />
+    <mesh name="mesh_13" file="assets/meshes/1e0f4fdb214d20d385836991a691f4dcad095ed2c5b4730dcaa3d795f923ee0b.stl" scale="1 1 1" />
+    <mesh name="mesh_14" file="assets/meshes/cca16f8920e9271348c891cfe474c4188cc55c579e469762f8720a97429cf20e.stl" scale="1 1 1" />
+    <mesh name="mesh_15" file="assets/meshes/8c072bfa9c9dfa51376890445d0b39fcd776e5dfb0fd3945b10a20ef89d41769.stl" scale="1 1 1" />
+    <mesh name="mesh_16" file="assets/meshes/8a9d1dda184f2f3f25ce46bf80e122d3ab09c451d1f539c17dde552959d33b8b.stl" scale="1 1 1" />
+    <mesh name="mesh_17" file="assets/meshes/4dbf35ae329dbb456679b66f16c56ab7c10b3af200c65b9fae67e0920a9b0bfe.stl" scale="1 1 1" />
+    <mesh name="mesh_18" file="assets/meshes/2dc0d80eb470c0ccd6e338650f383efea75a5b77eee7e51d2b6a1da553afcdfe.stl" scale="1 1 1" />
+    <mesh name="mesh_19" file="assets/meshes/9e8bd4b4adce43f74df492c1cd3890457b2ac0151c12582c5a8faaf6cdc9f1d9.stl" scale="1 1 1" />
+    <mesh name="mesh_20" file="assets/meshes/c91dc63ccd81ca270d166e9e276665ea3fbe6bb42fbee31d1c7bb545b4238045.stl" scale="1 1 1" />
+    <mesh name="mesh_21" file="assets/meshes/baf3c1b16f94925bcd06768af7ec811de1a97d78f253d26adcd502d35067cf75.stl" scale="1 1 1" />
+    <mesh name="mesh_22" file="assets/meshes/dd77da3a5c18d236c46c3adb51e7be8262e64926a0ee9e996741609d5ed0b08d.stl" scale="1 1 1" />
+    <mesh name="mesh_23" file="assets/meshes/4f2699ea27c60f6c28a3ca0cae64ddab40b24b4929bbc23e112cbe08f7ae311c.stl" scale="1 1 1" />
+    <mesh name="mesh_24" file="assets/meshes/ed2daec64e98506a9fdd3e63708f5644c5d0660ef54c7711c83f15351fc8eb85.stl" scale="1 1 1" />
+    <mesh name="mesh_25" file="assets/meshes/b92ed1e3af1d6ef3389287a45c27433a1584a1233fcb0825ee48411b59299697.stl" scale="1 1 1" />
+    <mesh name="mesh_26" file="assets/meshes/d17d67b52a5f02d9ff5dbb0b7315fea055f0ee43a0f2443faf7df28942cf3663.stl" scale="1 1 1" />
+    <mesh name="mesh_27" file="assets/meshes/a21ba5ccb885f939788ef701d99a94781d0001ffe2b43a3d79a32c376dab988b.stl" scale="1 1 1" />
+    <mesh name="mesh_28" file="assets/meshes/8d0a3df9d46abe366d27132a49a45552031b57d1684fdf3adf7969a19faf6bf0.stl" scale="1 1 1" />
+    <mesh name="mesh_29" file="assets/meshes/01a8db3f672c232cd3430c2314e1422cc14950c6f2e03606f9f4d20e66c30311.stl" scale="1 1 1" />
+    <mesh name="mesh_30" file="assets/meshes/f7fc8dae5d375e5a33251593c46f8b882c3a1aaafe89fa9544f0ef57d657f5de.stl" scale="1 1 1" />
+    <mesh name="mesh_31" file="assets/meshes/d92665c1cf3304617674cb4bc64cb20bc42ee49238043a427c222e32b4bdfe56.stl" scale="1 1 1" />
+    <mesh name="mesh_32" file="assets/meshes/6bb54d668aea4f71251d48dc010897e08717b0cd13f63b304357fdc36894b897.stl" scale="1 1 1" />
+    <mesh name="mesh_33" file="assets/meshes/c3642be300b1ae3f7f5af071f5b1cfd4dec99e610e57e7bfe44a3b804886a360.stl" scale="1 1 1" />
+    <mesh name="mesh_34" file="assets/meshes/38c58f62b9911203069925c3d374703772927ffd3fa98049400fd75e66e7194a.stl" scale="1 1 1" />
+    <mesh name="mesh_35" file="assets/meshes/f07c23647d61bbc3e1c195fd94a726fa1a7828d128100ad49176af4c2364645f.stl" scale="1 1 1" />
+    <mesh name="mesh_36" file="assets/meshes/392519c735b9658d3417d793a00f6a0f655b8e8b0a64fdd096eb2bcb31a4de65.stl" scale="1 1 1" />
+    <mesh name="mesh_37" file="assets/meshes/15d9e1daab1e75a1ce6808a64d37effd1f7cd179b9d1ecb44f3a4be70d0e186e.stl" scale="1 1 1" />
+    <mesh name="mesh_38" file="assets/meshes/e7485a837556d6c8a6101617bb113a625d65a878a00ac297b096d59b89629d5b.stl" scale="1 1 1" />
+    <mesh name="mesh_39" file="assets/meshes/e6488d4c8d8a8aa2d857c51178472f50e398dac1a2552cf90d2cf08561ae69cf.stl" scale="1 1 1" />
+    <mesh name="mesh_40" file="assets/meshes/50a1131fbead7bcf79ed1f435d4d799bd29f637ce81aa5220f31dc8b75a43777.stl" scale="1 1 1" />
+    <mesh name="mesh_41" file="assets/meshes/1b4b1c44dadd484bc3564ad622e0b7609c60eb8d76937b2a10c7d262cddc96e0.stl" scale="1 1 1" />
+    <texture name="crate_albedo" type="2d" file="assets/meshes/75509a36a8691942f895e2b8b9a3272747e79d22011d93b940f0766dda1135d5.png" />
+    <material name="crate_blue" texture="crate_albedo" rgba="1 1 1 1" specular=".22" shininess=".25" />
+    <mesh name="crate_visual" file="assets/meshes/35439d6b58ef0f51d16e4231c3e3d066de14f1a675c88886d32fa75fd9a4da29.obj" inertia="shell" />
+    <mesh name="crate_col_0" file="assets/meshes/f5c029b7d20408620bb600e99fda82e7c22f72d39f7e666449d25c09f8fe78ca.obj" />
+    <mesh name="crate_col_1" file="assets/meshes/10aea742d96ba470a9eb31ed344c8cdb28bcfe2ba5465616b81b1df61a7a2f31.obj" />
+    <mesh name="crate_col_2" file="assets/meshes/b39b1caefbb079ba5aec194509c35fefe5aedf43b1faf3c46a24b778abf6da38.obj" />
+    <mesh name="crate_col_3" file="assets/meshes/7296a9834e5922386f8693f3a2271b46f412014bbb7d8243084d4ce936f11f58.obj" />
+    <mesh name="crate_col_4" file="assets/meshes/006e7bd4e4d1d87147f0385b136a0414c570b34b4f92636da46984d377c82801.obj" />
+    <mesh name="crate_col_5" file="assets/meshes/31a1b7909585d7346ff2e8c5d62174c5e31b307e08ce1e296d7c0a1e06f2f0a2.obj" />
+    <mesh name="crate_col_6" file="assets/meshes/347ae4884a89af45456afc82e6cce0d98768339a8793072e6098855464b50051.obj" />
+    <mesh name="crate_col_7" file="assets/meshes/09f318918a5bb653e2a91eba3203f314e28586605774eaa09698ed9f44eea948.obj" />
+    <mesh name="crate_col_8" file="assets/meshes/2d9713a49c6ed950092998a50d65a5b9a5e02b0cdf8ef4dda17c518259b73cff.obj" />
+    <mesh name="crate_col_9" file="assets/meshes/9027d53a8cbc4cf801d861e055048dc3e0f3614b4d809bc45479f1231ab495e7.obj" />
+    <mesh name="crate_col_10" file="assets/meshes/f6f5abab96f256d0d16980750644871e021c798607ff0b882811eecc021a0422.obj" />
+    <mesh name="crate_col_11" file="assets/meshes/d743766ab89b7fc8307e610144d95c6db09cbc5e1daaf5e97303d9e90867a779.obj" />
+    <mesh name="crate_col_12" file="assets/meshes/917bf24b3892291e411affa5257b7c79ac8c4b6957b90afbfabc698b42c9cae9.obj" />
+    <mesh name="crate_col_13" file="assets/meshes/b7df3e23d822afeb8105da8892f4fcc01d2380bd87aa97fb4ec38858cec87b27.obj" />
+    <mesh name="crate_col_14" file="assets/meshes/8ccfbc3e8ee19abef85bab25268de42ad80471fba1178e383b59c9cdca009be0.obj" />
+    <mesh name="crate_col_15" file="assets/meshes/eadcf6d37bb582a6c1b6fddb31268c9609dd8ed4582342f48f6072af0995b805.obj" />
+    <mesh name="crate_col_16" file="assets/meshes/dd690a0a78b2be8d5177f1451f075f4d4ada7e375dbae17b54c5a63c379039be.obj" />
+    <mesh name="crate_col_17" file="assets/meshes/972c607239a42dc64954d03c71349a2a0e03a1f477ed72594f677f217ec60647.obj" />
+    <mesh name="crate_col_18" file="assets/meshes/0e906dafa0642d0bc0b818fef23602fe8e21c11d5b7a3783c9144a6e93311b26.obj" />
+    <mesh name="crate_col_19" file="assets/meshes/709aede61fb05ba7ab5c1f786fddfaf9d78133b947542e2d50f8277f4bd465b9.obj" />
+    <mesh name="crate_col_20" file="assets/meshes/c2d9935718cec47c4672af649cca445e30ec90fc56b847c61eb7fdc4d3f71666.obj" />
+    <mesh name="crate_col_21" file="assets/meshes/befa59c6ac72d560f8e20553f8485af464d6a02b159f3d1569fb97f185b0b925.obj" />
+    <mesh name="crate_col_22" file="assets/meshes/e84202e5bfa99f7aba9e9cb6f08c0d7a4833916181c88f70bf335cf48a909bc4.obj" />
+    <mesh name="crate_col_23" file="assets/meshes/64f336387e0707fa072a8369f168dec9321cb8a911ca253f663f3e2f40810e5a.obj" />
+    <mesh name="crate_col_24" file="assets/meshes/a4cda330739b47ecf1820ab0db82451932661edd68475e7f5ae7085eb140ec66.obj" />
+    <mesh name="crate_col_25" file="assets/meshes/43ba0d9369dd4fd88319a753433bd171bc5c953e9cd362ce66a8860bd5f64d91.obj" />
+    <mesh name="crate_col_26" file="assets/meshes/eac55f22b0aa6ba3a89d9e8b58fc2b31acfac4753e6a60608a4a88a341eec00e.obj" />
+    <mesh name="crate_col_27" file="assets/meshes/09b01d29b61d617c9dafa22f7bb957b304a6aa7ea16bd1716ce2af27d7eb2dd3.obj" />
+    <mesh name="crate_col_28" file="assets/meshes/625c0651faec013a54b8aeaa839965b31361303b70863f324e555ad91ab645cf.obj" />
+    <mesh name="crate_col_29" file="assets/meshes/0089b74b1d3613210627ec1182dc28ef4dc9f91fac76a83b6fb30624a80fe950.obj" />
+    <mesh name="crate_col_30" file="assets/meshes/73b5a5afd6729407e221769e75c691bb845fbffff5f405fc8e37c497ca1f44b6.obj" />
+    <mesh name="crate_col_31" file="assets/meshes/97b22b6a444908c548371a440497e7a5639c092d797728856436d73538a9dd0d.obj" />
+    <mesh name="crate_col_32" file="assets/meshes/5da8267da585deeaf332e0e45da9d7bf73826824917ce7d6f5212ff05f3ee897.obj" />
+    <mesh name="crate_col_33" file="assets/meshes/11d18a803fb28302e5e7b0845ceef70629bda24115a1859b502febfc4df8e6ca.obj" />
+    <mesh name="crate_col_34" file="assets/meshes/7fe673667fabadef6694c4afcedde926a6b8622ee8281043b34cf5be275fa05f.obj" />
+    <mesh name="crate_col_35" file="assets/meshes/8a53a95895b11b75881f6cf594ab6676d12cae6528d1c9375747b9d996af933e.obj" />
+    <mesh name="crate_col_36" file="assets/meshes/959ed0203e7801788706c50f49b1732159afe0fbed22b8210c12c7d9372bfaa2.obj" />
+    <mesh name="crate_col_37" file="assets/meshes/b621a74d61bdbe1e53618d95a0d7e71e8d8c8e6016811ae385716d698251912c.obj" />
+    <mesh name="crate_col_38" file="assets/meshes/6a47481bb5b0ef1377f194c90667b9ebc7277bb3b22625dac14fdabb7552a511.obj" />
+    <mesh name="crate_col_39" file="assets/meshes/687ae837ccf8950a2e23d78a3707035527b01d69527237861a41554e186720b0.obj" />
+    <mesh name="crate_col_40" file="assets/meshes/5d07cf46424b9a02e076ca1610bb10d70a287b7b0091f801012f55f8b5a596d2.obj" />
+    <mesh name="crate_col_41" file="assets/meshes/73a85ff1376ccf9a0d6b485df8d6eed0a298c3bd14f0640e0d496e5608df2baa.obj" />
+    <mesh name="crate_col_42" file="assets/meshes/98d4bc9dff507c802a17c6adbf6e780d71c1d8cdde1e342215289d97df861349.obj" />
+    <mesh name="crate_col_43" file="assets/meshes/bfbebbb355fb77425028d8dd49475297b462378d4e5f9214f7a8885a264f364c.obj" />
+    <mesh name="crate_col_44" file="assets/meshes/d4c0d6427b593b5b06e792d0fdb774d403f6b14d9594362b8c205828bd8bb826.obj" />
+    <mesh name="crate_col_45" file="assets/meshes/cfc7508f81d276eb00dfdc8ea1241b4263c2631d6ed2280ce05d6759aaec3b75.obj" />
+    <mesh name="crate_col_46" file="assets/meshes/1e599858d7ded06f89a7fae921d3b58e6ebc3b2c0497a29cb4ccf41954a08a1d.obj" />
+    <mesh name="crate_col_47" file="assets/meshes/55dd558603c25acf6f7d3436ce1778802b57d7e2597fd44ab55cdd795239308b.obj" />
+    <mesh name="crate_col_48" file="assets/meshes/a35639bfa57a212886416e9cff0182f7875c63164f7402b148036c366a057866.obj" />
+    <mesh name="crate_col_49" file="assets/meshes/899557f8a738e5fa6e58361b6ac316098a020a9239fa51478fd76b334fc3cc5e.obj" />
+    <mesh name="crate_col_50" file="assets/meshes/faacdda8789a80aafbd5e82ee2a0e543dddbe1ea47dd36b295734f799d7b8ef3.obj" />
+    <mesh name="crate_col_51" file="assets/meshes/cc85b42c1788acac9697bbc94bb35a8e48a1a5db7989f05c2db48af1dfa62c73.obj" />
+    <mesh name="crate_col_52" file="assets/meshes/67414c6d75237af626642983c708b64ee444715270ce04ceff632183d0e324b9.obj" />
+    <mesh name="crate_col_53" file="assets/meshes/d66367373cd4c02f1e09f4fb61be7bb803c0ba3959c9a258cede8012ca080c6f.obj" />
+    <mesh name="crate_col_54" file="assets/meshes/881c79defdbf93748691956c0c953ae44db2078f8caacef82cb184176349a77f.obj" />
+    <mesh name="crate_col_55" file="assets/meshes/5a638f65cc36de5292ca18e53dac8f133194ef6f875cdc7dabb66a4558dd08cc.obj" />
+    <mesh name="crate_col_56" file="assets/meshes/c66ce2e72e5716c15765fb65d0544b2a2398025b37cfab8ead9023226b521dbe.obj" />
+    <mesh name="crate_col_57" file="assets/meshes/0fde2d1623d3954680124d009795a51394e022bacd6c7f5ca6bf1694186648d4.obj" />
+    <mesh name="crate_col_58" file="assets/meshes/d3aa19f6115bf3210d11d6d62e9f6d49c03c7dfd7eea26769d568e6747446a72.obj" />
+    <mesh name="crate_col_59" file="assets/meshes/9fd5a51e727151ad437e9cf5f098378d6b63fb4231ff20ea751eba3cc8c53054.obj" />
+    <mesh name="crate_col_60" file="assets/meshes/a881ff386d711dc64118d19ae076f9967064922dab4a994f05358350ef92bf4a.obj" />
+    <mesh name="crate_col_61" file="assets/meshes/8e8173cb3ecd30b51dd729724021a0401d9b658c9c12eea21e01c7aee720a84e.obj" />
+    <mesh name="crate_col_62" file="assets/meshes/ec80aaa9b9d6ba19cb62d3ebb13b4d8a1d6a9b8e4b12028af1b50133680bd07e.obj" />
+    <mesh name="crate_col_63" file="assets/meshes/f7961db4e0171ea6bc54d862d687f3bb335f295041823275a93819e1a47250d3.obj" />
+    <mesh name="crate_col_64" file="assets/meshes/a19eb21c8ad9db17a6dcc82925b77460e8c98e136e271d8fda6a2f4831eebd67.obj" />
+    <mesh name="crate_col_65" file="assets/meshes/c7de2ba43f66eb0f20569062ea7d0332643c064f53f7c5f3ec0c5e2822b8e08e.obj" />
+    <mesh name="crate_col_66" file="assets/meshes/f371514da9813156b8ad7d32d0c5c049b6f8cd2f39c1cc947b1c6178e784024f.obj" />
+    <mesh name="crate_col_67" file="assets/meshes/8c0884e893a9bc60264a2853a45f7666a1e286b9eea189d67b240b7297145f1d.obj" />
+    <mesh name="crate_col_68" file="assets/meshes/85c8fbf56f67f800a3b5a05619415487bf943d32aaeb26b78a047892492bd606.obj" />
+    <mesh name="crate_col_69" file="assets/meshes/b410fde35ea8a06877c46f19221b7e30d7159d17999441bf0ccaffe558461de7.obj" />
+    <mesh name="crate_col_70" file="assets/meshes/89e1492e0729f51f1f9522dfa9049d94c9e6963a0f27cbdb6aee816b4f701bed.obj" />
+    <mesh name="crate_col_71" file="assets/meshes/72026c2bffea0d819d08a8cb36e023f3a8796445eeb00e0579e19b025708140c.obj" />
+    <mesh name="crate_col_72" file="assets/meshes/4dd8d2ce1984ffba584f2339c05f4f3b279abed955e3a41de754c1d8ad604350.obj" />
+    <mesh name="crate_col_73" file="assets/meshes/5a374ed7bc8260af5af0b12fb3f522b9668df072fe71c0c596c3d9113f562696.obj" />
+    <mesh name="crate_col_74" file="assets/meshes/83fd4149d357df3291a20ab5343763705da54ba14bc84490886c65e1d87fb28c.obj" />
+    <mesh name="crate_col_75" file="assets/meshes/fb5435bc1dc911867b2580105c203d898cb277abff69bac772d59ad5871b8bb8.obj" />
+    <mesh name="crate_col_76" file="assets/meshes/49f96c57728c16c045939d4087a8dda8d3d0771c445fb7546a08334e6555763f.obj" />
+    <mesh name="crate_col_77" file="assets/meshes/5635e5a216c16f7e7c3dbb0f241da82be949b7561b22fd1ffe0fa6ffbe92116b.obj" />
+    <mesh name="crate_col_78" file="assets/meshes/32a7f51d264e5d46881cac3995b2b437eea8443e3ed4dd52d69f7f40b81dce2d.obj" />
+    <mesh name="crate_col_79" file="assets/meshes/9ade6a35655a61be766ae6f19e2ce26e8fa77cfe899b59b52b9539ce12eee494.obj" />
+    <mesh name="crate_col_80" file="assets/meshes/9841652f24d6dab9867803d0295c96274377159aa0906611e9a380560cb5ed6f.obj" />
+    <mesh name="crate_col_81" file="assets/meshes/9dc9bbc01c995843c9b66e7b80df3707c53de0e2498a1eaed9f3420033ca2169.obj" />
+    <mesh name="crate_col_82" file="assets/meshes/a276cd6c45729ea3a850c1ea90de2ce812a4f80461066ef77ffd9a56ab326813.obj" />
+    <mesh name="crate_col_83" file="assets/meshes/1040787ed32099bc1fc6c5100a08e453a2fbed9f006909e72252512b66ed972a.obj" />
+    <mesh name="crate_col_84" file="assets/meshes/898ce4cffa693c1bf8b01d0999c7d39e9a12a521164f6eb7607e22f65c99d13f.obj" />
+    <mesh name="crate_col_85" file="assets/meshes/7aafe8a44ad17d82532762ad78817d2d495a2f8f29a3b132f33c2f81aa88fe72.obj" />
+    <mesh name="crate_col_86" file="assets/meshes/d65dbded6ffbef037419dac4c3508f12bfe9aaa4c245296d13f5f20182e24f38.obj" />
+    <mesh name="crate_col_87" file="assets/meshes/049f54db8d8063ca1abc81008d2b16fe9226b637745ce9603ddb28cd8755383e.obj" />
+    <mesh name="crate_col_88" file="assets/meshes/931ac133e64f2d5801a876febe8b238a1c0639dd70cc5105b1366dd98a5d4591.obj" />
+    <mesh name="crate_col_89" file="assets/meshes/e8bd7d8338a6fae03423342ee2aa17fef144a0775bb0efcda38a82ad0aa55669.obj" />
+    <mesh name="crate_col_90" file="assets/meshes/3ebf00be45be143d41445d6f71f4e8c39cb8f5c2b860e06b0cf22530c37d4520.obj" />
+    <mesh name="crate_col_91" file="assets/meshes/812f757b339743284bda7dc7e131d9fe86ad02479318acefb966c2f18212e277.obj" />
+    <mesh name="crate_col_92" file="assets/meshes/86c16ae2b21f24654248e1037bcec30069147f408efa38a288abef020d6a5eb3.obj" />
+    <mesh name="crate_col_93" file="assets/meshes/df2ef04244f610e8a5286c313aa23c0171b1cc968d17f0393f013f0e4576ee45.obj" />
+    <mesh name="crate_col_94" file="assets/meshes/773af6c5b5552246b14bc9dde19cb406be26a45167df13f6225d693f7e8a7b76.obj" />
+    <mesh name="crate_col_95" file="assets/meshes/15263ef9abd4a94086a9406bb4052da64d98c45bcd5b5c191db5a5823eaf7587.obj" />
+    <mesh name="crate_col_96" file="assets/meshes/011c9cc80e5b198b61ec61bc78f776931d223bbdc581e0751dad62b0baa567ed.obj" />
+    <mesh name="crate_col_97" file="assets/meshes/ec3f5a77a9d58db64d0002492c19b1b4360afb1e7970055ee35445e1d45e1f79.obj" />
+    <mesh name="crate_col_98" file="assets/meshes/2e49c193e9cb4e4802c8ce7b0a4bffda312059ca3106125b4a54cc9792694a26.obj" />
+    <mesh name="crate_col_99" file="assets/meshes/8249aa0c331ed1e9bf632907d51c93e431805d57751f44ff46ee2a93a4a8dd88.obj" />
+    <mesh name="crate_col_100" file="assets/meshes/fa98fd4863ccbc0c0543a4dff28b10d7b024566e33f741b06644b2f99f05eca5.obj" />
+    <mesh name="crate_col_101" file="assets/meshes/d2b3fd7e2b56e2dcb3f987caa3d8bd1c8e4ce250fab3db30869bce07d167d091.obj" />
+    <mesh name="crate_col_102" file="assets/meshes/988e92da6c1722eae0e3989173b4e7c7e17632146c1b440b5559d0ac1f5dee28.obj" />
+    <mesh name="crate_col_103" file="assets/meshes/6c8bb1140f276aa85056fa89b89996ad4d9445fcc7bc5238858eda6458a33e6b.obj" />
+    <mesh name="crate_col_104" file="assets/meshes/b4fde0872c1599dc7b9ea02a9bb0be16bf2715e21a2d4d5b8a6254306d1a99b7.obj" />
+    <mesh name="crate_col_105" file="assets/meshes/1d3fb98e6d690e1de0f6ecd6c65694f8f7b29d7948dd0cbb4af1d7cc9cb2d2ee.obj" />
+    <mesh name="crate_col_106" file="assets/meshes/dd914c4821e644f3305c1b87edc6969a0b5cbd9e26506554f6e731ea6208dadb.obj" />
+    <mesh name="crate_col_107" file="assets/meshes/7e3c97d27e77d60cc58b6bc5847d3ba306ad40e5d81b557da8997dc92036c815.obj" />
+    <mesh name="crate_col_108" file="assets/meshes/fb9379c21dac323c310cb4f3fddfb77e7161492724c367784952189535fbd0b2.obj" />
+    <mesh name="crate_col_109" file="assets/meshes/374eb9eabbe0aaf90cb35ed9f3101af13f9ea30de1e720a5d6d2e7bc36ea6173.obj" />
+    <mesh name="crate_col_110" file="assets/meshes/d8c3cfd9dd8dfbd815aa14dbcd9bc7f3f02720a2a4d409f0a8b875c951b3a332.obj" />
+    <mesh name="crate_col_111" file="assets/meshes/b6caf870e95ba0317b8e576c3024547e7e1dea14324c848e94c91ccbc8dfebde.obj" />
+    <mesh name="crate_col_112" file="assets/meshes/8774ecd7c54a521d8662a1857e787a0c74e3980ba06911c017d545fee2bd5aa3.obj" />
+    <mesh name="crate_col_113" file="assets/meshes/0a3467cfbd89f46b083e9b8df4bda291f93b1c40b4469189259bf1beaedde420.obj" />
+    <mesh name="crate_col_114" file="assets/meshes/3a134bd63805015f9e9ccf70ed0638a2a1feaafbdd4ff3c2586c0fbcfbb3625d.obj" />
+    <mesh name="crate_col_115" file="assets/meshes/d0893aeda99c0a9ffb7875a89fd1d25dac2965278341b42932ae84d8edd54acc.obj" />
+    <mesh name="crate_col_116" file="assets/meshes/cb5c4cd77cc080358201dff29ffb904b3591866259b352ab2cd19f7fc8b01cd8.obj" />
+    <mesh name="crate_col_117" file="assets/meshes/429eb45fa8ad167a661ff6c76a971043cdc0493f281168c8defa4364b12d8736.obj" />
+    <mesh name="crate_col_118" file="assets/meshes/5ebf09dc5bf15abe2b72e6f80825be98fa7aab23af8a94fb83ff71051a359882.obj" />
+    <mesh name="crate_col_119" file="assets/meshes/788ce9b121d119a42ba3db79228cd35f9ba0bab234a16c66ad516fa006c965f9.obj" />
+    <mesh name="crate_col_120" file="assets/meshes/865604b708f55cf2cc73b4ac0c418bc49eade6a3084e7b0326fb832677b2736d.obj" />
+    <mesh name="crate_col_121" file="assets/meshes/6871be77c0587963eb3c89ecb643c9ca423b75547523500697745c16a982a95b.obj" />
+    <mesh name="crate_col_122" file="assets/meshes/0cc6ca0cdd5b63cadc4790ecc37b765405abb4a9d8b20f696c094adec01993f2.obj" />
+    <mesh name="crate_col_123" file="assets/meshes/b2f9da74a53cc07c68ef09d51afe0ae6414554dde7469c023c4c47c32872b23c.obj" />
+    <mesh name="crate_col_124" file="assets/meshes/95067d41690f130517f68dd7d0160c1282bd91d66c8cba46721d555e55dd8689.obj" />
+    <mesh name="crate_col_125" file="assets/meshes/612819669104dbc8da683501cd51ecfd7fa60e33a5746167e2c214ad49754134.obj" />
+    <mesh name="crate_col_126" file="assets/meshes/8aebefc1fe3c56d7ca0ba7e27dd8ae8d78b36a2dea93ec3f1b7a9f1a82c023a9.obj" />
+    <mesh name="crate_col_127" file="assets/meshes/951d6fd46e2a7dc7dae79ab02bfcf859743f401bc46751fac6ce6ba408db7c5e.obj" />
+    <mesh name="crate_col_128" file="assets/meshes/51d6767618c089b3d3099ca21483ff258e240162ecf9baac5ced274e5805b0eb.obj" />
+    <mesh name="crate_col_129" file="assets/meshes/e6ba7f74502262c7590758f45fc3c54444411944cfb848db9989fb71ebb9fd56.obj" />
+    <mesh name="crate_col_130" file="assets/meshes/a963f4f4bbeb8a9fc559c9f31a42d5feb0657433b570e89294ce5e035c694871.obj" />
+    <mesh name="crate_col_131" file="assets/meshes/9640ff79a8d0fc270aeab07505df8ed723c0b6efcdc0e659ba2c0e324052f5ac.obj" />
+    <mesh name="crate_col_132" file="assets/meshes/1234cfbb029670cc895c7db26b235c52d63c13a80c686e13f672f98253336d66.obj" />
+    <mesh name="crate_col_133" file="assets/meshes/d132ddfbb7cf4bd12e6ff888ab7917e1b85be4ea0c61766be21f7298bd40fa99.obj" />
+    <mesh name="crate_col_134" file="assets/meshes/4629060fcf7f04f51b798a13c79ab54886c83fcb1ce3ec7939c86c071423eac6.obj" />
+    <mesh name="crate_col_135" file="assets/meshes/5f584b9ef8c7b25fdbc5afa9a502a382f12b4a031397f0dd0efbabf3b5e1712a.obj" />
+    <mesh name="crate_col_136" file="assets/meshes/263fd9d0658e29205d026c3be6428fac97aa1a4c76c57ee7ae4e080c8becba37.obj" />
+    <mesh name="crate_col_137" file="assets/meshes/ee09c969b72ffea70c43e2afb8954c2bc6ca1cfb3304920bdd7365f0a785e299.obj" />
+    <mesh name="crate_col_138" file="assets/meshes/79cb3ad16c58527146a034886e456ddfd6384cb44a3e8f5e4d7be295f55b1bc2.obj" />
+    <mesh name="crate_col_139" file="assets/meshes/005f7ff6784065f09af0bb5b07fab7a84b48b364b62280e74af05bfae767b27b.obj" />
+    <mesh name="crate_col_140" file="assets/meshes/3d0587e4778ba92a568f406536202c58cdd1741b18741ddaa5252036bc895a71.obj" />
+    <mesh name="crate_col_141" file="assets/meshes/717c2ccb6262849cd1b2ae0aab744640a6f9d0f03b9d614c8165dc3a90333f5e.obj" />
+    <mesh name="crate_col_142" file="assets/meshes/e374bcd21001089d2f959d62c0c902665edc3c89c17d62a293b5e0c6aecd9481.obj" />
+    <mesh name="crate_col_143" file="assets/meshes/f58c98cc2b7068ac4f7ca7c42127917267bd532e15b6c749b472b1e1d6e6cff0.obj" />
+    <mesh name="crate_col_144" file="assets/meshes/85d4dd0ac00ee4076a22934816fbbc658e24282e593b9e2cdae91405472adf82.obj" />
+    <mesh name="crate_col_145" file="assets/meshes/7b7a25a30ea4fe9fc19363e6de8e111281f5df7d4f20b0640e31f06c916d9b32.obj" />
+    <mesh name="crate_col_146" file="assets/meshes/a2399dbabd76a5904205d04c81747d984e6d9c4f109ff51d6705ab089ae05039.obj" />
+    <mesh name="crate_col_147" file="assets/meshes/bb4f806069030b945310e60d63d325a2c0bfbb1f58971ca7bc3b737eb0c6ec23.obj" />
+    <mesh name="crate_col_148" file="assets/meshes/0efb715f6fbbe858011683ef9df9258ed2711129836e5cdfa87757560fa4658f.obj" />
+    <mesh name="crate_col_149" file="assets/meshes/8b51b38a2e80a611b012bb505d4d3d30d903aff9362264d1752c7b1da9f30f2e.obj" />
+    <mesh name="crate_col_150" file="assets/meshes/805b489763013fdb42a947d6cd69d5e360a6f9d9e64b550e2ec4ed434ff66cd1.obj" />
+    <mesh name="crate_col_151" file="assets/meshes/1924af902336590d5c2b2da2721371d52b512a5c8dd4b601e1dd3621d634e6e1.obj" />
+    <mesh name="crate_col_152" file="assets/meshes/ed425f7a5c174a5854e0629ed45ec1c784374dd547bfa4251f23e921eacb9341.obj" />
+    <mesh name="crate_col_153" file="assets/meshes/7884b619fa521d1bf6368d7154218975fac21d930df28ff6bf4175e1ebef9423.obj" />
+    <mesh name="crate_col_154" file="assets/meshes/7f2f13ad4a1281a6df3935c858bf3f978da9a85a006498fcd29943f64ad1f1aa.obj" />
+    <mesh name="crate_col_155" file="assets/meshes/9cdd289e69ec0ebb48553115c4b6ad0382b16f538aeef935100a7e3bda7742c9.obj" />
+    <mesh name="crate_col_156" file="assets/meshes/c1dea4459c944bac65367f880ede64e4d2312c95d7dd1189c9b2df08dccf580a.obj" />
+    <mesh name="crate_col_157" file="assets/meshes/7731c65dad51496bd0f48421b0a4bf8147990db3ebb828506264104a7629ac33.obj" />
+    <mesh name="crate_col_158" file="assets/meshes/96eb8a031d41a0b5951de4bc0f72330fe543df37f5a3d6497daf08731daa66ab.obj" />
+    <mesh name="crate_col_159" file="assets/meshes/ec986a767108c4a2bd5b5f105b4d3eec3512c8033e773cc09464cfe86e7a0f69.obj" />
+    <mesh name="crate_col_160" file="assets/meshes/bc12ccb8fb4f0f3e6905dc0c02f2876d1bd4cf08dd179d7fe5af9ffe8ad56784.obj" />
+    <mesh name="crate_col_161" file="assets/meshes/1104f1885d2bf852ae6f87a62fdb09e3d8082ad9322bb3684a1b8162438b6854.obj" />
+    <mesh name="crate_col_162" file="assets/meshes/2867bc3686c491fc7c0fbe1dd0e9fc0f82c7fd9dc581e629168b5c8081a1c8d0.obj" />
+    <mesh name="crate_col_163" file="assets/meshes/068d3a89400356c614204715088df92ae92404907d9d1a1a672fa7525782f27e.obj" />
+    <mesh name="crate_col_164" file="assets/meshes/da965c4e226c568c46436b9ca1b48d2ab80185d468add8964bd3fad0ac47ae53.obj" />
+    <mesh name="crate_col_165" file="assets/meshes/11bc1ad52ce3574d95162b7b6061a0d3a0987309c3e79be2b1fb105083853b10.obj" />
+    <mesh name="crate_col_166" file="assets/meshes/bfc5b1a89c6b2b96bfd534e900745de88d3bf32fbc99b00c0069c4ec9c09ec15.obj" />
+    <mesh name="crate_col_167" file="assets/meshes/5b496a483380362ed6a98484b5c3d54fa7c3aae8616201af8d86bb5ec8ec0dac.obj" />
+    <mesh name="crate_col_168" file="assets/meshes/a1a9cd81f9dc620d8bb75453e8febd768b54465b8d8192f31224093e655f5c8f.obj" />
+    <mesh name="crate_col_169" file="assets/meshes/10624b809b99cd6cd225ad8b1c26211775aa07c37443ae609a93d4a94f087438.obj" />
+    <mesh name="crate_col_170" file="assets/meshes/33ec67fe0d93e99f26c36304a3066d495584623aea118eb0acab3ed0af9766f7.obj" />
+    <mesh name="crate_col_171" file="assets/meshes/739d8ec94d523ee64578459a4de9016f9b0aec39ecfb3da866f3c12edee50942.obj" />
+    <mesh name="crate_col_172" file="assets/meshes/67be45008ea2e945af532ba9a9a9a217768e8cc9ea4c955679102e12abd78ad4.obj" />
+    <mesh name="crate_col_173" file="assets/meshes/6ee6a84d4a31a5fc320524299587c67e17392f517e7d10b352d225f05c2fafb4.obj" />
+    <mesh name="crate_col_174" file="assets/meshes/1ddf74181f9ecb5b5de712ab44decfc679cb6fca94b6b456eeac22d64a135716.obj" />
+    <mesh name="crate_col_175" file="assets/meshes/c3fe4af2aed494e629a2d5846f49ded196c9d1a29186aa9202d99f722447df0c.obj" />
+    <mesh name="crate_col_176" file="assets/meshes/fbc8bbff9f9c7e65086ba87707a4932bb30c29b90cc7fb1dbd148a48a079679f.obj" />
+    <mesh name="crate_col_177" file="assets/meshes/762d59161afc926429092705124db1c090b69d929c07601369027ccd072a8b08.obj" />
+    <mesh name="crate_col_178" file="assets/meshes/e667660563077e0cfc617d6111b97c13ad21f567628bf5e9baf2ba66d78e5c2f.obj" />
+    <mesh name="crate_col_179" file="assets/meshes/e242c95529e347387abd4edf65f627425955c00ca2a4e0a390e6b2aef59a3bcf.obj" />
+    <mesh name="crate_col_180" file="assets/meshes/04f9628fb7e6650d6f9d047222dc607c777c1a948edd496598dc4ddb599a7645.obj" />
+    <mesh name="crate_col_181" file="assets/meshes/99a4f420c6b01cac09475bd28baa572ee3de3f5aa50d0d324b25b0e1a9696c88.obj" />
+    <mesh name="crate_col_182" file="assets/meshes/241502fe0cdafd6c69b7f6bc7506033245cb1698cabeae3e2624688d7a0ad641.obj" />
+    <mesh name="crate_col_183" file="assets/meshes/9aa9d737c194cf06a76c2d849e3e795f2f14ba47db6326327f25f7248a60f19e.obj" />
+    <mesh name="crate_col_184" file="assets/meshes/83573deb6bdb5d957282bf2d74ec8d485f527a5c3cfe0aa5a2e471a71e9030a2.obj" />
+    <mesh name="crate_col_185" file="assets/meshes/f64ea3c20586a6d7571e6f9c51ba3cbe53dde2bd17a9f6a923ac971f0d3beb60.obj" />
+    <mesh name="crate_col_186" file="assets/meshes/4ce7473dd50d79eb7a0cb17d2d70978bc006952f1c94343b6e08494208e7b5d7.obj" />
+    <mesh name="crate_col_187" file="assets/meshes/8894f5bf89428651f31a5e7934ca28c568f677061a5d9471c0e3f8aefbff1729.obj" />
+    <mesh name="crate_col_188" file="assets/meshes/d93ae08e4441582dcb36f0418bcb5263a2b68a9bc5dc7db53aa10e1f30de7713.obj" />
+    <mesh name="crate_col_189" file="assets/meshes/c20cbcf5ee31d6eb018b4abe4885f20a54ac579c9b8eec1dd38f7f937e0930bc.obj" />
+    <mesh name="crate_col_190" file="assets/meshes/f5f28a98af515f766f3ce5eb0cbe9c3ba03b59313d9c3a2c1231f221227ca8d3.obj" />
+    <mesh name="crate_col_191" file="assets/meshes/41700ad22c04e96fa359a641c9bb900aeeb169deac24298f963e5574c229036e.obj" />
+    <mesh name="crate_col_192" file="assets/meshes/2cda7037135f6b6b88707c2feace6648088693687ad5d884208926bedd380572.obj" />
+    <mesh name="crate_col_193" file="assets/meshes/c5267e4cdbcdcf7fa2352359e0862655d1d412b881071a7c0366a88ec5d36dd1.obj" />
+    <mesh name="crate_col_194" file="assets/meshes/d2543ad7110d9a1158d4f5cba83b56f2aff38d6bc12ab4fc38876b109f395b3a.obj" />
+    <mesh name="crate_col_195" file="assets/meshes/7b0734db94970dcb69473c7a7d132ecfaa7fa3d1b264546a4e6af004cd816d9c.obj" />
+    <mesh name="crate_col_196" file="assets/meshes/6d5d8de270846dda3f9a65bd6e7ca2cceb843a0beca58ae6419ec611ab1507b8.obj" />
+    <mesh name="crate_col_197" file="assets/meshes/550cceecc70628fa86ba5861c1826f179bff6b2a3cf68674a31ae2bce46b1e57.obj" />
+    <mesh name="crate_col_198" file="assets/meshes/6405bb2bb93cab27569fd045f4944ff1ea70450f5e9af1970929a2316410b60f.obj" />
+    <mesh name="crate_col_199" file="assets/meshes/f0d031e9b9e19bf7d63c0f2cf9ade9918485807b432fb8ab90afa78ad0c26f50.obj" />
+    <mesh name="crate_col_200" file="assets/meshes/e5d80d2a1d70230c2837410367d0dce47ea289a008d510d21436d485369a81b4.obj" />
+    <mesh name="crate_col_201" file="assets/meshes/b3fc861e68a049781a9207e2b98c540b8d891096c4a8aa5d7c5e30ffe152245e.obj" />
+    <mesh name="crate_col_202" file="assets/meshes/f1ccf8e96a2ff88943ba41216fa36221c6192effcde955423d240f81a333f7d3.obj" />
+    <mesh name="crate_col_203" file="assets/meshes/41e22e7e93ba91b06a6162935c0a30847e52fe7ff41a3f618858f5327407f00f.obj" />
+    <mesh name="crate_col_204" file="assets/meshes/f115cdb20e48d769efa6af23b4644122f8c3218f793930be1fe4c539eb65501c.obj" />
+    <mesh name="crate_col_205" file="assets/meshes/bd5dcf49d803256285e77379170835333180a69aa6e4e9d18dc4cb4d3b289a27.obj" />
+    <mesh name="crate_col_206" file="assets/meshes/142fc641107bfc3b979798c2c4e04518cf6f21460e2a83849c4b71605fb16f4a.obj" />
+    <mesh name="crate_col_207" file="assets/meshes/72049b4bd1cb429913ad1a12c36214d6b93782b14f804c3688368b5d98831880.obj" />
+    <mesh name="crate_col_208" file="assets/meshes/68211f5eb64160f1f45b7f094ee4c78945e14c6924900b9afaa6b7169fc01e06.obj" />
+    <mesh name="crate_col_209" file="assets/meshes/5d36465d016999299655eee990e0ed14ddf58691a3bd52d730661059ce5fe9ae.obj" />
+    <mesh name="crate_col_210" file="assets/meshes/4c7db07106073cd858b7f9af81a40a44d2b2a562d242a43164a9cf67a37b13d2.obj" />
+    <mesh name="crate_col_211" file="assets/meshes/d81493c41535cdd36dbe960114a3301858ccf9956b0213a46e993e84fc85b11c.obj" />
+    <mesh name="crate_col_212" file="assets/meshes/2bdd37af6733ec0ce93324d078630bf2a165617a3ef004355e289910adc3493b.obj" />
+    <mesh name="crate_col_213" file="assets/meshes/ed2eac051a8b09a24698cd7c1c204d0486534fc978201f7d305efd1bc39c22fd.obj" />
+    <mesh name="crate_col_214" file="assets/meshes/3f8a6408732e51c993eaa897e85c3ddfc27ccb5d1b21c85c3d55f9fcf17f1812.obj" />
+    <mesh name="crate_col_215" file="assets/meshes/77c903ef70ae9bf170915119f4d6a8b0b781ab29d74121ef43a47ced9e809592.obj" />
+    <mesh name="crate_col_216" file="assets/meshes/0bf208391b717a6bc60401aadb6bdf9da08f717ea7b9816fdf8c4324858774c4.obj" />
+    <mesh name="crate_col_217" file="assets/meshes/04f6d972c5d88c2472e7088e4c4dc7d1a39d0d813154afb81efcaf093033ad78.obj" />
+    <mesh name="crate_col_218" file="assets/meshes/8854e50f15bda52b3c0497b3ca14607d36b35e38d68f61eadd4aac1677f56d1c.obj" />
+    <mesh name="crate_col_219" file="assets/meshes/37217d8ae9b36a6c168c8a7e5a1aff4270e7ce7386677dcd49861392fff8d3ee.obj" />
+    <mesh name="crate_col_220" file="assets/meshes/8936d2c5ca33b90e709d185b08a2171669c6d562a0d869e3d036fbe32e39a725.obj" />
+    <mesh name="crate_col_221" file="assets/meshes/091bfd1ec98ff288155235601b6a21e984d746bbedc33110e4d37a204c1eaf98.obj" />
+    <mesh name="crate_col_222" file="assets/meshes/ba9eded1cd768d37a4dcc1482d8060f32d5c32d28fe4c5b90bf7a3f7a7372254.obj" />
+    <mesh name="crate_col_223" file="assets/meshes/2fd8482a663698a4803fae1e6f81c4059c85c195eb613e48071bf1f7288887b2.obj" />
+    <mesh name="crate_col_224" file="assets/meshes/049f7528ae448efbd94bd6c3f15feb4050e465bd5497c829cd97ee7873fd4046.obj" />
+    <mesh name="crate_col_225" file="assets/meshes/17f7e2c16abe60b38b305dad169f6628d10b0e9cd6b9e9f20f281a59219f7c52.obj" />
+    <mesh name="crate_col_226" file="assets/meshes/5e4702eea1d7ecb7269638835a26d5047c185c49fe7ebc04f1b8f28affef73b9.obj" />
+    <mesh name="crate_col_227" file="assets/meshes/1f318e00faf316006360d25865a3eeb6bc919c9230a52921b3c6860a642d9572.obj" />
+    <mesh name="crate_col_228" file="assets/meshes/e5c4f944b872247f502e281666a177d01c034df0c1c6274597a0111b4fa4e511.obj" />
+    <mesh name="crate_col_229" file="assets/meshes/989a819f1c9bfc420e76750f72e3f3a9e849f55887803f522b0e156e42989118.obj" />
+    <mesh name="crate_col_230" file="assets/meshes/19d01f38b0d5671b300243ee316fc8089da7bac1bf66c3e972fe48abfc8f5637.obj" />
+    <mesh name="crate_col_231" file="assets/meshes/4bef45f4e892e903a014a6634953410c53f783eb9e71d31d034d1f2f7ac43fea.obj" />
+    <mesh name="crate_col_232" file="assets/meshes/02592363ff751d876266211758a2a3f12be8b5752455b6753cecfdf20fe80313.obj" />
+    <mesh name="crate_col_233" file="assets/meshes/13dae1ed38f89d3c85c17985bf8dd385c04c6f87555343bb7cfbc096930f0d7a.obj" />
+    <mesh name="crate_col_234" file="assets/meshes/69815c5dce9f2573bfe99b237b8d63b4392892868c27bade0f179b6794ad7aed.obj" />
+    <mesh name="crate_col_235" file="assets/meshes/9263722696b3dcba106eebdfc241f5838198dafb902db1087693ec20cbafaa51.obj" />
+    <mesh name="crate_col_236" file="assets/meshes/5b52fae2519892c0a112e031f5fa3862b0cf948c339fbe1a9f27ad397a568aed.obj" />
+    <mesh name="crate_col_237" file="assets/meshes/c61a136fa1dcdcf8535b35d94a2a83f68c4570752ef6709f69099729edc5e5c1.obj" />
+    <mesh name="crate_col_238" file="assets/meshes/cdfd5f4ebbf1ce1e8956b7ee1023103a54d7028e268eb2fc76e07d0dcb22bbc5.obj" />
+    <mesh name="crate_col_239" file="assets/meshes/9fe5ebd06440360a0fe700a3acaa0e53b4772a1bfabb3756ae277ca2c2b522b7.obj" />
+    <mesh name="crate_col_240" file="assets/meshes/d3ed3f9e63cf5f65980b3a913e109cbcf2e68f5ddac04c6a2f81297b0ca46d57.obj" />
+    <mesh name="crate_col_241" file="assets/meshes/aebbbabb4443f5aa2afda96aad5a94a2e2fd6eab5e59e2f40474d0c3b8021853.obj" />
+    <mesh name="crate_col_242" file="assets/meshes/247b7a7d96d0483c2f4a8a481319e90dbc4ef83184d055959933f7fe15424f42.obj" />
+    <mesh name="crate_col_243" file="assets/meshes/eefed7271d774c6ae4f233189869e6a0a284bc0b2ced47393a6fc4a662a36651.obj" />
+    <mesh name="crate_col_244" file="assets/meshes/68db2d9050d67b9f0c92d05590aab727ebd569451f8a0b341c4f4b79607cb57b.obj" />
+    <mesh name="crate_col_245" file="assets/meshes/df5f2fc132cc320da289fd5b8a7bea617e62ff312951ee74d573c652b8519fd1.obj" />
+    <mesh name="crate_col_246" file="assets/meshes/f6e6c28180c9252b31e32b73ec6316c0f6e29b8221e69c547fa75817ee306250.obj" />
+    <mesh name="crate_col_247" file="assets/meshes/4b8bbd6ac09439ff16f27f299daf1bcffd94cfa04d4c830771e0e75a3fd5c5ba.obj" />
+    <mesh name="crate_col_248" file="assets/meshes/f2d7bb46969746104d81674f16d3f300b7a3c0b91e8f7d9361753d369ee91634.obj" />
+    <mesh name="crate_col_249" file="assets/meshes/2af603a8f03b4d5fa093fc09dee9132aa697c85704263abb9a41d855be394ac0.obj" />
+    <mesh name="crate_col_250" file="assets/meshes/27a38a76721f76a64e47fded3f148944bcc34a6cca33fba47790febd5a6334e9.obj" />
+    <mesh name="crate_col_251" file="assets/meshes/f9dfe88813693a7b548ffd553f0ed42257bd1c30724ecf2e213487fb640ca1f3.obj" />
+    <mesh name="crate_col_252" file="assets/meshes/f2d134e625300b3329cde39eae73607b67450efdc1833c7db411e85c5a1940d9.obj" />
+    <mesh name="crate_col_253" file="assets/meshes/5aec4e24a0aa6cdc2df1a6174154742d09df137821f4c4c77f5aa03be7a0f7b6.obj" />
+    <mesh name="crate_col_254" file="assets/meshes/4ac4dc0220e35e344da3a5b4a1fc85603865e05e0ce7f4593af6e323690a165e.obj" />
+    <mesh name="crate_col_255" file="assets/meshes/083a19d671362fe3e416ee7373415b1ad4966c581996113a9ae1660ec7815ff2.obj" />
+    <texture name="floor_checker" type="2d" builtin="checker" rgb1=".25 .27 .29" rgb2=".78 .80 .82" width="512" height="512" />
+    <material name="floor_mat" texture="floor_checker" texrepeat="2 2" texuniform="true" />
+    <texture name="sky" type="skybox" builtin="gradient" rgb1=".65 .72 .79" rgb2=".94 .95 .96" width="512" height="2048" />
+    <material name="wood" rgba=".54 .36 .21 1" specular=".12" shininess=".15" />
+    <mesh name="item0_mesh_12" file="assets/meshes/3632981f56bf26c8766351dfebb0a308aee01efcb75e7af73277d51e9f48a98c.obj" scale="0.08 0.08 0.08" />
+    <mesh name="item0_mesh_13" file="assets/meshes/ce6fececa180ca4e61c71f351198b0139ec8929eee91cff84291d2146971f189.obj" scale="0.08 0.08 0.08" />
+    <mesh name="item0_mesh_14" file="assets/meshes/b26694d9912059b1d48ee93829fb2abb75f0600233bd3d94be81f9459035ae2e.obj" scale="0.08 0.08 0.08" />
+    <mesh name="item0_mesh_15" file="assets/meshes/57f7ea9e56e9b6261814543a0c5559ab6868dc1a5bcfcd55a25e83e61a98bfa9.obj" scale="0.08 0.08 0.08" />
+    <mesh name="item0_mesh_16" file="assets/meshes/7bf18b5b47043bb48a940804a22614c45a92ac06bf9e5c4ed7b13ed55c3d4999.obj" scale="0.08 0.08 0.08" />
+    <mesh name="item0_mesh_17" file="assets/meshes/545766db2c1fa52652abaa401ca264c2da358229013155a40d3c5004fbffe4a2.obj" scale="0.08 0.08 0.08" />
+    <mesh name="item0_mesh_18" file="assets/meshes/5d8eba8d221a643b19cb87f0b2fc8448ec2503f097b75f57547370d6396384bb.obj" scale="0.08 0.08 0.08" />
+    <mesh name="item0_mesh_19" file="assets/meshes/e22deb9331328c825da6bf0f6159ca05ce96b9c9ba793c7c86df14e68c8451ba.obj" scale="0.08 0.08 0.08" />
+    <mesh name="item0_mesh_20" file="assets/meshes/07b1488785c91cc487c283f2e9c58eae15d6e11da834e39e7ac0cd8c6c4db9c7.obj" scale="0.08 0.08 0.08" />
+    <mesh name="item0_mesh_21" file="assets/meshes/5c9f9cea1384bd4532858ea7c9ede159e35448f768acf5e777183f271b29e57b.obj" scale="0.08 0.08 0.08" />
+    <mesh name="item0_mesh_22" file="assets/meshes/6d14034b8af640cb0c8c9e76772e4dc968f8f565465bc8d3204a62d0d8103e07.obj" scale="0.08 0.08 0.08" />
+    <mesh name="item0_mesh_23" file="assets/meshes/55e15c68476759e1d0f6ab88568d0ef9eacf8570a3a8417046f55d4b9f8edcf5.obj" scale="0.08 0.08 0.08" />
+    <mesh name="item0_mesh_24" file="assets/meshes/a8acd82a88d0c673bd0b8304b39f9872770ffbad23d81a2a3877638c47825315.obj" scale="0.08 0.08 0.08" />
+    <mesh name="item0_replay_mesh_0" file="assets/meshes/9560d906099300be5fe105009ae1376e3643ec60145e098332db30edef3c64c5.obj" scale="0.08 0.08 0.08" />
+    <texture name="item0_replay_texture_0" type="2d" file="assets/meshes/f92e59802f90e74177bee426f17c6f594452d54579158f1ff008a4cc07703d1c.png" />
+    <material name="item0_replay_material_0" specular="0.4000000000000001" shininess="0.15" texture="item0_replay_texture_0" rgba="1 1 1 1" />
+    <mesh name="item1_mesh_12" file="assets/meshes/6357d19fccd7eea34c7f68f3df90dcdfbfc8b6a2dff25d78841b3cee7762185c.obj" scale="0.08 0.08 0.08" />
+    <mesh name="item1_mesh_13" file="assets/meshes/ee79b549b8f16473f6dbe41fd8d3ca00424e653b1ffa3841b091b556cf000684.obj" scale="0.08 0.08 0.08" />
+    <mesh name="item1_mesh_14" file="assets/meshes/68d025fde4587c0307a59b27954f75f0dc0c641611b37fb0c0246c0aa7e6ba94.obj" scale="0.08 0.08 0.08" />
+    <mesh name="item1_mesh_15" file="assets/meshes/0edc4b35feb2919b9f21308a8e7844fc45cab75e9fd9622d5dfef0c63e42cb7f.obj" scale="0.08 0.08 0.08" />
+    <mesh name="item1_mesh_16" file="assets/meshes/a353fbf21665e766a4a90566160154a35f533fbb1a43725cea1f5966b8d2984c.obj" scale="0.08 0.08 0.08" />
+    <material name="item1_replay_default_material" rgba="0.83 0.82 0.76 1" specular="0.18" shininess="0.15" />
+    <mesh name="item2_mesh_12" file="assets/meshes/e5798cf931cb04700344bfb272b999b058e9487181b4ddbcbebd032db0e9fb24.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_13" file="assets/meshes/87804bc9776efc687f24057d7b8de70245b49cf02dd687e66bcab7c539c948da.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_14" file="assets/meshes/37475071ff24a3ccc8429703707d4d7cf8636deedb53a238dd174583553bd9ef.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_15" file="assets/meshes/bb2c2d56eebb0b42931e53a2822de226618e317ae79e61905dd816cfa33d71e2.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_16" file="assets/meshes/c43557e2623fbdd9702592d3eabf5a087f9040086eada6e51016d33dd64c586c.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_17" file="assets/meshes/b452a1cecd2758a0a706b8dfd66047310ec4cc99ee8800fd8c2f7a36776ff17a.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_18" file="assets/meshes/2652098ad00b5f7c73291944169adeec34963c2b10741127203734be3af3c11d.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_19" file="assets/meshes/f8f25f5ffd316004049a923c7c9252127d51e50c3c7c79c9ecb0c109dd2906bf.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_20" file="assets/meshes/8669809f43f7b96ff19909d71856825a374386987c9671d435cee83275c56652.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_21" file="assets/meshes/4bafe50b3a384c6d2c45f36728da9b2ee230693ee067132703121ca6a5e7264b.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_22" file="assets/meshes/06ebad25ea961a355b1a88b1b3118c3f2b0b624086363922d6ded391995824c5.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_23" file="assets/meshes/1328d9b8f8e7284cffebbc2b286f93b4019a4d9c140445281511810f15610032.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_24" file="assets/meshes/67741a4316dd8b6eed3ac4cf1171e5b839315aaf45ccb97a6e6900305716f7f4.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_25" file="assets/meshes/8b3f7c585b3230c22b3ae3bce7ed10b08357a0f4e1f34f30cb8147c98104293d.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_26" file="assets/meshes/a18097eafa21fd9ce11f3f5c675eab88c209e316b859d2fd44ba8a9139ae49ca.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_27" file="assets/meshes/d2864fc015f4248b31e74e4bc54488a9068129fc816aa17d43aa46cba9cddf11.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_28" file="assets/meshes/27a51afc946258cd1e50f9fc2b015ddac72ca660a52eb3a6847f6bf84d681495.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_29" file="assets/meshes/119d6aac124f2d937eaaa77281742f758e60684627d4160c4a58ab055bc2226b.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_30" file="assets/meshes/a31ddd72cb151b250fc99a95c5dfd1137299b87467cd8492e8c7ff74921c1509.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_31" file="assets/meshes/06b4e3eef8a3ccc3c2c14649a2fc8a5fdeaf597b2d25ead5b60001f489c81104.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_32" file="assets/meshes/4b896b0b57eeed7cbeaba4ad2a9e9e64126b5cdc2918726a0a33642cd6ec81da.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_33" file="assets/meshes/4f7c46c31cb9c423b18851830d7971c8a2621d5c4f2b1b422981ed86e7384e5c.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_34" file="assets/meshes/6341fcaad604a496db0208b71f6c55acc213fa673106232528e84946ab7031e2.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_35" file="assets/meshes/1468091fe7d707561bcc6b3dbe1d52914aeb5d736861141370c659a998e78e8f.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_36" file="assets/meshes/501b1b89d49b65610d869fd67f4d425514761411e63d3bf434bd9c3f6951d191.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_37" file="assets/meshes/c07ce8c60955c5661e9a6ba02f84ca5db3bb3be9be89d346683298d4359c1312.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_38" file="assets/meshes/d3f12eec8928f55c9c5e7931f04e3f6f7a588f558ebb7bb89e2334fda06de4d9.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_39" file="assets/meshes/63d97e541aab21e5823a477db0dd4409a08cbc5e7f3fe7db5bc69beb9576165c.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_40" file="assets/meshes/3d08f7b1dcb8308e190eedeb9f739d42da24af66cc7400d4d828eb8418fa59ea.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_41" file="assets/meshes/3018c085b37acceea27b85d2c304397224c9e426285040a75315d5a551554a26.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_42" file="assets/meshes/6493ee73d0c2f42608ae04aed15321017c9874369363cffcce822cf9732b06b3.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_43" file="assets/meshes/71f4afd2410ea651ddad4b5269ed158b933542e7e2c9418dbb2820484080f651.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_44" file="assets/meshes/281b013f7eff2a8a378f4df1f33814b0d805369f9a368e223c2fc16e68d4199c.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_45" file="assets/meshes/e4184a6f56aa27005325a878561efc25c551f964ca36898fc0ded279b73444a4.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_46" file="assets/meshes/4b8305026b9bc2784862a3ac01f8916da6da47be1512747a052d60712eae2b31.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_47" file="assets/meshes/69525a01bb6197b7af1dae0a03229e8b5d08f4c9b162e038542c1c93a5185b70.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_48" file="assets/meshes/70023e40ee934f2d6fa6493aac408ff2c1d911a7f51031f7b91087e4e7de45c4.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_49" file="assets/meshes/16cb1d711f87fdb705651ad5b37379416db9a0c17f8082baf2945ceb920d9efe.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_50" file="assets/meshes/99ecfdd47878c8bedfaeb9415640f7bd06f1fe6182a022f16b087b4c68c2f9de.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_51" file="assets/meshes/656f5375f1bc923a81f34fd3dfc121aa336028eef8fa01f99018da93add386bb.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_52" file="assets/meshes/d3ac3737218e658856e22d47585201104603a59300044767876902ccba1969ae.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_53" file="assets/meshes/64c9d16cc2ea3db055ff1a50ae87d230542539ef6618160bc39a1416cfe73fc1.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_54" file="assets/meshes/42d9470c87a6844aeae6f2a97834c9979ce74330763582a50874edad8d37ffbe.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_55" file="assets/meshes/e50efab4bdd237212cf91cd1087ccf1d55d2878b93995f30432371e96ab9ebc2.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_56" file="assets/meshes/4170077206e8bca6064191d7a824bb41bfd3bd5b60ea02e21fb78cb5e943b55e.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_57" file="assets/meshes/c9b220c4015411bb348339a1ac09b62337e8b0df4935c78786de987d0c803198.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_58" file="assets/meshes/f8f6feb364ae47b4537e60f5c55b599d32f6820b5a49e9ad577c46a81028da34.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_59" file="assets/meshes/7be9312798a953d809ebaa7e776d14565df1dd8c04bad63493ec354f74d17db8.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_60" file="assets/meshes/b386b9f979f2838c5c3f5ea22e7198b8297c5810ca9255b3ddb5d6f6d8c104cc.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_61" file="assets/meshes/46026167cece4a794d6405216ddba20e72964a97db3decb4f0f0f8498c1b95fd.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_62" file="assets/meshes/130cc77f6c676fe13c84df8c3a17d3a409fd7ff6ae65e1883f1e103b4a8dac51.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_63" file="assets/meshes/ab0c463c9f052c3ce85e23d202f96779f6a7ad2bc051811c2e238069aea0e2e3.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_64" file="assets/meshes/12f6a09c6562627373a3604605e64a83e81f34e4e6bb9be5d132e98e49c41214.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_65" file="assets/meshes/ff74022771ea1e813dddb96fbe1b7e18ee4e9ec12ba0666aa0633a67a70752ce.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_66" file="assets/meshes/32c2a77db3a3a5681480af1faf0157d4147eb251f3318af5db237069d43ed90a.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_67" file="assets/meshes/c71cbe2ea1b129177be362ba981a26bab668c6b346da958ce0f6330b6adeb4c0.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_68" file="assets/meshes/dae69ff86d1c57df39ee717ddafe1667ac19e316c5b1fabf46e7f66ff41b81a2.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_69" file="assets/meshes/fd2c17626433501a82809f1a8e0ad01003021d190ff5da4437e8bbbbc580520a.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_70" file="assets/meshes/b96028e707f62373efc96309a76be0a836239ea9c342b3194744340fcb6ef60d.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_71" file="assets/meshes/832901cb0568f3a8168040297f99f9ffd2640a242c72035dfec4e434870a0efc.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_72" file="assets/meshes/a784cd8b14167afcaea6e474e0a22987709a36e89742c4d55cd8eb8f7c5eee2b.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_73" file="assets/meshes/d0b3424f4a920e08433399c94fc84862b003ea5232a14d484edf395e662f1508.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_74" file="assets/meshes/edfdd7c380eb980a3c0596c1c0abf4b8749534ea6edc89fdf1dcd2407ce8d2c4.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_75" file="assets/meshes/1b7b6ce0e81fbfb1c8ffbdd81d9d683f8773c4eb4e9dde48fea612215472ca3e.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_mesh_76" file="assets/meshes/e548817b197c3f751822c35910030afe4cf88877213a8ffae319d4255fb53685.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item2_replay_mesh_0" file="assets/meshes/b08b1641f0f446a92d0833c9b10e6ff4f9fe9c04afb0be2e70277000018e235d.obj" scale="0.1 0.1 0.1" />
+    <texture name="item2_replay_texture_0" type="2d" file="assets/meshes/f92e59802f90e74177bee426f17c6f594452d54579158f1ff008a4cc07703d1c.png" />
+    <material name="item2_replay_material_0" specular="0.4000000000000001" shininess="0.15" texture="item2_replay_texture_0" rgba="1 1 1 1" />
+    <mesh name="item3_mesh_12" file="assets/meshes/8b043eb671d1f6619fb6ebb39dbd4f9012edc715de01d700d7bd0540cf9ae87e.obj" scale="0.1 0.1 0.1" />
+    <mesh name="item3_mesh_13" file="assets/meshes/3123f7f175d40b8a3ea54cf9f67639fa1aaa24bd19951ef0677904e06217df0b.obj" scale="0.1 0.1 0.1" />
+    <material name="item3_replay_default_material" rgba="0.72 0.47 0.36 1" specular="0.18" shininess="0.15" />
+    <mesh name="item4_mesh_12" file="assets/meshes/d1f39b6936127681972c7d77197ca082b4f0f66c4ca8b93ad7cccd3fc077b262.obj" scale="0.06 0.06 0.06" />
+    <mesh name="item4_mesh_13" file="assets/meshes/fc84537b3fa729c1ad4d5745f5adc137a63c12465cb95b48cbac453ac9872efc.obj" scale="0.06 0.06 0.06" />
+    <mesh name="item4_mesh_14" file="assets/meshes/5701b5ea5b3686533888ace45ef98c7fd3ac36516734b0b4b4054e6ccdfd733e.obj" scale="0.06 0.06 0.06" />
+    <mesh name="item4_mesh_15" file="assets/meshes/7c48919a59fdfc7ba75a27a503aaed1a1a4950198ff0311933d0b75cb6ee2739.obj" scale="0.06 0.06 0.06" />
+    <mesh name="item4_mesh_16" file="assets/meshes/78b95d5a926271e4bc4be69f7a9b0493bfc80ae73ec0575559dbd975c1b1a52c.obj" scale="0.06 0.06 0.06" />
+    <mesh name="item4_mesh_17" file="assets/meshes/7f968951801ef22f0988062a571726d645ca10c9342bb9b94a7f10e62f087641.obj" scale="0.06 0.06 0.06" />
+    <mesh name="item4_mesh_18" file="assets/meshes/4bd8536bc5de29846c4b0ddc7a7cbb57ec55673b30c4c723f255b6b81b3e946b.obj" scale="0.06 0.06 0.06" />
+    <mesh name="item4_replay_mesh_0" file="assets/meshes/374a9c741f9c8fec3b58a9b61235d4e0a6bf808943ab71e3570e08aa7a57f2e7.obj" scale="0.06 0.06 0.06" />
+    <texture name="item4_replay_texture_0" type="2d" file="assets/meshes/f92e59802f90e74177bee426f17c6f594452d54579158f1ff008a4cc07703d1c.png" />
+    <material name="item4_replay_material_0" specular="0.4000000000000001" shininess="0.15" texture="item4_replay_texture_0" rgba="1 1 1 1" />
+  </asset>
+  <worldbody>
+    <body name="lsrobot_base_link" pos="0 0 0" quat="1 0 0 0">
+      <inertial pos="0.267064664696591 -0.000245986140302757 -1.20224615179936" mass="149.932493110353" fullinertia="5.2110728969355904 10.8921336977157 10.720229816335801 0.00016175706787254301 0.73904772634700799 -0.000618706155735452" />
+      <geom name="lsrobot_base_link_visual_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_0" contype="0" conaffinity="0" group="2" material="robot_gloss_white" rgba="0.92000000000000004 0.93000000000000005 0.93999999999999995 1" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="lsrobot_base_link_collision_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_0" contype="1" conaffinity="1" group="3" rgba=".5 .5 .5 0" solref=".004 1" solimp=".98 .995 .0005" />
+      <body name="lsrobot_torso_link1" pos="0 0.09925 -0.483" quat="1 0 0 0">
+        <inertial pos="3.07753057911948E-06 -0.0952461597249824 0.0243525506523906" mass="1.46933678055315" fullinertia="0.0090657423804635304 0.0081198270554801392 0.0078459064042747904 -2.9704400720220402e-07 6.01231937746453e-08 0.000240356390824766" />
+        <joint name="lsrobot_torso_joint1" type="hinge" axis="0 1 0" range="-1.1345 1.1345" damping="1" armature=".01" />
+        <geom name="lsrobot_torso_link1_visual_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_1" contype="0" conaffinity="0" group="2" material="robot_gloss_white" rgba="0.92000000000000004 0.93000000000000005 0.93999999999999995 1" solref=".004 1" solimp=".98 .995 .0005" />
+        <geom name="lsrobot_torso_link1_collision_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_1" contype="1" conaffinity="1" group="3" rgba=".5 .5 .5 0" solref=".004 1" solimp=".98 .995 .0005" />
+        <body name="lsrobot_torso_link2" pos="0 -0.09925 0.129" quat="1 0 0 0">
+          <inertial pos="-0.00586246758027404 0.000591080545125066 0.207751482364125" mass="2.55848234298144" fullinertia="0.065844508576157701 0.054628148479235999 0.039297594176962498 -0.000124215320373632 -0.00056197142582062798 -0.000144474891118973" />
+          <joint name="lsrobot_torso_joint2" type="hinge" axis="0 0 -1" range="-0.7854 0.7854" damping="1" armature=".01" />
+          <geom name="lsrobot_torso_link2_visual_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_2" contype="0" conaffinity="0" group="2" material="robot_gloss_white" rgba="0.92000000000000004 0.93000000000000005 0.93999999999999995 1" solref=".004 1" solimp=".98 .995 .0005" />
+          <geom name="lsrobot_torso_link2_collision_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_2" contype="1" conaffinity="1" group="3" rgba=".5 .5 .5 0" solref=".004 1" solimp=".98 .995 .0005" />
+          <body name="lsrobot_torso_link3" pos="0 0 0.4785" quat="1 0 0 0">
+            <inertial pos="-0.0151881220219086 -0.00282403454220583 0.125791644439786" mass="0.900513471371477" fullinertia="0.0055138889043003696 0.0040600360531570703 0.00238280247966714 1.7998641118858699e-05 0.000134312337154597 1.2493768590233399e-05" />
+            <joint name="lsrobot_torso_joint3" type="hinge" axis="0 0 -1" range="-3.1416 3.1416" damping="1" armature=".01" />
+            <geom name="lsrobot_torso_link3_visual_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_3" contype="0" conaffinity="0" group="2" material="robot_gloss_white" rgba="0.92000000000000004 0.93000000000000005 0.93999999999999995 1" solref=".004 1" solimp=".98 .995 .0005" />
+            <geom name="lsrobot_torso_link3_collision_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_3" contype="1" conaffinity="1" group="3" rgba=".5 .5 .5 0" solref=".004 1" solimp=".98 .995 .0005" />
+            <camera name="head_camera" mode="fixed" pos="0.071 0.0 0.153" xyaxes="0.0 -1.0 0.0 0.8191520442889918 0.0 0.573576436351046" fovy="70.0" ipd="0" resolution="640 480" />
+          </body>
+          <body name="lsrobot_arm_base_link" pos="0 -0.05 0.354" quat="1 0 0 0">
+            <inertial pos="0.00000102 -0.06271062 -0.00000000" mass="0.425081480271616" fullinertia="0.00097707999999999996 0.00086293999999999997 0.00097706000000000008 1e-08 0 0" />
+            <geom name="lsrobot_arm_base_link_visual_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_4" contype="0" conaffinity="0" group="2" material="robot_gloss_white" rgba="0.92000000000000004 0.93000000000000005 0.93999999999999995 1" solref=".004 1" solimp=".98 .995 .0005" />
+            <geom name="lsrobot_arm_base_link_collision_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_4" contype="1" conaffinity="1" group="3" rgba=".5 .5 .5 0" solref=".004 1" solimp=".98 .995 .0005" />
+            <body name="lsrobot_arm_link1" pos="0.00084971 -0.10100000 0.00241381" quat="1 0 0 0">
+              <inertial pos="0.00000299 -0.06931962 0.02434597" mass="0.667304384441299" fullinertia="0.00182551 0.00085088999999999998 0.00179192 -9.9999999999999995e-08 -1e-08 0.00050533000000000002" />
+              <joint name="lsrobot_arm_joint1" type="hinge" axis="-0.00000008 -1.00000000 0.00000000" range="-3.1416 3.1416" damping="1" armature=".01" />
+              <geom name="lsrobot_arm_link1_visual_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_6" contype="0" conaffinity="0" group="2" material="robot_gloss_white" rgba="0.92000000000000004 0.93000000000000005 0.93999999999999995 1" solref=".004 1" solimp=".98 .995 .0005" />
+              <geom name="lsrobot_arm_link1_collision_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_6" contype="1" conaffinity="1" group="3" rgba=".5 .5 .5 0" solref=".004 1" solimp=".98 .995 .0005" />
+              <body name="lsrobot_arm_link2" pos="-0.00000001 -0.11000000 -0.00000000" quat="1 0 0 0">
+                <inertial pos="-0.00000009 -0.05961955 -0.01570928" mass="1.72629423593302" fullinertia="0.010053039999999999 0.0024857799999999999 0.0095942000000000006 0 0 0.0014265300000000001" />
+                <joint name="lsrobot_arm_joint2" type="hinge" axis="0 0 1" range="-2.1468 2.1468" damping="1" armature=".01" />
+                <geom name="lsrobot_arm_link2_visual_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_8" contype="0" conaffinity="0" group="2" material="robot_gloss_white" rgba="0.92000000000000004 0.93000000000000005 0.93999999999999995 1" solref=".004 1" solimp=".98 .995 .0005" />
+                <geom name="lsrobot_arm_link2_collision_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_8" contype="1" conaffinity="1" group="3" rgba=".5 .5 .5 0" solref=".004 1" solimp=".98 .995 .0005" />
+                <body name="lsrobot_arm_link3" pos="-0.00000001 -0.18200000 -0.00050004" quat="1 0 0 0">
+                  <inertial pos="0.00607924 -0.06092842 0.02255584" mass="0.365275588449588" fullinertia="0.00076190000000000003 0.00041636 0.00077437999999999997 9.145e-05 -4.5040000000000002e-05 0.00021848000000000001" />
+                  <joint name="lsrobot_arm_joint3" type="hinge" axis="0 1 0" range="-3.1416 3.1416" damping="1" armature=".01" />
+                  <geom name="lsrobot_arm_link3_visual_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_10" contype="0" conaffinity="0" group="2" material="robot_gloss_white" rgba="0.92000000000000004 0.93000000000000005 0.93999999999999995 1" solref=".004 1" solimp=".98 .995 .0005" />
+                  <geom name="lsrobot_arm_link3_collision_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_10" contype="1" conaffinity="1" group="3" rgba=".5 .5 .5 0" solref=".004 1" solimp=".98 .995 .0005" />
+                  <body name="lsrobot_arm_link4" pos="0.01499999 -0.09800000 -0.00000000" quat="1 0 0 0">
+                    <inertial pos="-0.00742754 -0.05625013 -0.01314285" mass="1.24697557074969" fullinertia="0.00608488 0.0014525300000000001 0.00591488 -0.00053326999999999997 9.2860000000000002e-05 0.00077970999999999997" />
+                    <joint name="lsrobot_arm_joint4" type="hinge" axis="0 0 1" range="-1.7104 2.5133" damping="1" armature=".01" />
+                    <geom name="lsrobot_arm_link4_visual_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_12" contype="0" conaffinity="0" group="2" material="robot_gloss_white" rgba="0.92000000000000004 0.93000000000000005 0.93999999999999995 1" solref=".004 1" solimp=".98 .995 .0005" />
+                    <geom name="lsrobot_arm_link4_collision_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_12" contype="1" conaffinity="1" group="3" rgba=".5 .5 .5 0" solref=".004 1" solimp=".98 .995 .0005" />
+                    <body name="lsrobot_arm_link5" pos="-0.01500001 -0.16850001 -0.00100005" quat="1 0 0 0">
+                      <inertial pos="0.00125837 -0.05581976 0.02378418" mass="0.263415610597945" fullinertia="0.00046068999999999998 0.00024143 0.00043609999999999998 7.4100000000000002e-06 -1.28e-06 0.00013998999999999999" />
+                      <joint name="lsrobot_arm_joint5" type="hinge" axis="0 1 0" range="-3.1416 3.1416" damping="1" armature=".01" />
+                      <geom name="lsrobot_arm_link5_visual_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_14" contype="0" conaffinity="0" group="2" material="robot_gloss_white" rgba="0.92000000000000004 0.93000000000000005 0.93999999999999995 1" solref=".004 1" solimp=".98 .995 .0005" />
+                      <geom name="lsrobot_arm_link5_collision_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_14" contype="1" conaffinity="1" group="3" rgba=".5 .5 .5 0" solref=".004 1" solimp=".98 .995 .0005" />
+                      <body name="lsrobot_arm_link6" pos="-0.00000001 -0.08600000 -0.00000000" quat="1 0 0 0">
+                        <inertial pos="-0.00050278 -0.05529660 -0.00948457" mass="0.983402067157163" fullinertia="0.0037848199999999999 0.00092048 0.00365556 2.1880000000000001e-05 -6.8600000000000004e-06 0.00041357999999999998" />
+                        <joint name="lsrobot_arm_joint6" type="hinge" axis="0 0 1" range="-2.0944 2.0944" damping="1" armature=".01" />
+                        <geom name="lsrobot_arm_link6_visual_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_16" contype="0" conaffinity="0" group="2" material="robot_gloss_white" rgba="0.92000000000000004 0.93000000000000005 0.93999999999999995 1" solref=".004 1" solimp=".98 .995 .0005" />
+                        <geom name="lsrobot_arm_link6_collision_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_16" contype="1" conaffinity="1" group="3" rgba=".5 .5 .5 0" solref=".004 1" solimp=".98 .995 .0005" />
+                        <body name="lsrobot_arm_link7" pos="-0.00005288 -0.15350001 -0.00099864" quat="1 0 0 0">
+                          <inertial pos="0 0 0" mass="0.01" fullinertia="9.9999999999999995e-07 9.9999999999999995e-07 9.9999999999999995e-07 0 0 0" />
+                          <joint name="lsrobot_arm_joint7" type="hinge" axis="0 1 0" range="-3.1416 3.1416" damping="1" armature=".01" />
+                          <geom name="lsrobot_arm_link7_visual_0" pos="0 0 0" quat="1 0 0 0" type="cylinder" size="0.001 0.00050000000000000001" contype="0" conaffinity="0" group="2" material="robot_gloss_white" rgba="0.92000000000000004 0.93000000000000005 0.93999999999999995 1" solref=".004 1" solimp=".98 .995 .0005" />
+                          <geom name="lsrobot_arm_link7_collision_0" pos="0 0 0" quat="1 0 0 0" type="cylinder" size="0.001 0.00050000000000000001" contype="1" conaffinity="1" group="3" rgba=".5 .5 .5 0" solref=".004 1" solimp=".98 .995 .0005" />
+                          <body name="rh_hand_base_link" pos="0 0 0" quat="0.70710678118654757 0.70710678118654746 0 0">
+                            <inertial pos="-0.00160320773490556 0.000358462699237561 0.0538002704027215" mass="0.06740077960995" fullinertia="5.2235994104190097e-05 3.33473043513648e-05 2.2834267742200601e-05 3.0391535852763999e-07 3.8832221537164302e-07 -7.7755528079486097e-07" />
+                            <geom name="rh_hand_base_link_visual_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_30" contype="0" conaffinity="0" group="2" material="robot_gloss_white" rgba="0.92000000000000004 0.93000000000000005 0.93999999999999995 1" solref=".004 1" solimp=".98 .995 .0005" />
+                            <geom name="rh_hand_base_link_collision_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_30" contype="1" conaffinity="1" group="3" rgba=".5 .5 .5 0" friction=".6 .02 .001" condim="4" solref=".005 1" solimp=".5 .99 .0001 .5 2" />
+                            <body name="rh_thumb_metacarpals_base2" pos="0.011508 0.022975 0.032794" quat="1 0 0 0">
+                              <inertial pos="0.00162795738393507 0.00276671978336815 -0.00184227725602707" mass="0.00138591070212997" fullinertia="5.2629462562422303e-08 4.82623724532942e-08 2.88555522060562e-08 -3.9288013799604002e-09 2.4376626819957101e-09 3.7186775411544298e-09" />
+                              <joint name="rh_thumb_cmc_yaw" type="hinge" axis="0 0 -1" range="0 1.36" damping=".05" armature=".0002" frictionloss=".01" />
+                              <geom name="rh_thumb_metacarpals_base2_visual_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_31" contype="0" conaffinity="0" group="2" material="robot_gloss_white" rgba="0.92000000000000004 0.93000000000000005 0.93999999999999995 1" solref=".004 1" solimp=".98 .995 .0005" />
+                              <geom name="rh_thumb_metacarpals_base2_collision_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_31" contype="1" conaffinity="1" group="3" rgba=".5 .5 .5 0" friction=".6 .02 .001" condim="4" solref=".005 1" solimp=".5 .99 .0001 .5 2" />
+                              <body name="rh_thumb_metacarpals" pos="0.0061649 0.010678 -0.004891" quat="0.41919965200090403 -0.47202872075866492 -0.27252436779004574 -0.72607920194831033">
+                                <inertial pos="4.24920612856275E-05 -1.67885666835232E-05 0.0228341522590467" mass="0.0123381607727595" fullinertia="1.1029248869376601e-06 1.7675765848578701e-06 9.3634814365740596e-07 -6.1424193915171904e-10 1.14233108676795e-07 -4.24576599367025e-10" />
+                                <joint name="rh_thumb_cmc_pitch" type="hinge" axis="0 1 0" range="0 0.58" damping=".05" armature=".0002" frictionloss=".01" />
+                                <geom name="rh_thumb_metacarpals_visual_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_32" contype="0" conaffinity="0" group="2" material="robot_gloss_white" rgba="0.92000000000000004 0.93000000000000005 0.93999999999999995 1" solref=".004 1" solimp=".98 .995 .0005" />
+                                <geom name="rh_thumb_metacarpals_collision_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_32" contype="1" conaffinity="1" group="3" rgba=".5 .5 .5 0" friction=".6 .02 .001" condim="4" solref=".005 1" solimp=".5 .99 .0001 .5 2" />
+                                <body name="rh_thumb_distal" pos="0.0037776 0 0.045368" quat="1 0 0 0">
+                                  <inertial pos="-0.00413690727496815 -4.54842793429222E-07 0.0230097179163771" mass="0.00763302603723749" fullinertia="1.30546842791578e-06 1.2245721271317601e-06 2.7729897944408998e-07 -2.6161751102946701e-12 7.1903068524240696e-08 1.6693106848522501e-11" />
+                                  <joint name="rh_thumb_ip" type="hinge" axis="0 1 0" range="0 1.08" damping=".05" armature=".0002" frictionloss=".01" />
+                                  <geom name="rh_thumb_distal_visual_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_33" contype="0" conaffinity="0" group="2" material="robot_gloss_white" rgba="0.92000000000000004 0.93000000000000005 0.93999999999999995 1" solref=".004 1" solimp=".98 .995 .0005" />
+                                  <geom name="rh_thumb_distal_collision_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_33" contype="1" conaffinity="1" group="3" rgba=".5 .5 .5 0" friction=".6 .02 .001" condim="4" solref=".005 1" solimp=".5 .99 .0001 .5 2" />
+                                </body>
+                              </body>
+                            </body>
+                            <body name="rh_index_proximal" pos="0.0024758 0.02419 0.098779" quat="0.99965732337300039 -0.026177009506979564 0 0">
+                              <inertial pos="-0.00208665596033792 -4.8964990644329E-06 0.0172736718900068" mass="0.00253178529301663" fullinertia="2.6599015953948202e-07 2.7291546027780402e-07 8.5602630668752798e-08 -3.5516562572284199e-11 4.3104633585216698e-08 1.7593597870895901e-10" />
+                              <joint name="rh_index_mcp_pitch" type="hinge" axis="0 1 0" range="0 1.60" damping=".05" armature=".0002" frictionloss=".01" />
+                              <geom name="rh_index_proximal_visual_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_34" contype="0" conaffinity="0" group="2" material="robot_gloss_white" rgba="0.92000000000000004 0.93000000000000005 0.93999999999999995 1" solref=".004 1" solimp=".98 .995 .0005" />
+                              <geom name="rh_index_proximal_collision_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_34" contype="1" conaffinity="1" group="3" rgba=".5 .5 .5 0" friction=".6 .02 .001" condim="4" solref=".005 1" solimp=".5 .99 .0001 .5 2" />
+                              <body name="rh_index_distal" pos="-0.0052516 0 0.036625" quat="1 0 0 0">
+                                <inertial pos="0.00658940011630532 -4.59976557022623E-06 0.0194434136420913" mass="0.00376787129082313" fullinertia="3.2211661942645498e-07 3.6513184468631698e-07 1.24256890612907e-07 1.0315273569904899e-11 -1.14363506430985e-07 -1.97263639269362e-10" />
+                                <joint name="rh_index_dip" type="hinge" axis="0 1 0" range="0 1.43" damping=".05" armature=".0002" frictionloss=".01" />
+                                <geom name="rh_index_distal_visual_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_35" contype="0" conaffinity="0" group="2" material="robot_gloss_white" rgba="0.92000000000000004 0.93000000000000005 0.93999999999999995 1" solref=".004 1" solimp=".98 .995 .0005" />
+                                <geom name="rh_index_distal_collision_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_35" contype="1" conaffinity="1" group="3" rgba=".5 .5 .5 0" friction=".6 .02 .001" condim="4" solref=".005 1" solimp=".5 .99 .0001 .5 2" />
+                              </body>
+                            </body>
+                            <body name="rh_middle_proximal" pos="0.00052576 0.00634 0.1027" quat="1 0 0 0">
+                              <inertial pos="-0.00208661081773556 -4.93451838476378E-06 0.0172736805321904" mass="0.00253175497594429" fullinertia="2.6598968369069499e-07 2.7291500604700601e-07 8.5602046720251805e-08 -3.5834395179158601e-11 4.3104860108521599e-08 1.75718024412593e-10" />
+                              <joint name="rh_middle_mcp_pitch" type="hinge" axis="0 1 0" range="0 1.60" damping=".05" armature=".0002" frictionloss=".01" />
+                              <geom name="rh_middle_proximal_visual_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_36" contype="0" conaffinity="0" group="2" material="robot_gloss_white" rgba="0.92000000000000004 0.93000000000000005 0.93999999999999995 1" solref=".004 1" solimp=".98 .995 .0005" />
+                              <geom name="rh_middle_proximal_collision_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_36" contype="1" conaffinity="1" group="3" rgba=".5 .5 .5 0" friction=".6 .02 .001" condim="4" solref=".005 1" solimp=".5 .99 .0001 .5 2" />
+                              <body name="rh_middle_distal" pos="-0.0052516 0 0.036625" quat="1 0 0 0">
+                                <inertial pos="0.00658940304809306 -4.5885743593238E-06 0.0194434523296449" mass="0.00376786259758948" fullinertia="3.2211536583059998e-07 3.6513072308310401e-07 1.24256787913797e-07 1.0263961730843199e-11 -1.1436354727271099e-07 -1.9690461879757701e-10" />
+                                <joint name="rh_middle_dip" type="hinge" axis="0 1 0" range="0 1.43" damping=".05" armature=".0002" frictionloss=".01" />
+                                <geom name="rh_middle_distal_visual_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_37" contype="0" conaffinity="0" group="2" material="robot_gloss_white" rgba="0.92000000000000004 0.93000000000000005 0.93999999999999995 1" solref=".004 1" solimp=".98 .995 .0005" />
+                                <geom name="rh_middle_distal_collision_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_37" contype="1" conaffinity="1" group="3" rgba=".5 .5 .5 0" friction=".6 .02 .001" condim="4" solref=".005 1" solimp=".5 .99 .0001 .5 2" />
+                              </body>
+                            </body>
+                            <body name="rh_ring_proximal" pos="0.0010258 -0.011135 0.098767" quat="0.99965732337300039 0.026177009506979564 0 0">
+                              <inertial pos="-0.00208654311325356 -4.98538564003281E-06 0.0172736743497407" mass="0.00253170963529411" fullinertia="2.6598913795678e-07 2.7291441706151699e-07 8.5601245867751494e-08 -3.6275710867526601e-11 4.3105061155550703e-08 1.7555498405347799e-10" />
+                              <joint name="rh_ring_mcp_pitch" type="hinge" axis="0 1 0" range="0 1.60" damping=".05" armature=".0002" frictionloss=".01" />
+                              <geom name="rh_ring_proximal_visual_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_38" contype="0" conaffinity="0" group="2" material="robot_gloss_white" rgba="0.92000000000000004 0.93000000000000005 0.93999999999999995 1" solref=".004 1" solimp=".98 .995 .0005" />
+                              <geom name="rh_ring_proximal_collision_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_38" contype="1" conaffinity="1" group="3" rgba=".5 .5 .5 0" friction=".6 .02 .001" condim="4" solref=".005 1" solimp=".5 .99 .0001 .5 2" />
+                              <body name="rh_ring_distal" pos="-0.0052516 0 0.036625" quat="1 0 0 0">
+                                <inertial pos="0.00658940273069729 -4.56628863591824E-06 0.0194435005686854" mass="0.0037678395356105" fullinertia="3.2211263243785799e-07 3.6512826209568601e-07 1.2425628460806401e-07 1.01848408913558e-11 -1.1436348915342e-07 -1.9614563299244499e-10" />
+                                <joint name="rh_ring_dip" type="hinge" axis="0 1 0" range="0 1.43" damping=".05" armature=".0002" frictionloss=".01" />
+                                <geom name="rh_ring_distal_visual_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_39" contype="0" conaffinity="0" group="2" material="robot_gloss_white" rgba="0.92000000000000004 0.93000000000000005 0.93999999999999995 1" solref=".004 1" solimp=".98 .995 .0005" />
+                                <geom name="rh_ring_distal_collision_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_39" contype="1" conaffinity="1" group="3" rgba=".5 .5 .5 0" friction=".6 .02 .001" condim="4" solref=".005 1" solimp=".5 .99 .0001 .5 2" />
+                              </body>
+                            </body>
+                            <body name="rh_pinky_proximal" pos="0.0024758 -0.028372 0.092741" quat="0.99904823167098911 0.043619156285622802 0 0">
+                              <inertial pos="-0.00208649034130813 -5.02314582560837E-06 0.0172736680793697" mass="0.00253167400540778" fullinertia="2.65988718820404e-07 2.7291393690481299e-07 8.5600642472012893e-08 -3.6601229528029497e-11 4.31052220484445e-08 1.7544739622230799e-10" />
+                              <joint name="rh_pinky_mcp_pitch" type="hinge" axis="0 1 0" range="0 1.60" damping=".05" armature=".0002" frictionloss=".01" />
+                              <geom name="rh_pinky_proximal_visual_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_40" contype="0" conaffinity="0" group="2" material="robot_gloss_white" rgba="0.92000000000000004 0.93000000000000005 0.93999999999999995 1" solref=".004 1" solimp=".98 .995 .0005" />
+                              <geom name="rh_pinky_proximal_collision_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_40" contype="1" conaffinity="1" group="3" rgba=".5 .5 .5 0" friction=".6 .02 .001" condim="4" solref=".005 1" solimp=".5 .99 .0001 .5 2" />
+                              <body name="rh_pinky_distal" pos="-0.0052516 0 0.036625" quat="1 0 0 0">
+                                <inertial pos="0.00658940431519205 -4.55268314210333E-06 0.0194435341098305" mass="0.00376782669873412" fullinertia="3.2211111233949798e-07 3.65126916899176e-07 1.24256004854426e-07 1.01707985908333e-11 -1.14363524419061e-07 -1.95589215866356e-10" />
+                                <joint name="rh_pinky_dip" type="hinge" axis="0 1 0" range="0 1.43" damping=".05" armature=".0002" frictionloss=".01" />
+                                <geom name="rh_pinky_distal_visual_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_41" contype="0" conaffinity="0" group="2" material="robot_gloss_white" rgba="0.92000000000000004 0.93000000000000005 0.93999999999999995 1" solref=".004 1" solimp=".98 .995 .0005" />
+                                <geom name="rh_pinky_distal_collision_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_41" contype="1" conaffinity="1" group="3" rgba=".5 .5 .5 0" friction=".6 .02 .001" condim="4" solref=".005 1" solimp=".5 .99 .0001 .5 2" />
+                              </body>
+                            </body>
+                          </body>
+                        </body>
+                      </body>
+                    </body>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+          <body name="lsrobot_arm_base_link_m" pos="0 0.05 0.354" quat="1 0 0 0">
+            <inertial pos="1.02e-06 0.06271062 -0" mass="0.425081480271616" fullinertia="0.00097707999999999996 0.00086293999999999997 0.00097706000000000008 -1e-08 0 0" />
+            <geom name="lsrobot_arm_base_link_m_visual_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_5" contype="0" conaffinity="0" group="2" material="robot_gloss_white" rgba="0.92000000000000004 0.93000000000000005 0.93999999999999995 1" solref=".004 1" solimp=".98 .995 .0005" />
+            <geom name="lsrobot_arm_base_link_m_collision_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_5" contype="1" conaffinity="1" group="3" rgba=".5 .5 .5 0" solref=".004 1" solimp=".98 .995 .0005" />
+            <body name="lsrobot_arm_link1_m" pos="0.00084971 0.101 0.00241381" quat="1 0 0 0">
+              <inertial pos="2.99e-06 0.06931962 0.02434597" mass="0.667304384441299" fullinertia="0.00182551 0.00085088999999999998 0.00179192 9.9999999999999995e-08 -1e-08 -0.00050533000000000002" />
+              <joint name="lsrobot_arm_joint1_m" type="hinge" axis="-8e-08 1 0" range="-3.1415999999999999 3.1415999999999999" damping="1" armature=".01" />
+              <geom name="lsrobot_arm_link1_m_visual_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_7" contype="0" conaffinity="0" group="2" material="robot_gloss_white" rgba="0.92000000000000004 0.93000000000000005 0.93999999999999995 1" solref=".004 1" solimp=".98 .995 .0005" />
+              <geom name="lsrobot_arm_link1_m_collision_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_7" contype="1" conaffinity="1" group="3" rgba=".5 .5 .5 0" solref=".004 1" solimp=".98 .995 .0005" />
+              <body name="lsrobot_arm_link2_m" pos="-1e-08 0.11 -0" quat="1 0 0 0">
+                <inertial pos="-9e-08 0.05961955 -0.01570928" mass="1.72629423593302" fullinertia="0.010053039999999999 0.0024857799999999999 0.0095942000000000006 0 0 -0.0014265300000000001" />
+                <joint name="lsrobot_arm_joint2_m" type="hinge" axis="0 0 -1" range="-2.1467999999999998 2.1467999999999998" damping="1" armature=".01" />
+                <geom name="lsrobot_arm_link2_m_visual_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_9" contype="0" conaffinity="0" group="2" material="robot_gloss_white" rgba="0.92000000000000004 0.93000000000000005 0.93999999999999995 1" solref=".004 1" solimp=".98 .995 .0005" />
+                <geom name="lsrobot_arm_link2_m_collision_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_9" contype="1" conaffinity="1" group="3" rgba=".5 .5 .5 0" solref=".004 1" solimp=".98 .995 .0005" />
+                <body name="lsrobot_arm_link3_m" pos="-1e-08 0.182 -0.00050004" quat="1 0 0 0">
+                  <inertial pos="0.00607924 0.06092842 0.02255584" mass="0.365275588449588" fullinertia="0.00076190000000000003 0.00041636 0.00077437999999999997 -9.145e-05 -4.5040000000000002e-05 -0.00021848000000000001" />
+                  <joint name="lsrobot_arm_joint3_m" type="hinge" axis="0 -1 0" range="-3.1415999999999999 3.1415999999999999" damping="1" armature=".01" />
+                  <geom name="lsrobot_arm_link3_m_visual_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_11" contype="0" conaffinity="0" group="2" material="robot_gloss_white" rgba="0.92000000000000004 0.93000000000000005 0.93999999999999995 1" solref=".004 1" solimp=".98 .995 .0005" />
+                  <geom name="lsrobot_arm_link3_m_collision_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_11" contype="1" conaffinity="1" group="3" rgba=".5 .5 .5 0" solref=".004 1" solimp=".98 .995 .0005" />
+                  <body name="lsrobot_arm_link4_m" pos="0.01499999 0.098 -0" quat="1 0 0 0">
+                    <inertial pos="-0.00742754 0.05625013 -0.01314285" mass="1.24697557074969" fullinertia="0.00608488 0.0014525300000000001 0.00591488 0.00053326999999999997 9.2860000000000002e-05 -0.00077970999999999997" />
+                    <joint name="lsrobot_arm_joint4_m" type="hinge" axis="0 0 -1" range="-1.7103999999999999 2.5133000000000001" damping="1" armature=".01" />
+                    <geom name="lsrobot_arm_link4_m_visual_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_13" contype="0" conaffinity="0" group="2" material="robot_gloss_white" rgba="0.92000000000000004 0.93000000000000005 0.93999999999999995 1" solref=".004 1" solimp=".98 .995 .0005" />
+                    <geom name="lsrobot_arm_link4_m_collision_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_13" contype="1" conaffinity="1" group="3" rgba=".5 .5 .5 0" solref=".004 1" solimp=".98 .995 .0005" />
+                    <body name="lsrobot_arm_link5_m" pos="-0.01500001 0.16850001 -0.00100005" quat="1 0 0 0">
+                      <inertial pos="0.00125837 0.05581976 0.02378418" mass="0.263415610597945" fullinertia="0.00046068999999999998 0.00024143 0.00043609999999999998 -7.4100000000000002e-06 -1.28e-06 -0.00013998999999999999" />
+                      <joint name="lsrobot_arm_joint5_m" type="hinge" axis="0 -1 0" range="-3.1415999999999999 3.1415999999999999" damping="1" armature=".01" />
+                      <geom name="lsrobot_arm_link5_m_visual_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_15" contype="0" conaffinity="0" group="2" material="robot_gloss_white" rgba="0.92000000000000004 0.93000000000000005 0.93999999999999995 1" solref=".004 1" solimp=".98 .995 .0005" />
+                      <geom name="lsrobot_arm_link5_m_collision_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_15" contype="1" conaffinity="1" group="3" rgba=".5 .5 .5 0" solref=".004 1" solimp=".98 .995 .0005" />
+                      <body name="lsrobot_arm_link6_m" pos="-1e-08 0.086 -0" quat="1 0 0 0">
+                        <inertial pos="-0.00050278 0.0552966 -0.00948457" mass="0.983402067157163" fullinertia="0.0037848199999999999 0.00092048 0.00365556 -2.1880000000000001e-05 -6.8600000000000004e-06 -0.00041357999999999998" />
+                        <joint name="lsrobot_arm_joint6_m" type="hinge" axis="0 0 -1" range="-2.0943999999999998 2.0943999999999998" damping="1" armature=".01" />
+                        <geom name="lsrobot_arm_link6_m_visual_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_17" contype="0" conaffinity="0" group="2" material="robot_gloss_white" rgba="0.92000000000000004 0.93000000000000005 0.93999999999999995 1" solref=".004 1" solimp=".98 .995 .0005" />
+                        <geom name="lsrobot_arm_link6_m_collision_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_17" contype="1" conaffinity="1" group="3" rgba=".5 .5 .5 0" solref=".004 1" solimp=".98 .995 .0005" />
+                        <body name="lsrobot_arm_link7_m" pos="-5.288e-05 0.15350001 -0.00099864" quat="1 0 0 0">
+                          <inertial pos="0 0 0" mass="0.01" fullinertia="9.9999999999999995e-07 9.9999999999999995e-07 9.9999999999999995e-07 0 0 0" />
+                          <joint name="lsrobot_arm_joint7_m" type="hinge" axis="0 -1 0" range="-3.1415999999999999 3.1415999999999999" damping="1" armature=".01" />
+                          <geom name="lsrobot_arm_link7_m_visual_0" pos="0 0 0" quat="1 0 0 0" type="cylinder" size="0.001 0.00050000000000000001" contype="0" conaffinity="0" group="2" material="robot_gloss_white" rgba="0.92000000000000004 0.93000000000000005 0.93999999999999995 1" solref=".004 1" solimp=".98 .995 .0005" />
+                          <geom name="lsrobot_arm_link7_m_collision_0" pos="0 0 0" quat="1 0 0 0" type="cylinder" size="0.001 0.00050000000000000001" contype="1" conaffinity="1" group="3" rgba=".5 .5 .5 0" solref=".004 1" solimp=".98 .995 .0005" />
+                          <body name="lh_hand_base_link" pos="0 0 0" quat="0.70710678118654757 -0.70710678118654746 0 0">
+                            <inertial pos="-0.00157788568070457 -0.00034876725935859 0.0538452219801211" mass="0.0672935238166485" fullinertia="5.2252521216095397e-05 3.3352234920772399e-05 2.28469461105385e-05 3.06955729584715e-07 -3.9034116695052098e-07 -7.7668006357462705e-07" />
+                            <geom name="lh_hand_base_link_visual_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_18" contype="0" conaffinity="0" group="2" material="robot_gloss_white" rgba="0.92000000000000004 0.93000000000000005 0.93999999999999995 1" solref=".004 1" solimp=".98 .995 .0005" />
+                            <geom name="lh_hand_base_link_collision_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_18" contype="1" conaffinity="1" group="3" rgba=".5 .5 .5 0" solref=".005 1" solimp=".5 .99 .0001 .5 2" friction=".6 .02 .001" condim="4" />
+                            <body name="lh_thumb_metacarpals_base2" pos="0.011508 -0.022975 0.032794" quat="1 0 0 0">
+                              <inertial pos="0.00162800681276937 -0.0027668017246415 -0.00184234438641236" mass="0.00138588296544333" fullinertia="5.2629216068590899e-08 4.8262049157032601e-08 2.88550286112821e-08 -3.9288868164056802e-09 -2.4376737129522201e-09 3.71869784206147e-09" />
+                              <joint name="lh_thumb_cmc_yaw" type="hinge" axis="0 0 1" range="0 1.3" damping=".05" armature=".0002" frictionloss=".01" />
+                              <geom name="lh_thumb_metacarpals_base2_visual_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_19" contype="0" conaffinity="0" group="2" material="robot_gloss_white" rgba="0.92000000000000004 0.93000000000000005 0.93999999999999995 1" solref=".004 1" solimp=".98 .995 .0005" />
+                              <geom name="lh_thumb_metacarpals_base2_collision_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_19" contype="1" conaffinity="1" group="3" rgba=".5 .5 .5 0" solref=".005 1" solimp=".5 .99 .0001 .5 2" friction=".6 .02 .001" condim="4" />
+                              <body name="lh_thumb_metacarpals" pos="0.0061649 -0.010678 -0.004891" quat="0.41919965200090403 0.47202872075866492 -0.27252436779004574 0.72607920194831033">
+                                <inertial pos="4.24816204999817E-05 1.74183907812875E-05 0.0228341640631254" mass="0.0123381586619931" fullinertia="1.10292537368909e-06 1.7675777255188401e-06 9.3634779241109799e-07 -5.9964223277787703e-10 -1.14233573940545e-07 -4.0396357082377702e-10" />
+                                <joint name="lh_thumb_cmc_pitch" type="hinge" axis="0 1 0" range="0 0.47161572052401751" damping=".05" armature=".0002" frictionloss=".01" />
+                                <geom name="lh_thumb_metacarpals_visual_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_20" contype="0" conaffinity="0" group="2" material="robot_gloss_white" rgba="0.92000000000000004 0.93000000000000005 0.93999999999999995 1" solref=".004 1" solimp=".98 .995 .0005" />
+                                <geom name="lh_thumb_metacarpals_collision_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_20" contype="1" conaffinity="1" group="3" rgba=".5 .5 .5 0" solref=".005 1" solimp=".5 .99 .0001 .5 2" friction=".6 .02 .001" condim="4" />
+                                <body name="lh_thumb_distal" pos="0.0037776 0 0.045368" quat="1 0 0 0">
+                                  <inertial pos="-0.00413725702921841 -5.90704520436747E-08 0.023011401589736" mass="0.00763332957284057" fullinertia="1.3057487813702001e-06 1.2248908905340999e-06 2.77271910592615e-07 -1.19781508112714e-11 -7.1955169726854102e-08 4.5534797465267901e-12" />
+                                  <joint name="lh_thumb_ip" type="hinge" axis="0 1 0" range="0 1.08" damping=".05" armature=".0002" frictionloss=".01" />
+                                  <geom name="lh_thumb_distal_visual_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_21" contype="0" conaffinity="0" group="2" material="robot_gloss_white" rgba="0.92000000000000004 0.93000000000000005 0.93999999999999995 1" solref=".004 1" solimp=".98 .995 .0005" />
+                                  <geom name="lh_thumb_distal_collision_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_21" contype="1" conaffinity="1" group="3" rgba=".5 .5 .5 0" solref=".005 1" solimp=".5 .99 .0001 .5 2" friction=".6 .02 .001" condim="4" />
+                                </body>
+                              </body>
+                            </body>
+                            <body name="lh_index_proximal" pos="0.0024758 -0.02419 0.098779" quat="0.99965732337300039 0.026177009506979564 0 0">
+                              <inertial pos="-0.00208656556336452 2.53838713251686E-06 0.0172734941980264" mass="0.00253174651934627" fullinertia="2.6598871415779902e-07 2.7291406916623299e-07 8.5601730563674805e-08 -1.6717457882582401e-11 -4.31047725546034e-08 1.8756709532167e-10" />
+                              <joint name="lh_index_mcp_pitch" type="hinge" axis="0 1 0" range="0 1.60" damping=".05" armature=".0002" frictionloss=".01" />
+                              <geom name="lh_index_proximal_visual_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_22" contype="0" conaffinity="0" group="2" material="robot_gloss_white" rgba="0.92000000000000004 0.93000000000000005 0.93999999999999995 1" solref=".004 1" solimp=".98 .995 .0005" />
+                              <geom name="lh_index_proximal_collision_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_22" contype="1" conaffinity="1" group="3" rgba=".5 .5 .5 0" solref=".005 1" solimp=".5 .99 .0001 .5 2" friction=".6 .02 .001" condim="4" />
+                              <body name="lh_index_distal" pos="-0.0052516 0 0.036625" quat="1 0 0 0">
+                                <inertial pos="0.00658986616416549 5.13855642059191E-06 0.0194393600039178" mass="0.00376951085886838" fullinertia="3.2234710608504302e-07 3.6532813372150902e-07 1.2428799638644199e-07 1.3801788663582001e-11 1.14352857317951e-07 -2.1150501170563399e-10" />
+                                <joint name="lh_index_dip" type="hinge" axis="0 1 0" range="0 1.43" damping=".05" armature=".0002" frictionloss=".01" />
+                                <geom name="lh_index_distal_visual_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_23" contype="0" conaffinity="0" group="2" material="robot_gloss_white" rgba="0.92000000000000004 0.93000000000000005 0.93999999999999995 1" solref=".004 1" solimp=".98 .995 .0005" />
+                                <geom name="lh_index_distal_collision_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_23" contype="1" conaffinity="1" group="3" rgba=".5 .5 .5 0" solref=".005 1" solimp=".5 .99 .0001 .5 2" friction=".6 .02 .001" condim="4" />
+                              </body>
+                            </body>
+                            <body name="lh_middle_proximal" pos="0.00052576 -0.00634 0.1027" quat="1 0 0 0">
+                              <inertial pos="-0.00208660654138235 2.56918180119303E-06 0.0172735011723351" mass="0.00253177375206983" fullinertia="2.65989021304483e-07 2.72914402745606e-07 8.5602213431864995e-08 -1.6981604663566201e-11 -4.3104668321527302e-08 1.8748465232439501e-10" />
+                              <joint name="lh_middle_mcp_pitch" type="hinge" axis="0 1 0" range="0 1.60" damping=".05" armature=".0002" frictionloss=".01" />
+                              <geom name="lh_middle_proximal_visual_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_24" contype="0" conaffinity="0" group="2" material="robot_gloss_white" rgba="0.92000000000000004 0.93000000000000005 0.93999999999999995 1" solref=".004 1" solimp=".98 .995 .0005" />
+                              <geom name="lh_middle_proximal_collision_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_24" contype="1" conaffinity="1" group="3" rgba=".5 .5 .5 0" solref=".005 1" solimp=".5 .99 .0001 .5 2" friction=".6 .02 .001" condim="4" />
+                              <body name="lh_middle_distal" pos="-0.0052516 0 0.036625" quat="1 0 0 0">
+                                <inertial pos="0.00658986516319194 5.10862924271716E-06 0.0194393315699782" mass="0.00376952789210256" fullinertia="3.22348591068053e-07 3.6532953508775501e-07 1.24288425862546e-07 1.37122394856588e-11 1.1435291391668e-07 -2.10453810291991e-10" />
+                                <joint name="lh_middle_dip" type="hinge" axis="0 1 0" range="0 1.43" damping=".05" armature=".0002" frictionloss=".01" />
+                                <geom name="lh_middle_distal_visual_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_25" contype="0" conaffinity="0" group="2" material="robot_gloss_white" rgba="0.92000000000000004 0.93000000000000005 0.93999999999999995 1" solref=".004 1" solimp=".98 .995 .0005" />
+                                <geom name="lh_middle_distal_collision_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_25" contype="1" conaffinity="1" group="3" rgba=".5 .5 .5 0" solref=".005 1" solimp=".5 .99 .0001 .5 2" friction=".6 .02 .001" condim="4" />
+                              </body>
+                            </body>
+                            <body name="lh_ring_proximal" pos="0.0010258 0.011135 0.098767" quat="0.99965732337300039 -0.026177009506979564 0 0">
+                              <inertial pos="-0.00208667931345812 2.63000419462034E-06 0.0172734926448377" mass="0.00253182223645066" fullinertia="2.6598975607658398e-07 2.7291510093393e-07 8.5603152276590904e-08 -1.7491295270365599e-11 -4.3104332559425299e-08 1.87158326740895e-10" />
+                              <joint name="lh_ring_mcp_pitch" type="hinge" axis="0 1 0" range="0 1.60" damping=".05" armature=".0002" frictionloss=".01" />
+                              <geom name="lh_ring_proximal_visual_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_26" contype="0" conaffinity="0" group="2" material="robot_gloss_white" rgba="0.92000000000000004 0.93000000000000005 0.93999999999999995 1" solref=".004 1" solimp=".98 .995 .0005" />
+                              <geom name="lh_ring_proximal_collision_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_26" contype="1" conaffinity="1" group="3" rgba=".5 .5 .5 0" solref=".005 1" solimp=".5 .99 .0001 .5 2" friction=".6 .02 .001" condim="4" />
+                              <body name="lh_ring_distal" pos="-0.0052516 0 0.036625" quat="1 0 0 0">
+                                <inertial pos="0.00658986648895491 5.05883528165163E-06 0.019439397215532" mass="0.00376949588316609" fullinertia="3.2234524157180999e-07 3.6532657010214699e-07 1.2428777021813501e-07 1.35766976056011e-11 1.14353011012842e-07 -2.08672149138738e-10" />
+                                <joint name="lh_ring_dip" type="hinge" axis="0 1 0" range="0 1.43" damping=".05" armature=".0002" frictionloss=".01" />
+                                <geom name="lh_ring_distal_visual_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_27" contype="0" conaffinity="0" group="2" material="robot_gloss_white" rgba="0.92000000000000004 0.93000000000000005 0.93999999999999995 1" solref=".004 1" solimp=".98 .995 .0005" />
+                                <geom name="lh_ring_distal_collision_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_27" contype="1" conaffinity="1" group="3" rgba=".5 .5 .5 0" solref=".005 1" solimp=".5 .99 .0001 .5 2" friction=".6 .02 .001" condim="4" />
+                              </body>
+                            </body>
+                            <body name="lh_pinky_proximal" pos="0.0024758 0.028372 0.092741" quat="0.99904823167098911 -0.043619156285622802 0 0">
+                              <inertial pos="-0.00208673599799501 2.68062251165824E-06 0.0172734848131236" mass="0.00253185993162408" fullinertia="2.6599033687183001e-07 2.7291561738157698e-07 8.5603917503487098e-08 -1.79030790016555e-11 -4.3104082956578097e-08 1.8690678742048601e-10" />
+                              <joint name="lh_pinky_mcp_pitch" type="hinge" axis="0 1 0" range="0 1.60" damping=".05" armature=".0002" frictionloss=".01" />
+                              <geom name="lh_pinky_proximal_visual_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_28" contype="0" conaffinity="0" group="2" material="robot_gloss_white" rgba="0.92000000000000004 0.93000000000000005 0.93999999999999995 1" solref=".004 1" solimp=".98 .995 .0005" />
+                              <geom name="lh_pinky_proximal_collision_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_28" contype="1" conaffinity="1" group="3" rgba=".5 .5 .5 0" solref=".005 1" solimp=".5 .99 .0001 .5 2" friction=".6 .02 .001" condim="4" />
+                              <body name="lh_pinky_distal" pos="-0.0052516 0 0.036625" quat="1 0 0 0">
+                                <inertial pos="0.00658987588903027 5.03087534178825E-06 0.0194394491065091" mass="0.00376948071276134" fullinertia="3.2234358373048798e-07 3.6532518088418301e-07 1.24287567374229e-07 1.35768173270357e-11 1.14353289593012e-07 -2.0744198062439001e-10" />
+                                <joint name="lh_pinky_dip" type="hinge" axis="0 1 0" range="0 1.43" damping=".05" armature=".0002" frictionloss=".01" />
+                                <geom name="lh_pinky_distal_visual_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_29" contype="0" conaffinity="0" group="2" material="robot_gloss_white" rgba="0.92000000000000004 0.93000000000000005 0.93999999999999995 1" solref=".004 1" solimp=".98 .995 .0005" />
+                                <geom name="lh_pinky_distal_collision_0" pos="0 0 0" quat="1 0 0 0" type="mesh" mesh="mesh_29" contype="1" conaffinity="1" group="3" rgba=".5 .5 .5 0" solref=".005 1" solimp=".5 .99 .0001 .5 2" friction=".6 .02 .001" condim="4" />
+                              </body>
+                            </body>
+                          </body>
+                        </body>
+                      </body>
+                    </body>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+    <light pos="2 -2 2" dir="-.4 .3 -1" diffuse=".6 .6 .6" castshadow="true" />
+    <light pos="2 -2 2" dir="-.4 .3 -1" diffuse=".4 .4 .4" castshadow="false" />
+    <geom name="floor" type="plane" size="5 5 .02" material="floor_mat" solref=".004 1" solimp=".98 .995 .0005" pos="0 0 -1.48" />
+    <body name="table">
+      <geom name="table_top" type="box" pos="0.5599999999999999 0.0 -0.5750000000000001" size=".36 .80 .025" material="wood" friction=".6 .02 .001" solref=".005 1" solimp=".5 .99 .0001 .5 2" />
+      <geom name="table_leg_0" type="box" pos="0.27999999999999997 -0.73 -1.04" size="0.025 0.025 0.43999999999999995" material="wood" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="table_leg_1" type="box" pos="0.84 -0.73 -1.04" size="0.025 0.025 0.43999999999999995" material="wood" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="table_leg_2" type="box" pos="0.27999999999999997 0.73 -1.04" size="0.025 0.025 0.43999999999999995" material="wood" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="table_leg_3" type="box" pos="0.84 0.73 -1.04" size="0.025 0.025 0.43999999999999995" material="wood" solref=".004 1" solimp=".98 .995 .0005" />
+    </body>
+    <body name="crate" pos="0.48 0.0 -0.549" quat="0.7071067811865476 0 0 -0.7071067811865476">
+      <freejoint name="crate_free" />
+      <geom name="crate_visual" type="mesh" mesh="crate_visual" material="crate_blue" contype="0" conaffinity="0" group="2" mass="0.0" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_0" type="mesh" mesh="crate_col_0" mass="0.040988847128901565" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_1" type="mesh" mesh="crate_col_1" mass="0.07891314875075334" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_2" type="mesh" mesh="crate_col_2" mass="0.0020841802454725816" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_3" type="mesh" mesh="crate_col_3" mass="0.008885372529009677" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_4" type="mesh" mesh="crate_col_4" mass="0.04626162150435732" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_5" type="mesh" mesh="crate_col_5" mass="0.001852941379521618" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_6" type="mesh" mesh="crate_col_6" mass="0.017190468253469534" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_7" type="mesh" mesh="crate_col_7" mass="0.0037984794783048645" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_8" type="mesh" mesh="crate_col_8" mass="0.07169576725612674" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_9" type="mesh" mesh="crate_col_9" mass="0.0171841853553193" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_10" type="mesh" mesh="crate_col_10" mass="0.04649241436189874" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_11" type="mesh" mesh="crate_col_11" mass="0.008185957850312025" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_12" type="mesh" mesh="crate_col_12" mass="0.008798466363130112" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_13" type="mesh" mesh="crate_col_13" mass="0.012291881713789308" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_14" type="mesh" mesh="crate_col_14" mass="0.00850075491855244" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_15" type="mesh" mesh="crate_col_15" mass="0.025240657965902337" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_16" type="mesh" mesh="crate_col_16" mass="0.010893179586562829" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_17" type="mesh" mesh="crate_col_17" mass="0.024471823378308978" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_18" type="mesh" mesh="crate_col_18" mass="0.008196164201087793" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_19" type="mesh" mesh="crate_col_19" mass="0.0027400190265835234" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_20" type="mesh" mesh="crate_col_20" mass="0.00914052876953982" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_21" type="mesh" mesh="crate_col_21" mass="0.003744489136572894" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_22" type="mesh" mesh="crate_col_22" mass="0.013795014585840981" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_23" type="mesh" mesh="crate_col_23" mass="0.0028239041763375057" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_24" type="mesh" mesh="crate_col_24" mass="0.014230099790181956" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_25" type="mesh" mesh="crate_col_25" mass="0.06619501032902392" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_26" type="mesh" mesh="crate_col_26" mass="0.011860935134839538" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_27" type="mesh" mesh="crate_col_27" mass="0.004357081528449553" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_28" type="mesh" mesh="crate_col_28" mass="0.012654900579516721" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_29" type="mesh" mesh="crate_col_29" mass="0.002607407946299962" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_30" type="mesh" mesh="crate_col_30" mass="0.0032408401366321397" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_31" type="mesh" mesh="crate_col_31" mass="0.015245915789518234" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_32" type="mesh" mesh="crate_col_32" mass="0.029996639289351826" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_33" type="mesh" mesh="crate_col_33" mass="0.0788268220415207" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_34" type="mesh" mesh="crate_col_34" mass="0.0024472602744598647" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_35" type="mesh" mesh="crate_col_35" mass="0.0029673328637996148" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_36" type="mesh" mesh="crate_col_36" mass="0.005852050012692163" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_37" type="mesh" mesh="crate_col_37" mass="0.0003823187539808695" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_38" type="mesh" mesh="crate_col_38" mass="0.0018472162669423105" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_39" type="mesh" mesh="crate_col_39" mass="0.0022756633485016124" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_40" type="mesh" mesh="crate_col_40" mass="0.0018593290316967267" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_41" type="mesh" mesh="crate_col_41" mass="0.001327311325627762" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_42" type="mesh" mesh="crate_col_42" mass="0.014551733270492972" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_43" type="mesh" mesh="crate_col_43" mass="0.011316390477118538" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_44" type="mesh" mesh="crate_col_44" mass="0.010181782836081656" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_45" type="mesh" mesh="crate_col_45" mass="0.012417081420146928" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_46" type="mesh" mesh="crate_col_46" mass="0.0128524255387501" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_47" type="mesh" mesh="crate_col_47" mass="0.00497112887941736" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_48" type="mesh" mesh="crate_col_48" mass="0.011075569775992528" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_49" type="mesh" mesh="crate_col_49" mass="0.015291782878983777" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_50" type="mesh" mesh="crate_col_50" mass="0.006713463691332519" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_51" type="mesh" mesh="crate_col_51" mass="0.054943562388458635" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_52" type="mesh" mesh="crate_col_52" mass="0.01730538218276846" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_53" type="mesh" mesh="crate_col_53" mass="0.020230890564196132" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_54" type="mesh" mesh="crate_col_54" mass="0.017175092053844262" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_55" type="mesh" mesh="crate_col_55" mass="0.007911261927929712" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_56" type="mesh" mesh="crate_col_56" mass="0.001895160925164392" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_57" type="mesh" mesh="crate_col_57" mass="0.001857181045128335" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_58" type="mesh" mesh="crate_col_58" mass="0.0058168077045482195" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_59" type="mesh" mesh="crate_col_59" mass="0.00295882782803781" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_60" type="mesh" mesh="crate_col_60" mass="0.01972291798377188" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_61" type="mesh" mesh="crate_col_61" mass="0.014188766800004705" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_62" type="mesh" mesh="crate_col_62" mass="0.012390781175021268" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_63" type="mesh" mesh="crate_col_63" mass="0.004005578013499088" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_64" type="mesh" mesh="crate_col_64" mass="0.018285490421628376" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_65" type="mesh" mesh="crate_col_65" mass="0.005051117287525078" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_66" type="mesh" mesh="crate_col_66" mass="0.0025109725995811475" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_67" type="mesh" mesh="crate_col_67" mass="0.0025166061283641732" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_68" type="mesh" mesh="crate_col_68" mass="0.00023109272028738853" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_69" type="mesh" mesh="crate_col_69" mass="0.013352505538573615" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_70" type="mesh" mesh="crate_col_70" mass="0.010343990830925463" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_71" type="mesh" mesh="crate_col_71" mass="0.0069966330589925595" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_72" type="mesh" mesh="crate_col_72" mass="0.016194990502569364" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_73" type="mesh" mesh="crate_col_73" mass="0.006238258452931803" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_74" type="mesh" mesh="crate_col_74" mass="0.0019082572543670012" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_75" type="mesh" mesh="crate_col_75" mass="0.07067275759883342" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_76" type="mesh" mesh="crate_col_76" mass="0.002604041104737621" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_77" type="mesh" mesh="crate_col_77" mass="0.006684986555359193" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_78" type="mesh" mesh="crate_col_78" mass="0.007458166400278673" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_79" type="mesh" mesh="crate_col_79" mass="0.004944662271068663" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_80" type="mesh" mesh="crate_col_80" mass="0.0036314193333669923" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_81" type="mesh" mesh="crate_col_81" mass="0.018460737831785517" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_82" type="mesh" mesh="crate_col_82" mass="0.030021614056025638" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_83" type="mesh" mesh="crate_col_83" mass="0.014297155883605753" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_84" type="mesh" mesh="crate_col_84" mass="0.010761021068112069" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_85" type="mesh" mesh="crate_col_85" mass="0.004022859493378188" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_86" type="mesh" mesh="crate_col_86" mass="0.0517151095096911" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_87" type="mesh" mesh="crate_col_87" mass="0.0035861305800671153" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_88" type="mesh" mesh="crate_col_88" mass="0.0018731992520757516" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_89" type="mesh" mesh="crate_col_89" mass="0.004746615166268971" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_90" type="mesh" mesh="crate_col_90" mass="0.0006810276448497667" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_91" type="mesh" mesh="crate_col_91" mass="0.002645756295724482" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_92" type="mesh" mesh="crate_col_92" mass="0.002559649591683204" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_93" type="mesh" mesh="crate_col_93" mass="0.0011771146712404035" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_94" type="mesh" mesh="crate_col_94" mass="0.004625627685361434" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_95" type="mesh" mesh="crate_col_95" mass="0.004818861584072607" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_96" type="mesh" mesh="crate_col_96" mass="0.0033182067600473226" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_97" type="mesh" mesh="crate_col_97" mass="0.001308242872139154" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_98" type="mesh" mesh="crate_col_98" mass="0.0010384625558009057" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_99" type="mesh" mesh="crate_col_99" mass="0.010343195502225611" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_100" type="mesh" mesh="crate_col_100" mass="0.0020348442095125424" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_101" type="mesh" mesh="crate_col_101" mass="0.005503920053748974" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_102" type="mesh" mesh="crate_col_102" mass="0.0015761111081501141" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_103" type="mesh" mesh="crate_col_103" mass="0.005011581867190922" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_104" type="mesh" mesh="crate_col_104" mass="0.008711271477463867" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_105" type="mesh" mesh="crate_col_105" mass="0.007971731409057601" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_106" type="mesh" mesh="crate_col_106" mass="0.005102907562301234" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_107" type="mesh" mesh="crate_col_107" mass="0.0059116724137144" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_108" type="mesh" mesh="crate_col_108" mass="0.004763028254238748" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_109" type="mesh" mesh="crate_col_109" mass="0.00650065007308842" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_110" type="mesh" mesh="crate_col_110" mass="0.006030371716977529" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_111" type="mesh" mesh="crate_col_111" mass="0.02131240622628952" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_112" type="mesh" mesh="crate_col_112" mass="0.004966254656318268" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_113" type="mesh" mesh="crate_col_113" mass="0.0011856238234801864" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_114" type="mesh" mesh="crate_col_114" mass="0.0009973719457645402" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_115" type="mesh" mesh="crate_col_115" mass="0.004588941379572878" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_116" type="mesh" mesh="crate_col_116" mass="0.0014092486445530163" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_117" type="mesh" mesh="crate_col_117" mass="0.0012746603119640405" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_118" type="mesh" mesh="crate_col_118" mass="0.000642229849488314" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_119" type="mesh" mesh="crate_col_119" mass="0.0019244686413679606" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_120" type="mesh" mesh="crate_col_120" mass="0.0007879344169845958" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_121" type="mesh" mesh="crate_col_121" mass="0.0336505498495554" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_122" type="mesh" mesh="crate_col_122" mass="0.0019061783707013922" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_123" type="mesh" mesh="crate_col_123" mass="0.02756878746283092" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_124" type="mesh" mesh="crate_col_124" mass="0.010692324674036245" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_125" type="mesh" mesh="crate_col_125" mass="0.009604727621249956" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_126" type="mesh" mesh="crate_col_126" mass="0.006724566556291559" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_127" type="mesh" mesh="crate_col_127" mass="0.025445694498382083" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_128" type="mesh" mesh="crate_col_128" mass="0.0014043585217604088" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_129" type="mesh" mesh="crate_col_129" mass="0.0051576622868813" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_130" type="mesh" mesh="crate_col_130" mass="0.0004416838361974797" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_131" type="mesh" mesh="crate_col_131" mass="0.0005583439566103173" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_132" type="mesh" mesh="crate_col_132" mass="0.0031666558030498124" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_133" type="mesh" mesh="crate_col_133" mass="0.009464797465794721" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_134" type="mesh" mesh="crate_col_134" mass="0.006808717165644396" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_135" type="mesh" mesh="crate_col_135" mass="0.002735322282760298" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_136" type="mesh" mesh="crate_col_136" mass="0.0011515033035801642" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_137" type="mesh" mesh="crate_col_137" mass="0.004657819564018594" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_138" type="mesh" mesh="crate_col_138" mass="0.0042283550951438325" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_139" type="mesh" mesh="crate_col_139" mass="0.017337037240809167" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_140" type="mesh" mesh="crate_col_140" mass="0.003478858959351991" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_141" type="mesh" mesh="crate_col_141" mass="0.000555276094605789" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_142" type="mesh" mesh="crate_col_142" mass="0.0008140347380239332" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_143" type="mesh" mesh="crate_col_143" mass="0.002743549426983481" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_144" type="mesh" mesh="crate_col_144" mass="0.0031231946447237637" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_145" type="mesh" mesh="crate_col_145" mass="0.00714473308695191" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_146" type="mesh" mesh="crate_col_146" mass="0.006928948498809245" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_147" type="mesh" mesh="crate_col_147" mass="0.003043318807307522" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_148" type="mesh" mesh="crate_col_148" mass="0.0005537817723301505" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_149" type="mesh" mesh="crate_col_149" mass="0.0011869899100418963" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_150" type="mesh" mesh="crate_col_150" mass="0.0004984059446744436" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_151" type="mesh" mesh="crate_col_151" mass="0.0005478466299573708" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_152" type="mesh" mesh="crate_col_152" mass="0.0007737243546986805" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_153" type="mesh" mesh="crate_col_153" mass="0.0014779593782869597" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_154" type="mesh" mesh="crate_col_154" mass="0.005739080727652284" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_155" type="mesh" mesh="crate_col_155" mass="0.0005554496130896271" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_156" type="mesh" mesh="crate_col_156" mass="0.00674515411182307" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_157" type="mesh" mesh="crate_col_157" mass="0.003989996813271505" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_158" type="mesh" mesh="crate_col_158" mass="0.005495032635314538" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_159" type="mesh" mesh="crate_col_159" mass="0.0031135861273135683" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_160" type="mesh" mesh="crate_col_160" mass="0.0005533258068431316" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_161" type="mesh" mesh="crate_col_161" mass="0.007256696804620266" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_162" type="mesh" mesh="crate_col_162" mass="0.006327500498703848" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_163" type="mesh" mesh="crate_col_163" mass="0.00815943739094497" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_164" type="mesh" mesh="crate_col_164" mass="0.0019979872660924286" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_165" type="mesh" mesh="crate_col_165" mass="0.0015266415918466546" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_166" type="mesh" mesh="crate_col_166" mass="0.013646918299101496" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_167" type="mesh" mesh="crate_col_167" mass="0.0018501472116465478" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_168" type="mesh" mesh="crate_col_168" mass="0.001943774805696253" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_169" type="mesh" mesh="crate_col_169" mass="0.001330158733000325" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_170" type="mesh" mesh="crate_col_170" mass="0.002337919750697863" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_171" type="mesh" mesh="crate_col_171" mass="0.008016956583976224" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_172" type="mesh" mesh="crate_col_172" mass="0.004653001523987891" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_173" type="mesh" mesh="crate_col_173" mass="0.0032145131827437446" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_174" type="mesh" mesh="crate_col_174" mass="0.04451330861319797" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_175" type="mesh" mesh="crate_col_175" mass="0.002790664915633479" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_176" type="mesh" mesh="crate_col_176" mass="0.0013964846949933803" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_177" type="mesh" mesh="crate_col_177" mass="0.001021226144484665" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_178" type="mesh" mesh="crate_col_178" mass="0.0002491578657286687" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_179" type="mesh" mesh="crate_col_179" mass="0.0003058213706895053" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_180" type="mesh" mesh="crate_col_180" mass="0.0005765456429051245" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_181" type="mesh" mesh="crate_col_181" mass="0.0007128510524278764" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_182" type="mesh" mesh="crate_col_182" mass="0.0024976213626388454" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_183" type="mesh" mesh="crate_col_183" mass="0.0010838362281730873" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_184" type="mesh" mesh="crate_col_184" mass="0.002459956405930646" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_185" type="mesh" mesh="crate_col_185" mass="0.008709368385176644" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_186" type="mesh" mesh="crate_col_186" mass="0.0004903533938029625" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_187" type="mesh" mesh="crate_col_187" mass="0.001070195159115517" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_188" type="mesh" mesh="crate_col_188" mass="0.010093134287347191" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_189" type="mesh" mesh="crate_col_189" mass="0.002239064078983001" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_190" type="mesh" mesh="crate_col_190" mass="0.0008938605700103555" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_191" type="mesh" mesh="crate_col_191" mass="0.0022553589403499544" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_192" type="mesh" mesh="crate_col_192" mass="0.0014569206957735711" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_193" type="mesh" mesh="crate_col_193" mass="0.005246278833289001" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_194" type="mesh" mesh="crate_col_194" mass="0.0019977247557471734" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_195" type="mesh" mesh="crate_col_195" mass="0.009511047726062635" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_196" type="mesh" mesh="crate_col_196" mass="0.002000599863673054" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_197" type="mesh" mesh="crate_col_197" mass="0.0012843095122815461" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_198" type="mesh" mesh="crate_col_198" mass="0.0016274325271093755" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_199" type="mesh" mesh="crate_col_199" mass="0.001664891627025828" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_200" type="mesh" mesh="crate_col_200" mass="0.0003940522979974274" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_201" type="mesh" mesh="crate_col_201" mass="0.0003961961681792488" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_202" type="mesh" mesh="crate_col_202" mass="0.004509747698385283" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_203" type="mesh" mesh="crate_col_203" mass="0.00534770526419974" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_204" type="mesh" mesh="crate_col_204" mass="0.0009209508277078376" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_205" type="mesh" mesh="crate_col_205" mass="0.00040145101750310453" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_206" type="mesh" mesh="crate_col_206" mass="0.002847365724421741" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_207" type="mesh" mesh="crate_col_207" mass="0.0007307853489761188" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_208" type="mesh" mesh="crate_col_208" mass="0.0033614507003376726" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_209" type="mesh" mesh="crate_col_209" mass="0.005709656326472048" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_210" type="mesh" mesh="crate_col_210" mass="0.0007120869941881808" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_211" type="mesh" mesh="crate_col_211" mass="0.0012804509981255718" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_212" type="mesh" mesh="crate_col_212" mass="0.004921470488982839" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_213" type="mesh" mesh="crate_col_213" mass="0.00039763872808461985" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_214" type="mesh" mesh="crate_col_214" mass="0.0033764439389637984" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_215" type="mesh" mesh="crate_col_215" mass="0.000750638835801848" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_216" type="mesh" mesh="crate_col_216" mass="0.0032911194506614542" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_217" type="mesh" mesh="crate_col_217" mass="0.0003109431135554613" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_218" type="mesh" mesh="crate_col_218" mass="0.002423349741566551" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_219" type="mesh" mesh="crate_col_219" mass="0.0008305661036543216" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_220" type="mesh" mesh="crate_col_220" mass="0.0011988346201126784" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_221" type="mesh" mesh="crate_col_221" mass="0.0016600246332260976" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_222" type="mesh" mesh="crate_col_222" mass="0.0021950745955769953" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_223" type="mesh" mesh="crate_col_223" mass="0.0009699363724999018" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_224" type="mesh" mesh="crate_col_224" mass="0.00042495563134854937" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_225" type="mesh" mesh="crate_col_225" mass="0.0008477261682691853" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_226" type="mesh" mesh="crate_col_226" mass="0.0005034692940246555" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_227" type="mesh" mesh="crate_col_227" mass="0.009280273968261381" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_228" type="mesh" mesh="crate_col_228" mass="0.008785625480956988" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_229" type="mesh" mesh="crate_col_229" mass="0.0016589921363404797" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_230" type="mesh" mesh="crate_col_230" mass="0.0005295416526139573" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_231" type="mesh" mesh="crate_col_231" mass="0.0018025694703096987" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_232" type="mesh" mesh="crate_col_232" mass="0.001640853941190007" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_233" type="mesh" mesh="crate_col_233" mass="0.0030053869781235705" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_234" type="mesh" mesh="crate_col_234" mass="0.0040124064234354165" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_235" type="mesh" mesh="crate_col_235" mass="0.0016435550004374273" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_236" type="mesh" mesh="crate_col_236" mass="0.00039804151478772614" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_237" type="mesh" mesh="crate_col_237" mass="0.0018720639986929924" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_238" type="mesh" mesh="crate_col_238" mass="0.0008062395154040805" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_239" type="mesh" mesh="crate_col_239" mass="0.0018134543170357843" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_240" type="mesh" mesh="crate_col_240" mass="0.011581510651113944" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_241" type="mesh" mesh="crate_col_241" mass="0.0009747775349686218" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_242" type="mesh" mesh="crate_col_242" mass="0.0038190632684023274" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_243" type="mesh" mesh="crate_col_243" mass="0.001122425854271755" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_244" type="mesh" mesh="crate_col_244" mass="0.0006349590655138119" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_245" type="mesh" mesh="crate_col_245" mass="0.0008747324777065885" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_246" type="mesh" mesh="crate_col_246" mass="0.002842174675692404" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_247" type="mesh" mesh="crate_col_247" mass="0.003223766863823276" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_248" type="mesh" mesh="crate_col_248" mass="0.0017116057782375319" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_249" type="mesh" mesh="crate_col_249" mass="0.0014213644959916291" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_250" type="mesh" mesh="crate_col_250" mass="0.003292226288801902" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_251" type="mesh" mesh="crate_col_251" mass="0.0005124489581827476" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_252" type="mesh" mesh="crate_col_252" mass="0.007101105046191484" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_253" type="mesh" mesh="crate_col_253" mass="0.0009159420002138943" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_254" type="mesh" mesh="crate_col_254" mass="0.006706647723986463" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+      <geom name="crate_collision_255" type="mesh" mesh="crate_col_255" mass="0.0011734140793731908" group="3" rgba=".1 .4 .8 .2" friction="1 .01 .001" solref=".004 1" solimp=".98 .995 .0005" />
+    </body>
+    <body name="item0_object" pos="0.5335462407208327 -0.45409087715526114 -0.5262403318583877" quat="0.36833860996703616 -0.3749188170391957 0.6189786032221488 -0.5836334789837194">
+      <freejoint name="item0_object_free" />
+      <geom name="item0_object_collision_0" type="mesh" mesh="item0_mesh_12" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item0_object_collision_1" type="mesh" mesh="item0_mesh_13" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item0_object_collision_2" type="mesh" mesh="item0_mesh_14" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item0_object_collision_3" type="mesh" mesh="item0_mesh_15" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item0_object_collision_4" type="mesh" mesh="item0_mesh_16" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item0_object_collision_5" type="mesh" mesh="item0_mesh_17" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item0_object_collision_6" type="mesh" mesh="item0_mesh_18" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item0_object_collision_7" type="mesh" mesh="item0_mesh_19" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item0_object_collision_8" type="mesh" mesh="item0_mesh_20" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item0_object_collision_9" type="mesh" mesh="item0_mesh_21" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item0_object_collision_10" type="mesh" mesh="item0_mesh_22" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item0_object_collision_11" type="mesh" mesh="item0_mesh_23" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item0_object_collision_12" type="mesh" mesh="item0_mesh_24" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <inertial pos="0.000348168615931 -0.0001013400859 -0.0023283813889" quat="0.494015052265 0.505368190456 0.492928473199 0.507517133229" mass="0.1" diaginertia="0.000166391341192 0.00011948789061 7.94707267998e-05" />
+      <geom name="item0_object_visual" type="mesh" mesh="item0_replay_mesh_0" contype="0" conaffinity="0" density="0" group="2" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" rgba="0.7 0.38 0.2 1" />
+    </body>
+    <body name="item1_object" pos="0.2464937162983474 0.40140079991211924 -0.489171298531582" quat="-0.0013151279627646147 0.0011698554099598235 0.7071679432982745 -0.7070434228872013">
+      <freejoint name="item1_object_free" />
+      <geom name="item1_object_collision_0" type="mesh" mesh="item1_mesh_12" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item1_object_collision_1" type="mesh" mesh="item1_mesh_13" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item1_object_collision_2" type="mesh" mesh="item1_mesh_14" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item1_object_collision_3" type="mesh" mesh="item1_mesh_15" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item1_object_visual" type="mesh" mesh="item1_mesh_16" contype="0" conaffinity="0" density="0" group="2" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" rgba="0.78 0.68 0.28 1" />
+      <inertial pos="1.11852177537e-05 -0.000723636316351 1.38819940305e-05" quat="0.705752969558 0.707325091499 0.0295230635769 -0.027061958774" mass="0.1" diaginertia="0.000149457503901 0.000149309963754 7.15717241622e-05" />
+    </body>
+    <body name="item2_object" pos="0.36747246100166586 -0.6000224096205837 -0.4998157604185576" quat="0.6695602613009788 -0.30326280231652475 -0.5193196476910997 -0.43592181952694875">
+      <freejoint name="item2_object_free" />
+      <geom name="item2_object_collision_0" type="mesh" mesh="item2_mesh_12" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_1" type="mesh" mesh="item2_mesh_13" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_2" type="mesh" mesh="item2_mesh_14" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_3" type="mesh" mesh="item2_mesh_15" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_4" type="mesh" mesh="item2_mesh_16" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_5" type="mesh" mesh="item2_mesh_17" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_6" type="mesh" mesh="item2_mesh_18" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_7" type="mesh" mesh="item2_mesh_19" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_8" type="mesh" mesh="item2_mesh_20" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_9" type="mesh" mesh="item2_mesh_21" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_10" type="mesh" mesh="item2_mesh_22" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_11" type="mesh" mesh="item2_mesh_23" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_12" type="mesh" mesh="item2_mesh_24" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_13" type="mesh" mesh="item2_mesh_25" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_14" type="mesh" mesh="item2_mesh_26" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_15" type="mesh" mesh="item2_mesh_27" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_16" type="mesh" mesh="item2_mesh_28" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_17" type="mesh" mesh="item2_mesh_29" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_18" type="mesh" mesh="item2_mesh_30" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_19" type="mesh" mesh="item2_mesh_31" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_20" type="mesh" mesh="item2_mesh_32" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_21" type="mesh" mesh="item2_mesh_33" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_22" type="mesh" mesh="item2_mesh_34" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_23" type="mesh" mesh="item2_mesh_35" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_24" type="mesh" mesh="item2_mesh_36" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_25" type="mesh" mesh="item2_mesh_37" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_26" type="mesh" mesh="item2_mesh_38" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_27" type="mesh" mesh="item2_mesh_39" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_28" type="mesh" mesh="item2_mesh_40" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_29" type="mesh" mesh="item2_mesh_41" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_30" type="mesh" mesh="item2_mesh_42" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_31" type="mesh" mesh="item2_mesh_43" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_32" type="mesh" mesh="item2_mesh_44" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_33" type="mesh" mesh="item2_mesh_45" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_34" type="mesh" mesh="item2_mesh_46" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_35" type="mesh" mesh="item2_mesh_47" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_36" type="mesh" mesh="item2_mesh_48" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_37" type="mesh" mesh="item2_mesh_49" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_38" type="mesh" mesh="item2_mesh_50" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_39" type="mesh" mesh="item2_mesh_51" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_40" type="mesh" mesh="item2_mesh_52" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_41" type="mesh" mesh="item2_mesh_53" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_42" type="mesh" mesh="item2_mesh_54" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_43" type="mesh" mesh="item2_mesh_55" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_44" type="mesh" mesh="item2_mesh_56" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_45" type="mesh" mesh="item2_mesh_57" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_46" type="mesh" mesh="item2_mesh_58" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_47" type="mesh" mesh="item2_mesh_59" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_48" type="mesh" mesh="item2_mesh_60" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_49" type="mesh" mesh="item2_mesh_61" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_50" type="mesh" mesh="item2_mesh_62" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_51" type="mesh" mesh="item2_mesh_63" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_52" type="mesh" mesh="item2_mesh_64" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_53" type="mesh" mesh="item2_mesh_65" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_54" type="mesh" mesh="item2_mesh_66" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_55" type="mesh" mesh="item2_mesh_67" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_56" type="mesh" mesh="item2_mesh_68" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_57" type="mesh" mesh="item2_mesh_69" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_58" type="mesh" mesh="item2_mesh_70" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_59" type="mesh" mesh="item2_mesh_71" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_60" type="mesh" mesh="item2_mesh_72" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_61" type="mesh" mesh="item2_mesh_73" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_62" type="mesh" mesh="item2_mesh_74" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_63" type="mesh" mesh="item2_mesh_75" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item2_object_collision_64" type="mesh" mesh="item2_mesh_76" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <inertial pos="-9.42627256897e-05 0.000215509036119 0.000637209743904" quat="0.993794461766 0.00348914884856 -0.066693916134 0.0889511953513" mass="0.1" diaginertia="0.000219420261577 0.000218511901459 0.000214865405049" />
+      <geom name="item2_object_visual" type="mesh" mesh="item2_replay_mesh_0" contype="0" conaffinity="0" density="0" group="2" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" rgba="0.42 0.46 0.5 1" />
+    </body>
+    <body name="item3_object" pos="0.39862078424125963 0.5620811086169872 -0.493268657969072" quat="0.590939299902622 0.3437235045596453 0.6434803788244159 0.3443514168866172">
+      <freejoint name="item3_object_free" />
+      <geom name="item3_object_collision_0" type="mesh" mesh="item3_mesh_12" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item3_object_visual" type="mesh" mesh="item3_mesh_13" contype="0" conaffinity="0" density="0" group="2" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" rgba="0.3 0.6 0.76 1" />
+      <inertial pos="0.000234243455893 -1.24048525632e-05 -4.14858556809e-05" quat="0.709164058197 0.00855164807486 0.0119502369922 0.704890345879" mass="0.1" diaginertia="0.000134205503889 0.000132460329224 0.000128182160076" />
+    </body>
+    <body name="item4_object" pos="0.26942513391257833 -0.3939998363649525 -0.5306654997414999" quat="0.03948493400782834 -0.04474129304835503 0.7090307917862599 -0.702648200013142">
+      <freejoint name="item4_object_free" />
+      <geom name="item4_object_collision_0" type="mesh" mesh="item4_mesh_12" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item4_object_collision_1" type="mesh" mesh="item4_mesh_13" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item4_object_collision_2" type="mesh" mesh="item4_mesh_14" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item4_object_collision_3" type="mesh" mesh="item4_mesh_15" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item4_object_collision_4" type="mesh" mesh="item4_mesh_16" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item4_object_collision_5" type="mesh" mesh="item4_mesh_17" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <geom name="item4_object_collision_6" type="mesh" mesh="item4_mesh_18" density="1000" group="3" rgba="0.95 0.65 0.15 0" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+      <inertial pos="2.38568640394e-05 0.00163918867871 0.000129578809637" quat="0.710688524032 0.000919375126419 -0.00703251125577 0.703471051533" mass="0.1" diaginertia="0.000108752657303 0.000104960835582 2.33445977466e-05" />
+      <geom name="item4_object_visual" type="mesh" mesh="item4_replay_mesh_0" contype="0" conaffinity="0" density="0" group="2" condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" rgba="0.76 0.78 0.73 1" />
+    </body>
+  </worldbody>
+  <contact>
+    <exclude body1="lsrobot_base_link" body2="lsrobot_torso_link1" />
+    <exclude body1="lsrobot_torso_link1" body2="lsrobot_torso_link2" />
+    <exclude body1="lsrobot_torso_link2" body2="lsrobot_torso_link3" />
+    <exclude body1="lsrobot_torso_link2" body2="lsrobot_arm_base_link" />
+    <exclude body1="lsrobot_torso_link2" body2="lsrobot_arm_base_link_m" />
+    <exclude body1="lsrobot_arm_base_link" body2="lsrobot_arm_link1" />
+    <exclude body1="lsrobot_arm_base_link_m" body2="lsrobot_arm_link1_m" />
+    <exclude body1="lsrobot_arm_link1" body2="lsrobot_arm_link2" />
+    <exclude body1="lsrobot_arm_link1_m" body2="lsrobot_arm_link2_m" />
+    <exclude body1="lsrobot_arm_link2" body2="lsrobot_arm_link3" />
+    <exclude body1="lsrobot_arm_link2_m" body2="lsrobot_arm_link3_m" />
+    <exclude body1="lsrobot_arm_link3" body2="lsrobot_arm_link4" />
+    <exclude body1="lsrobot_arm_link3_m" body2="lsrobot_arm_link4_m" />
+    <exclude body1="lsrobot_arm_link4" body2="lsrobot_arm_link5" />
+    <exclude body1="lsrobot_arm_link4_m" body2="lsrobot_arm_link5_m" />
+    <exclude body1="lsrobot_arm_link5" body2="lsrobot_arm_link6" />
+    <exclude body1="lsrobot_arm_link5_m" body2="lsrobot_arm_link6_m" />
+    <exclude body1="lsrobot_arm_link6" body2="lsrobot_arm_link7" />
+    <exclude body1="lsrobot_arm_link6_m" body2="lsrobot_arm_link7_m" />
+    <exclude body1="lh_hand_base_link" body2="lh_thumb_metacarpals_base2" />
+    <exclude body1="lh_thumb_metacarpals_base2" body2="lh_thumb_metacarpals" />
+    <exclude body1="lh_thumb_metacarpals" body2="lh_thumb_distal" />
+    <exclude body1="lh_hand_base_link" body2="lh_index_proximal" />
+    <exclude body1="lh_index_proximal" body2="lh_index_distal" />
+    <exclude body1="lh_hand_base_link" body2="lh_middle_proximal" />
+    <exclude body1="lh_middle_proximal" body2="lh_middle_distal" />
+    <exclude body1="lh_hand_base_link" body2="lh_ring_proximal" />
+    <exclude body1="lh_ring_proximal" body2="lh_ring_distal" />
+    <exclude body1="lh_hand_base_link" body2="lh_pinky_proximal" />
+    <exclude body1="lh_pinky_proximal" body2="lh_pinky_distal" />
+    <exclude body1="lsrobot_arm_link7_m" body2="lh_hand_base_link" />
+    <exclude body1="rh_hand_base_link" body2="rh_thumb_metacarpals_base2" />
+    <exclude body1="rh_thumb_metacarpals_base2" body2="rh_thumb_metacarpals" />
+    <exclude body1="rh_thumb_metacarpals" body2="rh_thumb_distal" />
+    <exclude body1="rh_hand_base_link" body2="rh_index_proximal" />
+    <exclude body1="rh_index_proximal" body2="rh_index_distal" />
+    <exclude body1="rh_hand_base_link" body2="rh_middle_proximal" />
+    <exclude body1="rh_middle_proximal" body2="rh_middle_distal" />
+    <exclude body1="rh_hand_base_link" body2="rh_ring_proximal" />
+    <exclude body1="rh_ring_proximal" body2="rh_ring_distal" />
+    <exclude body1="rh_hand_base_link" body2="rh_pinky_proximal" />
+    <exclude body1="rh_pinky_proximal" body2="rh_pinky_distal" />
+    <exclude body1="lsrobot_arm_link7" body2="rh_hand_base_link" />
+    <exclude body1="lh_hand_base_link" body2="lh_thumb_metacarpals" />
+    <exclude body1="lh_hand_base_link" body2="lh_thumb_distal" />
+    <exclude body1="rh_hand_base_link" body2="rh_thumb_metacarpals" />
+    <exclude body1="rh_hand_base_link" body2="rh_thumb_distal" />
+  </contact>
+  <equality>
+    <joint name="lh_thumb_ip_mimic" joint1="lh_thumb_ip" joint2="lh_thumb_cmc_pitch" polycoef="0 2.29 0 0 0" solref=".002 1" solimp=".99 .99 .001" />
+    <joint name="lh_index_dip_mimic" joint1="lh_index_dip" joint2="lh_index_mcp_pitch" polycoef="0 0.89000000000000001 0 0 0" solref=".002 1" solimp=".99 .99 .001" />
+    <joint name="lh_middle_dip_mimic" joint1="lh_middle_dip" joint2="lh_middle_mcp_pitch" polycoef="0 0.89000000000000001 0 0 0" solref=".002 1" solimp=".99 .99 .001" />
+    <joint name="lh_ring_dip_mimic" joint1="lh_ring_dip" joint2="lh_ring_mcp_pitch" polycoef="0 0.89000000000000001 0 0 0" solref=".002 1" solimp=".99 .99 .001" />
+    <joint name="lh_pinky_dip_mimic" joint1="lh_pinky_dip" joint2="lh_pinky_mcp_pitch" polycoef="0 0.89000000000000001 0 0 0" solref=".002 1" solimp=".99 .99 .001" />
+    <joint name="rh_thumb_ip_mimic" joint1="rh_thumb_ip" joint2="rh_thumb_cmc_pitch" polycoef="0 1.8600000000000001 0 0 0" solref=".002 1" solimp=".99 .99 .001" />
+    <joint name="rh_index_dip_mimic" joint1="rh_index_dip" joint2="rh_index_mcp_pitch" polycoef="0 0.89000000000000001 0 0 0" solref=".002 1" solimp=".99 .99 .001" />
+    <joint name="rh_middle_dip_mimic" joint1="rh_middle_dip" joint2="rh_middle_mcp_pitch" polycoef="0 0.89000000000000001 0 0 0" solref=".002 1" solimp=".99 .99 .001" />
+    <joint name="rh_ring_dip_mimic" joint1="rh_ring_dip" joint2="rh_ring_mcp_pitch" polycoef="0 0.89000000000000001 0 0 0" solref=".002 1" solimp=".99 .99 .001" />
+    <joint name="rh_pinky_dip_mimic" joint1="rh_pinky_dip" joint2="rh_pinky_mcp_pitch" polycoef="0 0.89000000000000001 0 0 0" solref=".002 1" solimp=".99 .99 .001" />
+  </equality>
+  <actuator>
+    <position name="lsrobot_torso_joint1_servo" joint="lsrobot_torso_joint1" kp="16000" kv="250" ctrllimited="false" forcelimited="true" forcerange="-180 180" />
+    <position name="lsrobot_torso_joint2_servo" joint="lsrobot_torso_joint2" kp="16000" kv="250" ctrllimited="false" forcelimited="true" forcerange="-180 180" />
+    <position name="lsrobot_torso_joint3_servo" joint="lsrobot_torso_joint3" kp="16000" kv="250" ctrllimited="false" forcelimited="true" forcerange="-180 180" />
+    <position name="lsrobot_arm_joint1_servo" joint="lsrobot_arm_joint1" kp="16000" kv="250" ctrllimited="false" forcelimited="true" forcerange="-180 180" />
+    <position name="lsrobot_arm_joint1_m_servo" joint="lsrobot_arm_joint1_m" kp="16000" kv="250" ctrllimited="false" forcelimited="true" forcerange="-180 180" />
+    <position name="lsrobot_arm_joint2_servo" joint="lsrobot_arm_joint2" kp="16000" kv="250" ctrllimited="false" forcelimited="true" forcerange="-180 180" />
+    <position name="lsrobot_arm_joint2_m_servo" joint="lsrobot_arm_joint2_m" kp="16000" kv="250" ctrllimited="false" forcelimited="true" forcerange="-180 180" />
+    <position name="lsrobot_arm_joint3_servo" joint="lsrobot_arm_joint3" kp="16000" kv="250" ctrllimited="false" forcelimited="true" forcerange="-180 180" />
+    <position name="lsrobot_arm_joint3_m_servo" joint="lsrobot_arm_joint3_m" kp="16000" kv="250" ctrllimited="false" forcelimited="true" forcerange="-180 180" />
+    <position name="lsrobot_arm_joint4_servo" joint="lsrobot_arm_joint4" kp="16000" kv="250" ctrllimited="false" forcelimited="true" forcerange="-180 180" />
+    <position name="lsrobot_arm_joint4_m_servo" joint="lsrobot_arm_joint4_m" kp="16000" kv="250" ctrllimited="false" forcelimited="true" forcerange="-180 180" />
+    <position name="lsrobot_arm_joint5_servo" joint="lsrobot_arm_joint5" kp="16000" kv="250" ctrllimited="false" forcelimited="true" forcerange="-180 180" />
+    <position name="lsrobot_arm_joint5_m_servo" joint="lsrobot_arm_joint5_m" kp="16000" kv="250" ctrllimited="false" forcelimited="true" forcerange="-180 180" />
+    <position name="lsrobot_arm_joint6_servo" joint="lsrobot_arm_joint6" kp="16000" kv="250" ctrllimited="false" forcelimited="true" forcerange="-180 180" />
+    <position name="lsrobot_arm_joint6_m_servo" joint="lsrobot_arm_joint6_m" kp="16000" kv="250" ctrllimited="false" forcelimited="true" forcerange="-180 180" />
+    <position name="lsrobot_arm_joint7_servo" joint="lsrobot_arm_joint7" kp="16000" kv="250" ctrllimited="false" forcelimited="true" forcerange="-180 180" />
+    <position name="lsrobot_arm_joint7_m_servo" joint="lsrobot_arm_joint7_m" kp="16000" kv="250" ctrllimited="false" forcelimited="true" forcerange="-180 180" />
+    <motor name="lh_thumb_cmc_yaw_motor" joint="lh_thumb_cmc_yaw" ctrllimited="true" ctrlrange="-3 3" forcelimited="true" forcerange="-3 3" />
+    <motor name="lh_thumb_cmc_pitch_motor" joint="lh_thumb_cmc_pitch" ctrllimited="true" ctrlrange="-3 3" forcelimited="true" forcerange="-3 3" />
+    <motor name="lh_index_mcp_pitch_motor" joint="lh_index_mcp_pitch" ctrllimited="true" ctrlrange="-3 3" forcelimited="true" forcerange="-3 3" />
+    <motor name="lh_middle_mcp_pitch_motor" joint="lh_middle_mcp_pitch" ctrllimited="true" ctrlrange="-3 3" forcelimited="true" forcerange="-3 3" />
+    <motor name="lh_ring_mcp_pitch_motor" joint="lh_ring_mcp_pitch" ctrllimited="true" ctrlrange="-3 3" forcelimited="true" forcerange="-3 3" />
+    <motor name="lh_pinky_mcp_pitch_motor" joint="lh_pinky_mcp_pitch" ctrllimited="true" ctrlrange="-3 3" forcelimited="true" forcerange="-3 3" />
+    <motor name="rh_thumb_cmc_yaw_motor" joint="rh_thumb_cmc_yaw" ctrllimited="true" ctrlrange="-3 3" forcelimited="true" forcerange="-3 3" />
+    <motor name="rh_thumb_cmc_pitch_motor" joint="rh_thumb_cmc_pitch" ctrllimited="true" ctrlrange="-3 3" forcelimited="true" forcerange="-3 3" />
+    <motor name="rh_index_mcp_pitch_motor" joint="rh_index_mcp_pitch" ctrllimited="true" ctrlrange="-3 3" forcelimited="true" forcerange="-3 3" />
+    <motor name="rh_middle_mcp_pitch_motor" joint="rh_middle_mcp_pitch" ctrllimited="true" ctrlrange="-3 3" forcelimited="true" forcerange="-3 3" />
+    <motor name="rh_ring_mcp_pitch_motor" joint="rh_ring_mcp_pitch" ctrllimited="true" ctrlrange="-3 3" forcelimited="true" forcerange="-3 3" />
+    <motor name="rh_pinky_mcp_pitch_motor" joint="rh_pinky_mcp_pitch" ctrllimited="true" ctrlrange="-3 3" forcelimited="true" forcerange="-3 3" />
+  </actuator>
+</mujoco>

@@ -1,0 +1,14 @@
+{
+  "architecture": "YOLOv8n-seg",
+  "selected_training_epochs": 3,
+  "weights_sha256": "e66345a2c4e0d46a8997e27c3b5f53e4f9a97bbc04261b363ac0284198bacd5a",
+  "training_images": 240,
+  "validation_images": 48,
+  "test_images": 48,
+  "training_device": "Apple_MPS",
+  "CUDA_required": false,
+  "synthetic_workcell_only": true,
+  "source_weights_sha256": "369e91335089a334152aa2a4249e16b5e591389a688c347da4ecc215d370fe92",
+  "parameter_sha256": "94f393e098f0a662d93e440ca6f1c07d86aa0147a0ea2b5a12a09b33673f6b08",
+  "release_metadata": "Training paths made relative; network parameters unchanged."
+}

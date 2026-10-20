@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mujoco model="selected_object">
+  <compiler angle="radian" autolimits="true" inertiafromgeom="auto" strippath="false" />
+  <option timestep="0.001" gravity="0 0 -9.81" integrator="implicitfast" cone="elliptic" iterations="100" impratio="10" noslip_iterations="2" />
+  <default>
+    <joint damping="0.05" frictionloss="0.01" armature="0.0002" />
+    <geom condim="4" friction="0.6 0.02 0.001" solref="0.005 1" solimp="0.5 0.99 0.0001 0.5 2" />
+  </default>
+  <asset>
+    <mesh name="mesh_12" file="../../../meshes/6357d19fccd7eea34c7f68f3df90dcdfbfc8b6a2dff25d78841b3cee7762185c.obj" scale="0.08 0.08 0.08" />
+    <mesh name="mesh_13" file="../../../meshes/ee79b549b8f16473f6dbe41fd8d3ca00424e653b1ffa3841b091b556cf000684.obj" scale="0.08 0.08 0.08" />
+    <mesh name="mesh_14" file="../../../meshes/68d025fde4587c0307a59b27954f75f0dc0c641611b37fb0c0246c0aa7e6ba94.obj" scale="0.08 0.08 0.08" />
+    <mesh name="mesh_15" file="../../../meshes/0edc4b35feb2919b9f21308a8e7844fc45cab75e9fd9622d5dfef0c63e42cb7f.obj" scale="0.08 0.08 0.08" />
+    <mesh name="mesh_16" file="../../../meshes/a353fbf21665e766a4a90566160154a35f533fbb1a43725cea1f5966b8d2984c.obj" scale="0.08 0.08 0.08" />
+    <material name="replay_default_material" rgba="0.83 0.82 0.76 1" specular="0.18" shininess="0.15" />
+  </asset>
+  <worldbody>
+    <body name="object">
+      <freejoint name="object_free" />
+      <geom name="object_collision_0" type="mesh" mesh="mesh_12" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_1" type="mesh" mesh="mesh_13" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_2" type="mesh" mesh="mesh_14" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_collision_3" type="mesh" mesh="mesh_15" density="1000" group="3" rgba="0.95 0.65 0.15 0" />
+      <geom name="object_visual" type="mesh" mesh="mesh_16" contype="0" conaffinity="0" density="0" group="2" material="replay_default_material" />
+      <inertial pos="1.11852177537e-05 -0.000723636316351 1.38819940305e-05" quat="0.705752969558 0.707325091499 0.0295230635769 -0.027061958774" mass="0.1" diaginertia="0.000149457503901 0.000149309963754 7.15717241622e-05" />
+    </body>
+  </worldbody>
+</mujoco>

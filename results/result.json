@@ -1,0 +1,1023 @@
+{
+  "success": true,
+  "crate_lift_mm": 127.35817056756017,
+  "crate_final_tilt_deg": 6.03154967163023,
+  "objects_inside": [
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "object_lift_mm": [
+    135.86171401936198,
+    115.56488379081992,
+    113.2549204858726,
+    128.9046466582815,
+    126.78841707298882
+  ],
+  "loaded_mass_kg": 2.5,
+  "seed": 20261015,
+  "compute_seconds": 159.06781287500053,
+  "vision": {
+    "observations": [
+      {
+        "label": "initial",
+        "time_s": 0.5000000000000003,
+        "source": "RGB + depth + calibration + known CAD",
+        "recognition": "trained_YOLOv8n_instance_segmentation",
+        "no_simulator_object_pose_or_instance_id_input": true,
+        "no_color_rule_fallback": true,
+        "camera_pitch_deg": 55.0,
+        "table_z_estimated_m": -0.5499998577321913,
+        "detections": [
+          {
+            "index": 5,
+            "name": "料框",
+            "T_world_object": [
+              [
+                1.419532201995174e-05,
+                0.9999999998469045,
+                1.0231411853891485e-05,
+                0.4800019431372917
+              ],
+              [
+                -0.9999999998736334,
+                1.4195395246645841e-05,
+                -7.157007755375322e-06,
+                3.190356091772502e-07
+              ],
+              [
+                -7.1571529932147795e-06,
+                -1.0231310256568567e-05,
+                0.9999999999220462,
+                -0.5480146645293813
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "registration_rmse_mm": 1.265496976612256,
+            "registration_median_mm": 1.0659752897231753,
+            "compute_seconds": 11.967100749985548,
+            "method": "YOLOv8_mask + FPFH_RANSAC/table_multistart + robust_CAD_ICP",
+            "frame_symmetry": "180_deg_yaw; long_X_toward_robot_negative_Y",
+            "rim_height_m": 0.2532194904,
+            "global_registration": "Open3D_CPU_FPFH_RANSAC",
+            "global_candidate_selected": false,
+            "registration_prior": "table_support_and_reference_rest_orientation",
+            "global_ransac_fitness": 0.0,
+            "global_candidate_rmse_mm": 483.1689676599139,
+            "inlier_rmse_mm": 1.2678892731796223,
+            "cad_inlier_fraction": 1.0,
+            "side": "both",
+            "pixel_count": 40257,
+            "yolo_confidence": 0.9964505434036255,
+            "bbox_xyxy": [
+              144,
+              170,
+              494,
+              368
+            ],
+            "segmentation": "YOLOv8n-seg_six_classes",
+            "inference_device": "cpu"
+          },
+          {
+            "index": 4,
+            "name": "3d_dollhouse_refrigerator",
+            "T_world_object": [
+              [
+                -0.992900260144591,
+                -0.007782331240789753,
+                0.11869502401222663,
+                0.2694221357189723
+              ],
+              [
+                -0.11876055472145577,
+                0.00858048584168291,
+                -0.9928858473686561,
+                -0.39399657783298747
+              ],
+              [
+                0.0067085055754999645,
+                -0.9999329030405891,
+                -0.009443800599556233,
+                -0.5312157368650826
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "registration_rmse_mm": 0.2393807012827654,
+            "registration_median_mm": 0.19609064651340083,
+            "compute_seconds": 1.017251999990549,
+            "method": "YOLOv8_mask + FPFH_RANSAC/table_multistart + robust_CAD_ICP",
+            "global_registration": "Open3D_CPU_FPFH_RANSAC",
+            "global_candidate_selected": false,
+            "registration_prior": "table_support_and_reference_rest_orientation",
+            "global_ransac_fitness": 0.32164562879850395,
+            "global_candidate_rmse_mm": 1.114050652189823,
+            "inlier_rmse_mm": 0.23938070130585726,
+            "cad_inlier_fraction": 1.0,
+            "side": "rh",
+            "pixel_count": 1080,
+            "yolo_confidence": 0.9522328972816467,
+            "bbox_xyxy": [
+              465,
+              360,
+              522,
+              386
+            ],
+            "segmentation": "YOLOv8n-seg_six_classes",
+            "inference_device": "cpu"
+          },
+          {
+            "index": 3,
+            "name": "球",
+            "T_world_object": [
+              [
+                -0.07100100000671107,
+                0.04353833094406674,
+                0.9965256001411362,
+                0.3991822492311794
+              ],
+              [
+                0.8165724827923224,
+                0.5762988045535702,
+                0.03300103356726292,
+                0.5654302458284103
+              ],
+              [
+                -0.5728597021474181,
+                0.8160784898578876,
+                -0.07646999442160596,
+                -0.4939315972679896
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "registration_rmse_mm": 0.3654888233281028,
+            "registration_median_mm": 0.3088961702096283,
+            "compute_seconds": 0.01989049999974668,
+            "method": "YOLOv8_mask + sphere/CAD fit; canonical_spherical_frame",
+            "radius": 0.05739806401319078,
+            "global_candidate_selected": false,
+            "inlier_rmse_mm": 0.3654888235716595,
+            "cad_inlier_fraction": 1.0,
+            "side": "lh",
+            "pixel_count": 2251,
+            "yolo_confidence": 0.9974791407585144,
+            "bbox_xyxy": [
+              52,
+              286,
+              110,
+              336
+            ],
+            "segmentation": "YOLOv8n-seg_six_classes",
+            "inference_device": "cpu"
+          },
+          {
+            "index": 2,
+            "name": "锅/盆",
+            "T_world_object": [
+              [
+                0.08041085054482251,
+                0.8987970344243013,
+                -0.4309268917400491,
+                0.3674896550543727
+              ],
+              [
+                -0.2694893178919439,
+                0.43582967738388434,
+                0.858736280736755,
+                -0.600053293757514
+              ],
+              [
+                0.9596403506818549,
+                0.047078479388581444,
+                0.2772616347814207,
+                -0.5003922420194516
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "registration_rmse_mm": 0.4834463677592229,
+            "registration_median_mm": 0.4043881683370965,
+            "compute_seconds": 2.2421458330354653,
+            "method": "YOLOv8_mask + FPFH_RANSAC/table_multistart + robust_CAD_ICP",
+            "global_registration": "Open3D_CPU_FPFH_RANSAC",
+            "global_candidate_selected": false,
+            "registration_prior": "table_support_and_reference_rest_orientation",
+            "global_ransac_fitness": 0.45100778287766913,
+            "global_candidate_rmse_mm": 1.3942400287271912,
+            "inlier_rmse_mm": 0.4834463677574598,
+            "cad_inlier_fraction": 1.0,
+            "side": "rh",
+            "pixel_count": 2889,
+            "yolo_confidence": 0.9723424315452576,
+            "bbox_xyxy": [
+              536,
+              305,
+              603,
+              359
+            ],
+            "segmentation": "YOLOv8n-seg_six_classes",
+            "inference_device": "cpu"
+          },
+          {
+            "index": 1,
+            "name": "罐头/易拉罐",
+            "T_world_object": [
+              [
+                -0.9999922785362629,
+                -0.000399032547825018,
+                -0.003909429738066413,
+                0.24651381383869136
+              ],
+              [
+                0.003909260488803231,
+                0.00042405134897066535,
+                -0.999992268901557,
+                0.4013828854031642
+              ],
+              [
+                0.000400687261819242,
+                -0.999999830476725,
+                -0.0004224881525005932,
+                -0.49019767735881503
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "registration_rmse_mm": 0.3471944846603442,
+            "registration_median_mm": 0.2956702799875888,
+            "compute_seconds": 0.7051267090137117,
+            "method": "YOLOv8_mask + FPFH_RANSAC/table_multistart + robust_CAD_ICP",
+            "global_registration": "Open3D_CPU_FPFH_RANSAC",
+            "global_candidate_selected": false,
+            "registration_prior": "table_support_and_reference_rest_orientation",
+            "global_ransac_fitness": 0.40999190938511326,
+            "global_candidate_rmse_mm": 0.36086650128165804,
+            "inlier_rmse_mm": 0.3363606853934902,
+            "cad_inlier_fraction": 1.0,
+            "side": "lh",
+            "pixel_count": 2091,
+            "yolo_confidence": 0.9551854729652405,
+            "bbox_xyxy": [
+              99,
+              355,
+              157,
+              403
+            ],
+            "segmentation": "YOLOv8n-seg_six_classes",
+            "inference_device": "cpu"
+          },
+          {
+            "index": 0,
+            "name": "盒子",
+            "T_world_object": [
+              [
+                -0.4476600178551894,
+                -0.03329842168953209,
+                0.8935836410358452,
+                0.533533721927586
+              ],
+              [
+                -0.8940079283383751,
+                0.03758348336864585,
+                -0.44647206614300894,
+                -0.4540889766920521
+              ],
+              [
+                -0.01871717078033814,
+                -0.9987385528209399,
+                -0.04659367582746437,
+                -0.5268070114486337
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "registration_rmse_mm": 31.054065343584423,
+            "registration_median_mm": 0.2884066646333121,
+            "compute_seconds": 2.260584542003926,
+            "method": "YOLOv8_mask + FPFH_RANSAC/table_multistart + robust_CAD_ICP",
+            "global_registration": "Open3D_CPU_FPFH_RANSAC",
+            "global_candidate_selected": false,
+            "registration_prior": "table_support_and_reference_rest_orientation",
+            "global_ransac_fitness": 0.1879832118400707,
+            "global_candidate_rmse_mm": 33.97062572736427,
+            "inlier_rmse_mm": 0.3425685618449424,
+            "cad_inlier_fraction": 0.985191637630662,
+            "side": "rh",
+            "pixel_count": 1276,
+            "yolo_confidence": 0.9082121253013611,
+            "bbox_xyxy": [
+              472,
+              251,
+              512,
+              294
+            ],
+            "segmentation": "YOLOv8n-seg_six_classes",
+            "inference_device": "cpu"
+          }
+        ],
+        "missing_indices": [],
+        "compute_seconds": 18.680711166991387,
+        "score_note": "YOLO scores are not calibrated pose-accuracy probabilities"
+      },
+      {
+        "label": "round_1_placement_crate",
+        "time_s": 8.960000000000473,
+        "source": "RGB + depth + calibration + known CAD",
+        "recognition": "trained_YOLOv8n_instance_segmentation",
+        "no_simulator_object_pose_or_instance_id_input": true,
+        "no_color_rule_fallback": true,
+        "camera_pitch_deg": 55.0,
+        "table_z_estimated_m": -0.5500001864248184,
+        "detections": [
+          {
+            "index": 5,
+            "name": "料框",
+            "T_world_object": [
+              [
+                0.004302134313734813,
+                0.999990558929694,
+                0.0006113033821066583,
+                0.47896853598466577
+              ],
+              [
+                -0.9999907317214276,
+                0.004302030953264422,
+                0.00017029656770666758,
+                -5.41945809393387e-06
+              ],
+              [
+                0.00016766511385314095,
+                -0.0006120303550840632,
+                0.9999997986536067,
+                -0.5481002233041763
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "registration_rmse_mm": 1.402233487193968,
+            "registration_median_mm": 1.2539621221338888,
+            "compute_seconds": 10.263217750005424,
+            "method": "YOLOv8_mask + FPFH_RANSAC/table_multistart + robust_CAD_ICP",
+            "frame_symmetry": "180_deg_yaw; long_X_toward_robot_negative_Y",
+            "rim_height_m": 0.2532194904,
+            "global_registration": "Open3D_CPU_FPFH_RANSAC",
+            "global_candidate_selected": false,
+            "registration_prior": "table_support_and_reference_rest_orientation",
+            "global_ransac_fitness": 0.0,
+            "global_candidate_rmse_mm": 483.29443922171555,
+            "inlier_rmse_mm": 1.3970931515371792,
+            "cad_inlier_fraction": 1.0,
+            "side": "both",
+            "pixel_count": 40810,
+            "yolo_confidence": 0.9984082579612732,
+            "bbox_xyxy": [
+              143,
+              170,
+              495,
+              368
+            ],
+            "segmentation": "YOLOv8n-seg_six_classes",
+            "inference_device": "cpu"
+          }
+        ],
+        "missing_indices": [],
+        "compute_seconds": 11.006744959013304,
+        "score_note": "YOLO scores are not calibrated pose-accuracy probabilities"
+      },
+      {
+        "label": "round_2",
+        "time_s": 17.899999999998894,
+        "source": "RGB + depth + calibration + known CAD",
+        "recognition": "trained_YOLOv8n_instance_segmentation",
+        "no_simulator_object_pose_or_instance_id_input": true,
+        "no_color_rule_fallback": true,
+        "camera_pitch_deg": 55.0,
+        "table_z_estimated_m": -0.5500004339618128,
+        "detections": [
+          {
+            "index": 5,
+            "name": "料框",
+            "T_world_object": [
+              [
+                1.5202607680324464e-05,
+                0.9999999985207028,
+                5.222523599132645e-05,
+                0.4799993117038847
+              ],
+              [
+                -0.9999999998786863,
+                1.5202430484089994e-05,
+                3.393317970460585e-06,
+                -3.329071820701247e-06
+              ],
+              [
+                3.392524014921124e-06,
+                -5.222528757227303e-05,
+                0.9999999986305055,
+                -0.5480232359181813
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "registration_rmse_mm": 2.5888161035615833,
+            "registration_median_mm": 1.0821966916262395,
+            "compute_seconds": 9.171590001002187,
+            "method": "YOLOv8_mask + FPFH_RANSAC/table_multistart + robust_CAD_ICP",
+            "frame_symmetry": "180_deg_yaw; long_X_toward_robot_negative_Y",
+            "rim_height_m": 0.2532194904,
+            "global_registration": "Open3D_CPU_FPFH_RANSAC",
+            "global_candidate_selected": false,
+            "registration_prior": "table_support_and_reference_rest_orientation",
+            "global_ransac_fitness": 0.0,
+            "global_candidate_rmse_mm": 473.50588751967354,
+            "inlier_rmse_mm": 1.2696581500989301,
+            "cad_inlier_fraction": 0.9879595699271131,
+            "side": "both",
+            "pixel_count": 36176,
+            "yolo_confidence": 0.9994170665740967,
+            "bbox_xyxy": [
+              143,
+              170,
+              495,
+              368
+            ],
+            "segmentation": "YOLOv8n-seg_six_classes",
+            "inference_device": "cpu"
+          },
+          {
+            "index": 2,
+            "name": "锅/盆",
+            "T_world_object": [
+              [
+                0.07833918481739643,
+                0.8994794837402735,
+                -0.4298832753812093,
+                0.36743247799566353
+              ],
+              [
+                -0.2705281516583595,
+                0.434208724373147,
+                0.8592306458911694,
+                -0.6000869120211827
+              ],
+              [
+                0.9595194064126364,
+                0.04898409954848103,
+                0.27735007969886566,
+                -0.5004020856513608
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "registration_rmse_mm": 0.49333595899924254,
+            "registration_median_mm": 0.4105083767480161,
+            "compute_seconds": 1.5109282080084085,
+            "method": "YOLOv8_mask + FPFH_RANSAC/table_multistart + robust_CAD_ICP",
+            "global_registration": "Open3D_CPU_FPFH_RANSAC",
+            "global_candidate_selected": false,
+            "registration_prior": "table_support_and_reference_rest_orientation",
+            "global_ransac_fitness": 0.0,
+            "global_candidate_rmse_mm": 782.2186775255075,
+            "inlier_rmse_mm": 0.4933359556774946,
+            "cad_inlier_fraction": 1.0,
+            "side": "rh",
+            "pixel_count": 426,
+            "yolo_confidence": 0.3118290603160858,
+            "bbox_xyxy": [
+              536,
+              308,
+              578,
+              358
+            ],
+            "segmentation": "YOLOv8n-seg_six_classes",
+            "inference_device": "cpu"
+          },
+          {
+            "index": 1,
+            "name": "罐头/易拉罐",
+            "T_world_object": [
+              [
+                -0.9999931553697559,
+                -0.0003875062544010697,
+                -0.0036795451542063788,
+                0.24651363149823025
+              ],
+              [
+                0.0036793801724912937,
+                0.0004256081540490186,
+                -0.9999931404860957,
+                0.40138313988903124
+              ],
+              [
+                0.000389069640717352,
+                -0.999999834348287,
+                -0.00042417945808941574,
+                -0.4901980612368813
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "registration_rmse_mm": 0.34724498840844087,
+            "registration_median_mm": 0.29429869632008515,
+            "compute_seconds": 0.6930646670225542,
+            "method": "YOLOv8_mask + FPFH_RANSAC/table_multistart + robust_CAD_ICP",
+            "global_registration": "Open3D_CPU_FPFH_RANSAC",
+            "global_candidate_selected": false,
+            "registration_prior": "table_support_and_reference_rest_orientation",
+            "global_ransac_fitness": 0.33171521035598706,
+            "global_candidate_rmse_mm": 0.5500244216696354,
+            "inlier_rmse_mm": 0.33646435892301646,
+            "cad_inlier_fraction": 1.0,
+            "side": "lh",
+            "pixel_count": 2091,
+            "yolo_confidence": 0.9515420198440552,
+            "bbox_xyxy": [
+              99,
+              355,
+              158,
+              403
+            ],
+            "segmentation": "YOLOv8n-seg_six_classes",
+            "inference_device": "cpu"
+          }
+        ],
+        "missing_indices": [],
+        "compute_seconds": 11.563131125003565,
+        "score_note": "YOLO scores are not calibrated pose-accuracy probabilities"
+      },
+      {
+        "label": "round_2_placement_crate",
+        "time_s": 28.64000000001202,
+        "source": "RGB + depth + calibration + known CAD",
+        "recognition": "trained_YOLOv8n_instance_segmentation",
+        "no_simulator_object_pose_or_instance_id_input": true,
+        "no_color_rule_fallback": true,
+        "camera_pitch_deg": 55.0,
+        "table_z_estimated_m": -0.55000049204883,
+        "detections": [
+          {
+            "index": 5,
+            "name": "料框",
+            "T_world_object": [
+              [
+                1.014153140052081e-05,
+                0.9999999991188172,
+                4.073706223775396e-05,
+                0.47999690928513766
+              ],
+              [
+                -0.9999999999485238,
+                1.0141518505202365e-05,
+                3.1675528564449915e-07,
+                -2.494327746478237e-07
+              ],
+              [
+                3.1634214969488174e-07,
+                -4.0737065448041104e-05,
+                0.9999999991701949,
+                -0.5480212751125929
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "registration_rmse_mm": 2.520903384662185,
+            "registration_median_mm": 1.2561461936511131,
+            "compute_seconds": 13.906034874991747,
+            "method": "YOLOv8_mask + FPFH_RANSAC/table_multistart + robust_CAD_ICP",
+            "frame_symmetry": "180_deg_yaw; long_X_toward_robot_negative_Y",
+            "rim_height_m": 0.2532194904,
+            "global_registration": "Open3D_CPU_FPFH_RANSAC",
+            "global_candidate_selected": false,
+            "registration_prior": "table_support_and_reference_rest_orientation",
+            "global_ransac_fitness": 0.051272964391018375,
+            "global_candidate_rmse_mm": 77.72490286438223,
+            "inlier_rmse_mm": 1.2676134839761648,
+            "cad_inlier_fraction": 0.9894108719646799,
+            "side": "both",
+            "pixel_count": 40675,
+            "yolo_confidence": 0.9995061159133911,
+            "bbox_xyxy": [
+              143,
+              170,
+              495,
+              368
+            ],
+            "segmentation": "YOLOv8n-seg_six_classes",
+            "inference_device": "cpu"
+          }
+        ],
+        "missing_indices": [],
+        "compute_seconds": 14.78606504201889,
+        "score_note": "YOLO scores are not calibrated pose-accuracy probabilities"
+      },
+      {
+        "label": "round_3",
+        "time_s": 38.740000000000414,
+        "source": "RGB + depth + calibration + known CAD",
+        "recognition": "trained_YOLOv8n_instance_segmentation",
+        "no_simulator_object_pose_or_instance_id_input": true,
+        "no_color_rule_fallback": true,
+        "camera_pitch_deg": 55.0,
+        "table_z_estimated_m": -0.5500005578623135,
+        "detections": [
+          {
+            "index": 5,
+            "name": "料框",
+            "T_world_object": [
+              [
+                5.803397012281374e-06,
+                0.9999999992928487,
+                3.715674440824733e-05,
+                0.47999792603162184
+              ],
+              [
+                -0.9999999999830723,
+                5.803412603151523e-06,
+                -4.1949051325340776e-07,
+                -1.0244569107435192e-06
+              ],
+              [
+                -4.197061488756775e-07,
+                -3.715674197314798e-05,
+                0.9999999993095998,
+                -0.5480200384974762
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "registration_rmse_mm": 2.49320158276512,
+            "registration_median_mm": 1.0742365979378756,
+            "compute_seconds": 13.05954133303021,
+            "method": "YOLOv8_mask + FPFH_RANSAC/table_multistart + robust_CAD_ICP",
+            "frame_symmetry": "180_deg_yaw; long_X_toward_robot_negative_Y",
+            "rim_height_m": 0.2532194904,
+            "global_registration": "Open3D_CPU_FPFH_RANSAC",
+            "global_candidate_selected": false,
+            "registration_prior": "table_support_and_reference_rest_orientation",
+            "global_ransac_fitness": 0.0,
+            "global_candidate_rmse_mm": 477.60660267004937,
+            "inlier_rmse_mm": 1.2686016995500626,
+            "cad_inlier_fraction": 0.9889247311827957,
+            "side": "both",
+            "pixel_count": 38741,
+            "yolo_confidence": 0.9985658526420593,
+            "bbox_xyxy": [
+              143,
+              169,
+              494,
+              369
+            ],
+            "segmentation": "YOLOv8n-seg_six_classes",
+            "inference_device": "cpu"
+          },
+          {
+            "index": 4,
+            "name": "3d_dollhouse_refrigerator",
+            "T_world_object": [
+              [
+                -0.9928941934644934,
+                -0.007844029580429748,
+                0.11874170196032915,
+                0.2694217842626753
+              ],
+              [
+                -0.11880747013378741,
+                0.008529576111836655,
+                -0.9928806732794039,
+                -0.3939998767965375
+              ],
+              [
+                0.006775368986520992,
+                -0.999932856511523,
+                -0.009400895904261505,
+                -0.5312177204142662
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "registration_rmse_mm": 0.23941145517213994,
+            "registration_median_mm": 0.19879528620320103,
+            "compute_seconds": 0.9986457510094624,
+            "method": "YOLOv8_mask + FPFH_RANSAC/table_multistart + robust_CAD_ICP",
+            "global_registration": "Open3D_CPU_FPFH_RANSAC",
+            "global_candidate_selected": false,
+            "registration_prior": "table_support_and_reference_rest_orientation",
+            "global_ransac_fitness": 0.36044880785413747,
+            "global_candidate_rmse_mm": 0.23941332234949728,
+            "inlier_rmse_mm": 0.23941145544794912,
+            "cad_inlier_fraction": 1.0,
+            "side": "rh",
+            "pixel_count": 1080,
+            "yolo_confidence": 0.9662195444107056,
+            "bbox_xyxy": [
+              465,
+              360,
+              522,
+              386
+            ],
+            "segmentation": "YOLOv8n-seg_six_classes",
+            "inference_device": "cpu"
+          }
+        ],
+        "missing_indices": [],
+        "compute_seconds": 14.237694834009744,
+        "score_note": "YOLO scores are not calibrated pose-accuracy probabilities"
+      },
+      {
+        "label": "round_3_placement_crate",
+        "time_s": 45.75999999998405,
+        "source": "RGB + depth + calibration + known CAD",
+        "recognition": "trained_YOLOv8n_instance_segmentation",
+        "no_simulator_object_pose_or_instance_id_input": true,
+        "no_color_rule_fallback": true,
+        "camera_pitch_deg": 55.0,
+        "table_z_estimated_m": -0.5499994651665855,
+        "detections": [
+          {
+            "index": 5,
+            "name": "料框",
+            "T_world_object": [
+              [
+                -5.366696010482158e-07,
+                0.9999999998291829,
+                1.847554877664299e-05,
+                0.48000237558791614
+              ],
+              [
+                -0.9999999999971073,
+                -5.366262840204856e-07,
+                -2.3445647250044175e-06,
+                -1.0109386342338947e-06
+              ],
+              [
+                -2.344554810138917e-06,
+                -1.8475550034846105e-05,
+                0.9999999998265784,
+                -0.5480168236840679
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "registration_rmse_mm": 2.322848071665719,
+            "registration_median_mm": 1.05502282723698,
+            "compute_seconds": 11.806437166989781,
+            "method": "YOLOv8_mask + FPFH_RANSAC/table_multistart + robust_CAD_ICP",
+            "frame_symmetry": "180_deg_yaw; long_X_toward_robot_negative_Y",
+            "rim_height_m": 0.2532194904,
+            "global_registration": "Open3D_CPU_FPFH_RANSAC",
+            "global_candidate_selected": false,
+            "registration_prior": "table_support_and_reference_rest_orientation",
+            "global_ransac_fitness": 0.17839929689271944,
+            "global_candidate_rmse_mm": 2.5568530998849095,
+            "inlier_rmse_mm": 1.2683347595923744,
+            "cad_inlier_fraction": 0.9889716312056738,
+            "side": "both",
+            "pixel_count": 39036,
+            "yolo_confidence": 0.9989678859710693,
+            "bbox_xyxy": [
+              143,
+              169,
+              495,
+              369
+            ],
+            "segmentation": "YOLOv8n-seg_six_classes",
+            "inference_device": "cpu"
+          }
+        ],
+        "missing_indices": [],
+        "compute_seconds": 12.00531083298847,
+        "score_note": "YOLO scores are not calibrated pose-accuracy probabilities"
+      },
+      {
+        "label": "loaded_crate_grasp",
+        "time_s": 53.33999999996639,
+        "source": "RGB + depth + calibration + known CAD",
+        "recognition": "trained_YOLOv8n_instance_segmentation",
+        "no_simulator_object_pose_or_instance_id_input": true,
+        "no_color_rule_fallback": true,
+        "camera_pitch_deg": 55.0,
+        "table_z_estimated_m": -0.5500007151616867,
+        "detections": [
+          {
+            "index": 5,
+            "name": "料框",
+            "T_world_object": [
+              [
+                8.658563785039081e-08,
+                0.9999999994691181,
+                3.258459653646588e-05,
+                0.48000052829256334
+              ],
+              [
+                -0.9999999999974337,
+                8.665939914784697e-08,
+                -2.2636849099756784e-06,
+                -1.8693574712851632e-06
+              ],
+              [
+                -2.263687732535428e-06,
+                -3.2584596340379616e-05,
+                0.9999999994665596,
+                -0.5480196935139426
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "registration_rmse_mm": 2.711196870049695,
+            "registration_median_mm": 1.065873657134943,
+            "compute_seconds": 10.162070000020321,
+            "method": "YOLOv8_mask + FPFH_RANSAC/table_multistart + robust_CAD_ICP",
+            "frame_symmetry": "180_deg_yaw; long_X_toward_robot_negative_Y",
+            "rim_height_m": 0.2532194904,
+            "global_registration": "Open3D_CPU_FPFH_RANSAC",
+            "global_candidate_selected": false,
+            "registration_prior": "table_support_and_reference_rest_orientation",
+            "global_ransac_fitness": 0.0,
+            "global_candidate_rmse_mm": 473.8611634218848,
+            "inlier_rmse_mm": 1.2668406573117055,
+            "cad_inlier_fraction": 0.9880934208517783,
+            "side": "both",
+            "pixel_count": 36694,
+            "yolo_confidence": 0.9985505938529968,
+            "bbox_xyxy": [
+              143,
+              169,
+              495,
+              368
+            ],
+            "segmentation": "YOLOv8n-seg_six_classes",
+            "inference_device": "cpu"
+          }
+        ],
+        "missing_indices": [],
+        "compute_seconds": 10.31834687499213,
+        "score_note": "YOLO scores are not calibrated pose-accuracy probabilities"
+      }
+    ]
+  },
+  "phase_names": [
+    "双臂水平张开：物体稳定",
+    "第1轮：双臂接近物体上方",
+    "第1轮：同步下降到抓取姿态",
+    "双臂同步闭合（复用稳定抓取姿态）",
+    "第1轮：双臂连续抬升并搬运至料框",
+    "第1轮：同时松手放入料框",
+    "第1轮：退出料框",
+    "第2轮：直接接近下一组物体",
+    "第2轮：同步下降到抓取姿态",
+    "双臂同步闭合（复用稳定抓取姿态）",
+    "第2轮：双臂连续抬升并搬运至料框",
+    "第2轮：同时松手放入料框",
+    "第2轮：退出料框",
+    "第3轮：直接接近下一组物体",
+    "第3轮：同步下降到抓取姿态",
+    "双臂同步闭合（复用稳定抓取姿态）",
+    "第3轮：双臂连续抬升并搬运至料框",
+    "第3轮：同时松手放入料框",
+    "第3轮：退出料框",
+    "全部物体入框：直接接近抓框位置",
+    "全部物体入框：双臂同步抓框、抬升和保持"
+  ],
+  "events": [
+    {
+      "round": 1,
+      "objects": [
+        {
+          "index": 3,
+          "name": "球",
+          "side": "lh",
+          "lift_mm": 287.13257207531626,
+          "contact_n": 4.395026377109039,
+          "contact_links": 3,
+          "table_support_n": 0.0,
+          "penetration_mm": 0.07891762262374187,
+          "success": true,
+          "inside_crate_after_drop": true
+        },
+        {
+          "index": 0,
+          "name": "盒子",
+          "side": "rh",
+          "lift_mm": 289.1944318992152,
+          "contact_n": 8.589577232704958,
+          "contact_links": 3,
+          "table_support_n": 0.0,
+          "penetration_mm": 0.08625638113385047,
+          "success": true,
+          "inside_crate_after_drop": true
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "objects": [
+        {
+          "index": 1,
+          "name": "罐头/易拉罐",
+          "side": "lh",
+          "lift_mm": 286.86167959380646,
+          "contact_n": 8.13552961604246,
+          "contact_links": 5,
+          "table_support_n": 0.0,
+          "penetration_mm": 0.08596486937421133,
+          "success": true,
+          "inside_crate_after_drop": true
+        },
+        {
+          "index": 2,
+          "name": "锅/盆",
+          "side": "rh",
+          "lift_mm": 284.2510623009448,
+          "contact_n": 12.043971684806717,
+          "contact_links": 3,
+          "table_support_n": 0.0,
+          "penetration_mm": 0.09067546648207025,
+          "success": true,
+          "inside_crate_after_drop": true
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "objects": [
+        {
+          "index": 4,
+          "name": "3d_dollhouse_refrigerator",
+          "side": "rh",
+          "lift_mm": 287.8951967531107,
+          "contact_n": 14.586885183726542,
+          "contact_links": 2,
+          "table_support_n": 0.0,
+          "penetration_mm": 0.09113208129896609,
+          "success": true,
+          "inside_crate_after_drop": true
+        }
+      ]
+    }
+  ],
+  "maximum_forbidden_penetration_mm": 0.0
+}
